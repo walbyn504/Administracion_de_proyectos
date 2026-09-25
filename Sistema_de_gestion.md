@@ -2,36 +2,11 @@
 
 Este historial registra los avances realizados cada semana durante el desarrollo del proyecto.
 
-<table style="border-collapse: collapse; width: 100%; border-bottom: 2px solid currentColor;">
-  <thead style="border-bottom: 2px solid currentColor;">
-    <tr>
-      <th>Versi&#243;n</th>
-      <th>Semana</th>
-      <th>Fecha</th>
-      <th>Avance realizado</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0.1</td>
-      <td>2</td>
-      <td>23/09/2026</td>
-      <td>Documentaci&#243;n de la propuesta inicial: problema, sistema propuesto, roles, valor esperado y objetivos.</td>
-    </tr>
-    <tr>
-      <td>0.2</td>
-      <td>2</td>
-      <td>Por definir</td>
-      <td>Identificaci&#243;n de ocho interesados, registro (tabla) de necesidad, poder, inter&#233;s, actitud y estrategia, valoraci&#243;n del poder y el inter&#233;s y construcci&#243;n del mapa Poder–Inter&#233;s.</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+| Versión | Semana | Fecha | Avance realizado |
+| --- | --- | --- | --- |
+| 0.1 | 2 | 23/09/2026 | Documentación de la propuesta inicial: problema, sistema propuesto, roles, valor esperado y objetivos. |
+| 0.2 | 2 | 25/09/2026 | Identificación de ocho interesados, registro (tabla) de necesidad, poder, interés, actitud y estrategia, valoración del poder y el interés y construcción del mapa Poder–Interés.|
+| 0.3 | 2 | 25/09/2026 | Ajuste visual y exportación del mapa Poder–Interés como imagen, e inserción en el documento Markdown dentro de la carpeta imagenes.  |
 
 
 
@@ -163,69 +138,6 @@ Las puntuaciones del registro se justifican de la siguiente manera:
 
 El mapa ubica a los ocho interesados según las puntuaciones del registro. El **poder aumenta hacia arriba** y el **interés hacia la derecha**. Para formar los cuadrantes, se agrupan los valores **1 a 3 como bajos o medios** y los valores **4 a 5 como altos**. Los pares indican **(poder, interés)**.
 
-<div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720" width="1440" style="max-width:100%;height:auto" role="img" aria-labelledby="mapa-titulo mapa-descripcion">
-  <title id="mapa-titulo">Mapa Poder–Interés de la empresa corredora de seguros</title>
-  <desc id="mapa-descripcion">Poder vertical e interés horizontal. Empresa y gerencia: 5,5; administradores: 4,5; TI: 4,4; colaboradores y desarrolladores: 3,5; clientes: 2,5; aseguradoras: 3,3.</desc>
-  <rect width="1440" height="720" fill="white"/>
-  <g font-family="Arial, sans-serif" fill="#111">
-    <text x="50" y="45" font-size="29" font-weight="700">Mapa Poder–Interés de la empresa corredora de seguros</text>
-    <path d="M50 70H1390" stroke="#111" stroke-width="2"/>
-    <path d="M530 115V625 M115 360H920" stroke="#ccc" stroke-width="3" stroke-dasharray="9 9" fill="none"/>
-    <path d="M115 115V625H920" stroke="#111" stroke-width="3" fill="none"/>
-    <g font-size="17" font-weight="700">
-      <text x="88" y="100">ALTO</text>
-      <text x="70" y="650">BAJO</text>
-      <text x="935" y="630">ALTO</text>
-      <text x="10" y="365">PODER ↑</text>
-      <text x="460" y="672">INTERÉS →</text>
-    </g>
-    <g fill="#000">
-      <circle cx="770" cy="195" r="7"/>
-      <circle cx="770" cy="305" r="7"/>
-      <circle cx="610" cy="305" r="7"/>
-      <circle cx="770" cy="415" r="7"/>
-      <circle cx="770" cy="525" r="7"/>
-      <circle cx="450" cy="415" r="7"/>
-    </g>
-    <g font-size="18" font-weight="600">
-      <text x="753" y="188" text-anchor="end">Empresa corredora</text>
-      <text x="753" y="214" text-anchor="end">Gerencia</text>
-      <text x="770" y="283" text-anchor="middle">Administradores</text>
-      <text x="593" y="311" text-anchor="end">Encargado/área de TI</text>
-      <text x="788" y="409">Colaboradores</text>
-      <text x="788" y="435">Equipo desarrollador</text>
-      <text x="788" y="531">Clientes</text>
-      <text x="433" y="409" text-anchor="end">Compañías</text>
-      <text x="433" y="435" text-anchor="end">aseguradoras</text>
-    </g>
-    <text x="1040" y="140" font-size="29" font-weight="700" fill="#173dce">Interpretación</text>
-    <g font-size="20">
-      <text x="1020" y="192">• Empresa, gerencia,</text>
-      <text x="1040" y="220">administradores y TI:</text>
-      <text x="1040" y="248">gestionar de cerca.</text>
-      <text x="1020" y="305">• Colaboradores, clientes</text>
-      <text x="1040" y="333">y equipo desarrollador:</text>
-      <text x="1040" y="361">mantener informados e</text>
-      <text x="1040" y="389">involucrar según su función.</text>
-      <text x="1020" y="446">• Compañías aseguradoras:</text>
-      <text x="1040" y="474">monitorear y consultar</text>
-      <text x="1040" y="502">requisitos de los trámites.</text>
-      <text x="1020" y="559">• Mantener satisfechos:</text>
-      <text x="1040" y="587">sin interesados en esta</text>
-      <text x="1040" y="615">valoración inicial.</text>
-    </g>
-  </g>
-</svg>
-</div>
-
-Los interesados con la misma puntuación comparten un punto: empresa y gerencia **(5, 5)**; colaboradores y equipo desarrollador **(3, 5)**. Las posiciones conservan las puntuaciones del registro y el corte entre los niveles 3 y 4.
-
-#### Interpretación
-
-- **Empresa, gerencia, administradores y TI:** gestionar de cerca; validar decisiones, requisitos y avances.
-- **Colaboradores, clientes y equipo desarrollador:** mantener informados e involucrar en consultas y validaciones según su función.
-- **Compañías aseguradoras:** monitorear y consultar los requisitos de los trámites.
-- **Mantener satisfechos:** no hay interesados en este cuadrante en la valoración inicial.
-
-El mapa indica que se debe mantener una participación cercana con la empresa, la gerencia, los administradores y TI. Los colaboradores, clientes y desarrolladores requieren información y participación acorde con su relación con el sistema. Las aseguradoras se consultarán al definir los requisitos de los trámites. La representación de la empresa se coordinará con la gerencia para evitar duplicar la participación.
+![Mapa Poder-Interés de la empresa corredora de seguros](Imagenes/mapa_poder_interes.png)
+ 
+ 
