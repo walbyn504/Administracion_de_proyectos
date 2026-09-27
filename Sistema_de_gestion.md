@@ -21,11 +21,11 @@ Este historial registra los avances realizados cada semana durante el desarrollo
   - [Objetivo general](#objetivo-general)
   - [Objetivos específicos](#objetivos-específicos)
 - [5. Análisis de Interesados](#análisis-de-interesados)
-  - [5.1. Identificación de los interesados](#1-identificación-de-los-interesados)
-  - [5.2. Registro de interesados](#2-registro-de-interesados)
-  - [5.3. Valoración del poder y el interés](#3-valoración-del-poder-y-el-interés)
-  - [5.4. Mapa Poder–Interés](#4-mapa-poderinterés)
-  - [5.5. Interesados críticos](#5-interesados-críticos)
+  - [5.1. Identificación de los interesados](#51-identificación-de-los-interesados)
+  - [5.2. Registro de interesados](#52-registro-de-interesados)
+  - [5.3. Valoración del poder y el interés](#53-valoración-del-poder-y-el-interés)
+  - [5.4. Mapa Poder–Interés](#54-mapa-poderinterés)
+  - [5.5. Interesados críticos](#55-interesados-críticos)
 - [6. Enfoque de Desarrollo del Proyecto](#6-enfoque-de-desarrollo-del-proyecto)
 
 ---
@@ -113,7 +113,7 @@ Desarrollar un sistema web para la gestión y seguimiento de solicitudes de clie
 
 ## Análisis de Interesados
 
-### 1. Identificación de los interesados
+### 5.1. Identificación de los interesados
 
 - Empresa corredora de seguros.
 - Gerencia de la corredora.
@@ -124,7 +124,7 @@ Desarrollar un sistema web para la gestión y seguimiento de solicitudes de clie
 - Equipo desarrollador.
 - Encargado/área de TI.
 
-### 2. Registro de interesados
+### 5.2. Registro de interesados
 
 Las actitudes y puntuaciones son estimaciones iniciales pendientes de validar. La existencia y las atribuciones del encargado o área de TI están por confirmar.
 
@@ -139,7 +139,7 @@ Las actitudes y puntuaciones son estimaciones iniciales pendientes de validar. L
 | 7. Equipo desarrollador | Diseña, desarrolla y documenta el sistema. | Contar con requisitos claros y un alcance viable. | 3 | 5 | Favorable. | Mantener informado e involucrar continuamente en las decisiones técnicas. |
 | 8. Encargado/área de TI | Apoya la implementación, operación y soporte técnico. | Garantizar funcionamiento, seguridad y soporte. | 4 | 4 | Favorable, sujeto a la viabilidad técnica. | Gestionar de cerca: consultar restricciones técnicas y validar las condiciones de operación. |
 
-### 3. Valoración del poder y el interés
+### 5.3. Valoración del poder y el interés
 
 Se utiliza la escala **1 = muy bajo, 2 = bajo, 3 = medio, 4 = alto y 5 = muy alto**.
 
@@ -157,14 +157,14 @@ Las puntuaciones del registro se justifican de la siguiente manera:
 - **Equipo desarrollador — Poder 3, interés 5:** propone soluciones y determina su viabilidad técnica, pero no aprueba por sí solo recursos o cambios de alcance. Su interés es muy alto porque es responsable de construir el sistema.
 - **Encargado/área de TI — Poder 4, interés 4:** se supone que puede condicionar la implementación según la infraestructura y el soporte disponibles. Esta valoración debe confirmarse; si su función fuera únicamente consultiva, su poder sería menor.
 
-### 4. Mapa Poder–Interés
+### 5.4. Mapa Poder–Interés
 
 El mapa ubica a los ocho interesados según las puntuaciones del registro. El **poder aumenta hacia arriba** y el **interés hacia la derecha**. Para formar los cuadrantes, se agrupan los valores **1 a 3 como bajos o medios** y los valores **4 a 5 como altos**. Los pares indican **(poder, interés)**.
 
 ![Mapa Poder-Interés de la empresa corredora de seguros](Imagenes/mapa_poder-interes.png)
 
 
-### 5. Interesados críticos 
+### 5.5. Interesados críticos 
 
 Basado en el mapa de poder-interés se determinan tres interesados críticos y cómo se involucrarán. 
 
