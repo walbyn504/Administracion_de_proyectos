@@ -173,5 +173,20 @@ Define la factibilidad técnica, las reglas de infraestructura y la seguridad de
 
 
 
- 
- 
+### 6. Enfoque de Desarrollo del Proyecto
+
+
+Debido a las características del proyecto, se requerirá un enfoque híbrido, combinando la previsibilidad y el control de la gestión predictiva con la flexibilidad e iteración de la gestión adaptativa:
+
+**Predictivo (Control, Arquitectura y Reglas de Negocio):** 
+
+Se empleará para definir formalmente la base del sistema antes del desarrollo masivo. Permitirá establecer la arquitectura de base de datos, las restricciones de infraestructura exigidas por el área de TI (seguridad, autenticación y respaldos) y la matriz formal de roles y permisos (Administrador vs. Colaborador). Esto garantizará el cumplimiento de las reglas del negocio, el control del flujo formal del trámite y la previsibilidad en alcance, tiempo y presupuesto requerida por la Gerencia.
+
+
+**Adaptativo (Diseño e Implementación de Interfaces):**
+
+Se aplicará mediante ciclos iterativos (sprints) para la construcción de las páginas web, vistas y formularios. Debido a que las solicitudes ingresarán por múltiples canales (WhatsApp, correo, llamadas y atención presencial), la capa visual se validará de forma incremental con los Colaboradores. Esto permitirá ajustar filtros, botones y vistas para optimizar la usabilidad y facilitar la adopción del sistema.
+
+
+En conclusión, el componente predictivo asegurará la gobernanza, la seguridad y los permisos de acceso del sistema, mientras que el componente adaptativo otorgará la flexibilidad necesaria para diseñar e iterar las pantallas web a la medida de la operación diaria de los colaboradores.
+
