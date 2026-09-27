@@ -196,7 +196,7 @@ Define la factibilidad técnica, las reglas de infraestructura y la seguridad de
 
 
 
-### 6. Enfoque de Desarrollo del Proyecto
+## 6. Enfoque de Desarrollo del Proyecto
 
 
 Debido a las características del proyecto, se requerirá un enfoque híbrido, combinando la previsibilidad y el control de la gestión predictiva con la flexibilidad e iteración de la gestión adaptativa:
