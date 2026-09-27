@@ -5,8 +5,30 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 | Versión | Semana | Fecha | Avance realizado |
 | --- | --- | --- | --- |
 | 0.1 | 2 | 23/09/2026 | Documentación de la propuesta inicial: problema, sistema propuesto, roles, valor esperado y objetivos. |
-| 0.2 | 2 | 25/09/2026 | Identificación de ocho interesados, registro (tabla) de necesidad, poder, interés, actitud y estrategia, valoración del poder y el interés y construcción del mapa Poder–Interés.|
-| 0.3 | 2 | 25/09/2026 | Ajuste visual y exportación del mapa Poder–Interés como imagen, e inserción en el documento Markdown dentro de la carpeta imagenes.  |
+| 0.2 | 2 | 26/09/2026 | Análisis de interesados (registro, mapa Poder–Interés e interesados críticos) y selección del Enfoque Híbrido de desarrollo.|
+
+---
+
+## Tabla de Contenidos
+
+[Semana 2](#semana-2)
+- [1. Planteamiento del problema](#1-planteamiento-del-problema)
+- [2. Proyecto propuesto](#2-proyecto-propuesto)
+  - [2.1. Administrador](#21-administrador)
+  - [2.2. Colaborador](#22-colaborador)
+- [3. Valor esperado](#3-valor-esperado)
+- [4. Objetivos](#4-objetivos)
+  - [Objetivo general](#objetivo-general)
+  - [Objetivos específicos](#objetivos-específicos)
+- [5. Análisis de Interesados](#análisis-de-interesados)
+  - [5.1. Identificación de los interesados](#1-identificación-de-los-interesados)
+  - [5.2. Registro de interesados](#2-registro-de-interesados)
+  - [5.3. Valoración del poder y el interés](#3-valoración-del-poder-y-el-interés)
+  - [5.4. Mapa Poder–Interés](#4-mapa-poderinterés)
+  - [5.5. Interesados críticos](#5-interesados-críticos)
+- [6. Enfoque de Desarrollo del Proyecto](#6-enfoque-de-desarrollo-del-proyecto)
+
+---
 
 
 
@@ -88,7 +110,8 @@ Desarrollar un sistema web para la gestión y seguimiento de solicitudes de clie
 
 4. Implementar mecanismos de búsqueda y filtrado que faciliten la localización de solicitudes según diferentes criterios.
 
-## Semana 2
+
+## Análisis de Interesados
 
 ### 1. Identificación de los interesados
 
