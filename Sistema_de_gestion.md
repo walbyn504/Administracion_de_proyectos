@@ -138,5 +138,5 @@ Las puntuaciones del registro se justifican de la siguiente manera:
 
 El mapa ubica a los ocho interesados según las puntuaciones del registro. El **poder aumenta hacia arriba** y el **interés hacia la derecha**. Para formar los cuadrantes, se agrupan los valores **1 a 3 como bajos o medios** y los valores **4 a 5 como altos**. Los pares indican **(poder, interés)**.
 
-![Mapa Poder-Interés de la empresa corredora de seguros](Imagenes/mapa_poder_interes.png)
+![Mapa Poder-Interés de la empresa corredora de seguros](Imagenes/mapa_poder-interes.png)
 
