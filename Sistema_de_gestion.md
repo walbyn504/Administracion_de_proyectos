@@ -6,6 +6,7 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 | --- | --- | --- | --- |
 | 0.1 | 2 | 23/09/2026 | Documentación de la propuesta inicial: problema, sistema propuesto, roles, valor esperado y objetivos. |
 | 0.2 | 2 | 26/09/2026 | Análisis de interesados (registro, mapa Poder–Interés e interesados críticos) y selección del Enfoque Híbrido de desarrollo.|
+| 0.3 | 3 | 01/10/2026 | Definición del Scrum Team y distribución de responsabilidades de gestión, desarrollo, diseño, arquitectura y calidad. |
 
 ---
 
@@ -28,6 +29,11 @@ Este historial registra los avances realizados cada semana durante el desarrollo
   - [5.5. Interesados críticos](#55-interesados-críticos)
 - [6. Enfoque de Desarrollo del Proyecto](#6-enfoque-de-desarrollo-del-proyecto)
 
+[Semana 3](#semana-3)
+- [7. Definición del Scrum Team y distribución de responsabilidades](#7-definición-del-scrum-team-y-distribución-de-responsabilidades)
+  - [7.1. Asignación de responsabilidades de Scrum](#71-asignación-de-responsabilidades-de-scrum)
+  - [7.2. Distribución de funciones técnicas](#72-distribución-de-funciones-técnicas)
+
 ---
 
 
@@ -38,8 +44,8 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 
 **Estudiantes:**
 
-- Seidy Alanis Balladares.
-- Walbyn González Sequeira.
+- Seidy Alanis.
+- Walbyn González.
 
 ## 1. Planteamiento del problema
 
@@ -209,3 +215,32 @@ Debido a las características del proyecto, se requerirá un enfoque híbrido, c
 
 En conclusión, el componente predictivo asegurará la gobernanza, la seguridad y los permisos de acceso del sistema, mientras que el componente adaptativo otorgará la flexibilidad necesaria para diseñar e iterar las pantallas web a la medida de la operación diaria de los colaboradores.
 
+---
+
+## Semana 3
+
+## 7. Definición del Scrum Team y distribución de responsabilidades
+
+El Scrum Team está conformado por Seidy Alanis y Walbyn González. Durante las semanas establecidas del proyecto, ambos integrantes participarán en el desarrollo del sistema web de gestión y seguimiento de solicitudes de clientes de la empresa corredora de seguros. Debido a que el equipo cuenta con dos integrantes, cada persona combinará responsabilidades.
+
+### 7.1. Asignación de responsabilidades de Scrum
+
+| Responsabilidad | Integrante asignado | Funciones principales |
+| --- | --- | --- |
+| **Product Owner** | Seidy Alanis | Definir el objetivo del producto; mantener actualizada la lista de tareas pendientes del producto; aclarar los requisitos de registro, seguimiento y consulta de solicitudes con los interesados; revisar que las funcionalidades respondan a las necesidades del negocio. |
+| **Scrum Master** | Walbyn González | ofrecerá asesoramiento sobre los procesos y metodologías al propietario del producto, a los desarrolladores y a las partes interesadas. Además, actúa como agente de cambio y facilita el desarrollo organizacional. |
+| **Developers** | Seidy Alanis y Walbyn González | Planificar el trabajo de cada Sprint; analizar, diseñar, desarrollar y probar las funcionalidades; integrar los componentes del sistema y cumplir los criterios de calidad acordados en la Definición de Terminado. |
+
+### 7.2. Distribución de funciones técnicas
+
+Ambos integrantes participarán como desarrolladores full-stack, con una distribución inicial de funciones principales y apoyo mutuo según las necesidades de cada Sprint.
+
+| Función técnica | Responsable principal | Actividades en el proyecto |
+| --- | --- | --- |
+| **Desarrollo full-stack** | Ambos | Construir e integrar las interfaces, la lógica del sistema y el acceso a la base de datos; corregir errores y entregar funcionalidades completas. |
+| **Frontend** | Seidy Alanis, con apoyo de Walbyn González | Implementar las pantallas de registro, consulta y seguimiento de solicitudes, filtros y formularios; adaptar las interfaces a distintos dispositivos. |
+| **Backend** | Walbyn González, con apoyo de Seidy Alanis | Implementar la lógica de solicitudes, cambios de estado, asignación de responsables, observaciones, autenticación y permisos de Administrador y Colaborador. |
+| **Designer** | Seidy Alanis | Elaborar bocetos y prototipos; definir la apariencia y navegación; validar la facilidad de uso de las pantallas con los colaboradores. |
+| **Architect** | Walbyn González | Proponer y documentar la estructura del sistema, los componentes, el modelo de datos y las tecnologías; acordar las decisiones técnicas con el equipo considerando las restricciones de infraestructura. |
+| **QA** | Ambos | Definir criterios de aceptación; diseñar y ejecutar pruebas de registro, filtros, estados y permisos; registrar defectos y comprobar sus correcciones. |
+| **Documentación técnica** | Ambos | Mantener actualizados los requisitos, las decisiones técnicas, los resultados de pruebas y las instrucciones de uso del sistema. |
