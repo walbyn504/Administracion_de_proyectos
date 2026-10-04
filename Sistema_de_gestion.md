@@ -30,9 +30,16 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 - [6. Enfoque de Desarrollo del Proyecto](#6-enfoque-de-desarrollo-del-proyecto)
 
 [Semana 3](#semana-3)
-- [7. Definición del Scrum Team y distribución de responsabilidades](#7-definición-del-scrum-team-y-distribución-de-responsabilidades)
-  - [7.1. Asignación de responsabilidades de Scrum](#71-asignación-de-responsabilidades-de-scrum)
-  - [7.2. Distribución de funciones técnicas](#72-distribución-de-funciones-técnicas)
+
+- [1. Acta de Inicio](#1-acta-de-inicio-project-charter)
+  - [1.1. Justificación del Proyecto](#11-justificación-del-proyecto)
+  - [1.2. Objetivos del Proyecto](#12-objetivos-del-proyecto)
+  - [1.3. Alcance y Límites Generales](#13-alcance-y-límites-generales)
+- [2. Definición del Scrum Team y distribución de responsabilidades](#2-definición-del-scrum-team-y-distribución-de-responsabilidades)
+  - [2.1. Asignación de responsabilidades de Scrum](#21-asignación-de-responsabilidades-de-scrum)
+  - [2.2. Distribución de funciones técnicas](#22-distribución-de-funciones-técnicas)
+
+
 
 ---
 
@@ -219,11 +226,44 @@ En conclusión, el componente predictivo asegurará la gobernanza, la seguridad 
 
 ## Semana 3
 
-## 7. Definición del Scrum Team y distribución de responsabilidades
+## 1. Acta de inicio (Project Charter)
+
+El Acta de Inicio formaliza la autorización del proyecto y consolida su justificación, metas y límites operativos.
+
+### 1.1. Justificación del Proyecto
+*(Basado en el [Planteamiento del problema](#1-planteamiento-del-problema) y el [Valor esperado](#3-valor-esperado) de la Semana 2)*
+
+---
+
+### 1.2. Objetivos del Proyecto
+*(Para el desglose completo de las metas del proyecto, véanse la **Semana 2, Sección 4 "Objetivos"**).*
+
+* **Objetivo General:** Desarrollar un sistema web para la gestión y seguimiento de solicitudes de clientes de una empresa corredora de seguros, que facilite el registro, control y consulta de los trámites recibidos por los diferentes medios de atención.
+* **Objetivos Específicos:** El detalle de los cuatro objetivos específicos del proyecto se encuentra disponible en la sección [objetivos](#4-objetivos) de la Semana 2.
+
+
+### 1.3. Alcance y Límites Generales
+Con base en la descripción y roles definidos en la [semana 2 (punto 2)](#2-proyecto-propuesto), el alcance del proyecto comprende:
+
+#### Inclusiones (Dentro del Alcance)
+* **Gestión de solicitudes:** Registro de trámites ingresando datos del cliente, tipo de consulta, fecha, canal de ingreso, aseguradora responsable, prioridad y estado inicial.
+* **Asignación automática:** El usuario que registra la solicitud queda asignado automáticamente como el colaborador responsable.
+* **Seguimiento y bitácora:** Actualización de estados del trámite (*recibido, pendiente de requisito, enviado a aseguradora, finalizado*) y registro de observaciones/actualizaciones.
+* **Búsqueda y filtrado:** Motor de búsqueda con filtros por diversos criterios para localizar casos y dar seguimiento a trámites pendientes.
+* **Gestión de accesos y roles:**
+  * **Colaborador:** Funciones operativas de registro, gestión de trámites, actualización de estados, observaciones y consultas con filtros.
+  * **Administrador:** Acceso total a todas las funciones del sistema, consulta del estado general de las solicitudes y módulo para la gestión de usuarios.
+
+#### Exclusiones (Fuera del Alcance)
+* **Acceso a clientes finales:** El sistema es para uso exclusivo del personal interno de la corredora; no contempla usuarios ni portal de consulta para clientes externos.
+* **Integraciones automáticas con aseguradoras o mensajería:** No incluye conexión API automatizada con sistemas de aseguradoras ni envío/recepción automática de mensajes (WhatsApp API, SMS, etc.).
+* **Gestión financiera o de cobros:** No abarca facturación, pagos ni cobros de pólizas.
+
+## 2. Definición del Scrum Team y distribución de responsabilidades
 
 El Scrum Team está conformado por Seidy Alanis y Walbyn González. Durante las semanas establecidas del proyecto, ambos integrantes participarán en el desarrollo del sistema web de gestión y seguimiento de solicitudes de clientes de la empresa corredora de seguros. Debido a que el equipo cuenta con dos integrantes, cada persona combinará responsabilidades.
 
-### 7.1. Asignación de responsabilidades de Scrum
+### 2.1. Asignación de responsabilidades de Scrum
 
 | Responsabilidad | Integrante asignado | Funciones principales |
 | --- | --- | --- |
@@ -231,7 +271,7 @@ El Scrum Team está conformado por Seidy Alanis y Walbyn González. Durante las 
 | **Scrum Master** | Walbyn González | ofrecerá asesoramiento sobre los procesos y metodologías al propietario del producto, a los desarrolladores y a las partes interesadas. Además, actúa como agente de cambio y facilita el desarrollo organizacional. |
 | **Developers** | Seidy Alanis y Walbyn González | Planificar el trabajo de cada Sprint; analizar, diseñar, desarrollar y probar las funcionalidades; integrar los componentes del sistema y cumplir los criterios de calidad acordados en la Definición de Terminado. |
 
-### 7.2. Distribución de funciones técnicas
+### 2.2. Distribución de funciones técnicas
 
 Ambos integrantes participarán como desarrolladores full-stack, con una distribución inicial de funciones principales y apoyo mutuo según las necesidades de cada Sprint.
 
@@ -244,3 +284,5 @@ Ambos integrantes participarán como desarrolladores full-stack, con una distrib
 | **Architect** | Walbyn González | Proponer y documentar la estructura del sistema, los componentes, el modelo de datos y las tecnologías; acordar las decisiones técnicas con el equipo considerando las restricciones de infraestructura. |
 | **QA** | Ambos | Definir criterios de aceptación; diseñar y ejecutar pruebas de registro, filtros, estados y permisos; registrar defectos y comprobar sus correcciones. |
 | **Documentación técnica** | Ambos | Mantener actualizados los requisitos, las decisiones técnicas, los resultados de pruebas y las instrucciones de uso del sistema. |
+
+
