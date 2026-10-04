@@ -38,6 +38,8 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 - [2. Definición del Scrum Team y distribución de responsabilidades](#2-definición-del-scrum-team-y-distribución-de-responsabilidades)
   - [2.1. Asignación de responsabilidades de Scrum](#21-asignación-de-responsabilidades-de-scrum)
   - [2.2. Distribución de funciones técnicas](#22-distribución-de-funciones-técnicas)
+- [3. Análisis de entorno](#3-análisis-de-entorno)
+  - [3.1 Factores Ambientales de la Empresa (EEFs)](#31-factores-ambientales-de-la-empresa-eefs)
 
 
 
@@ -286,3 +288,20 @@ Ambos integrantes participarán como desarrolladores full-stack, con una distrib
 | **Documentación técnica** | Ambos | Mantener actualizados los requisitos, las decisiones técnicas, los resultados de pruebas y las instrucciones de uso del sistema. |
 
 
+## 3. Análisis de Entorno 
+
+### 3.1. Factores Ambientales de la Empresa (EEFs)
+
+Los Factores Ambientales de la Empresa son condiciones internas y externas que no están bajo el control directo del equipo de desarrollo, pero que influyen, condicionan y orientan las decisiones del proyecto.
+
+#### Factores Internos
+* **Cultura operacional y canales dispersos:** La corredora atiende clientes por teléfono, correo, WhatsApp y presencialmente sin un flujo estandarizado. El sistema debe adaptarse a esta realidad multi-canal para facilitar su adopción.
+* **Infraestructura de TI:** La elección de tecnologías, el servidor de alojamiento (*hosting*) y la base de datos están alineados con la viabilidad técnica y condiciones fijadas por la empresa.
+* **Estructura organizacional:** Definición clara de permisos y roles de trabajo (Administrador y Colaborador) según las funciones de la empresa.
+
+#### Factores Externos
+* **Normativa legal y privacidad:** Manejo de datos sensibles de clientes y pólizas sujeto a la legislación vigente de protección de datos personales (*Ley N° 8968*).
+* **Entorno con Aseguradoras:** Las compañías aseguradoras operan con sus propias plataformas y tiempos. El sistema registrará el envío del trámite a la aseguradora correspondiente sin requerir integraciones API directas.
+* **Expectativas de los clientes:** Los clientes no interactúan con el sistema, pero esperan respuestas rápidas cuando consultan a su colaborador por los canales tradicionales.
+
+---
