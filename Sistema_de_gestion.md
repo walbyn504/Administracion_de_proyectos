@@ -312,4 +312,4 @@ Los Factores Ambientales de la Empresa son condiciones internas y externas que n
 
 El Canvas del Proyecto sintetiza los aspectos fundamentales de gobernanza, alcance, interesados y restricciones para el desarrollo del sistema de gestión de solicitudes de la Corredora de Seguros:
 
-![Canvas del Proyecto](imagenes/canva-proyecto.png)
+![Canvas del Proyecto](Imagenes/canva-proyecto.png)
