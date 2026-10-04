@@ -40,6 +40,7 @@ Este historial registra los avances realizados cada semana durante el desarrollo
   - [2.2. Distribución de funciones técnicas](#22-distribución-de-funciones-técnicas)
 - [3. Análisis de entorno](#3-análisis-de-entorno)
   - [3.1 Factores Ambientales de la Empresa (EEFs)](#31-factores-ambientales-de-la-empresa-eefs)
+  - [3.2 Canvas del Proyecto](#32-canvas-del-proyecto)
 
 
 
@@ -305,3 +306,10 @@ Los Factores Ambientales de la Empresa son condiciones internas y externas que n
 * **Expectativas de los clientes:** Los clientes no interactúan con el sistema, pero esperan respuestas rápidas cuando consultan a su colaborador por los canales tradicionales.
 
 ---
+
+
+### 3.2. Canvas del Proyecto
+
+El Canvas del Proyecto sintetiza los aspectos fundamentales de gobernanza, alcance, interesados y restricciones para el desarrollo del sistema de gestión de solicitudes de la Corredora de Seguros:
+
+![Canvas del Proyecto](imagenes/canva.png)
