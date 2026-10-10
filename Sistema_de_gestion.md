@@ -100,7 +100,7 @@ Por esta razón, surge la necesidad de analizar cómo se gestionan actualmente l
 
 Desarrollar un sistema web para la gestión y seguimiento de solicitudes de clientes de una empresa corredora de seguros. El sistema permitirá centralizar en un solo lugar las solicitudes que actualmente pueden recibirse por diferentes medios, facilitando su registro, organización y seguimiento.
 
-La propuesta contemplará el registro de cada solicitud con información como los datos del cliente, tipo de consulta o solicitud, fecha de ingreso, canal por el cual fue recibida, colaborador responsable, aseguradora responsable de atender, prioridad y estado. El colaborador que registre la solicitud quedará automáticamente asignado como responsable de su gestión. Los estados podrían incluir opciones como recibido, pendiente de requisito, enviado a aseguradora y finalizado, permitiendo conocer de manera rápida en qué situación se encuentra cada caso.
+La propuesta contemplará el registro de cada solicitud con información como los datos del cliente, tipo de consulta o solicitud, número de póliza, fecha de ingreso, canal por el cual fue recibida, colaborador responsable, aseguradora responsable de atender, prioridad y estado. El colaborador que registre la solicitud quedará automáticamente asignado como responsable de su gestión. Los estados podrían incluir opciones como recibido, pendiente de requisito, enviado a aseguradora y finalizado, permitiendo conocer de manera rápida en qué situación se encuentra cada caso.
 
 El sistema contará con dos roles principales:
 
@@ -163,7 +163,7 @@ Con base en la descripción y roles definidos en el [proyecto propuesto](#proyec
 
 #### Inclusiones (Dentro del Alcance)
 
-* **Gestión de solicitudes:** Registro de trámites ingresando datos del cliente, tipo de consulta, fecha, canal de ingreso, aseguradora responsable, prioridad y estado inicial.
+* **Gestión de solicitudes:** Registro de trámites ingresando datos del cliente, tipo de consulta, número de póliza, fecha, canal de ingreso, aseguradora responsable, prioridad y estado inicial.
 * **Asignación automática:** El usuario que registra la solicitud queda asignado automáticamente como el colaborador responsable.
 * **Seguimiento y bitácora:** Actualización de estados del trámite (*recibido, pendiente de requisito, enviado a aseguradora, finalizado*) y registro de observaciones/actualizaciones.
 * **Búsqueda y filtrado:** Motor de búsqueda con filtros por diversos criterios para localizar casos y dar seguimiento a trámites pendientes.
@@ -383,7 +383,7 @@ El análisis inicial se ejecuta como el primer sprint dentro de los cinco sprint
 | ID | Historia de Usuario / Tarea | Estimación | Responsable |
 | :--- | :--- | :---: | :--- |
 | **TASK-01** | **Análisis del Problema:** Estudio de la recepción dispersa de solicitudes (WhatsApp, correo, llamadas, presencial) para definir la centralización del trámite. | **3 SP** | Seidy Alanis |
-| **TASK-02** | **Definición de Campos:** Identificación de los 8 datos del registro (*cliente, consulta, fecha, canal, aseguradora, prioridad, estado y responsable*). | **3 SP** | Seidy Alanis |
+| **TASK-02** | **Definición de Campos:** Identificación de los 8 datos del registro (*cliente, consulta, número de póliza, fecha, canal, aseguradora, prioridad, estado y responsable*). | **3 SP** | Seidy Alanis |
 | **TASK-03** | **Roles y Asignación:** Definición de la matriz de permisos (*Administrador vs. Colaborador*) y la regla de asignación automática del responsable. | **3 SP** | Walbyn González |
 | **TASK-04** | **Flujo de Estados:** Propuesta y documentación del flujo de estados (*recibido, pendiente de requisito, enviado a aseguradora, finalizado*). | **2 SP** | Walbyn González |
 
