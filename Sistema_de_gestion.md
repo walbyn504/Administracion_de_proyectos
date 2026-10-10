@@ -59,6 +59,19 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 
 - [6. Restricciones](#6-restricciones)
 
+[Semana 3](#semana-3)
+
+- [1. Ciclo de vida del proyecto](#1-ciclo-de-vida-del-proyecto)
+  - [Enfoque de Desarrollo del Proyecto](#enfoque-de-desarrollo-del-proyecto)
+  - [Etapas del ciclo de vida](#etapas-del-ciclo-de-vida)
+
+- [2. Primer Sprint](#2-primer-sprint)
+  - [Sprint Goal](#sprint-goal)
+  - [Duración y participantes](#duración-y-participantes)
+  - [Trabajo seleccionado (Análisis de la idea y reglas del sistema)](#trabajo-seleccionado-análisis-de-la-idea-y-reglas-del-sistema)
+  - [Incremento esperado](#incremento-esperado)
+  - [Criterios de aceptación del primer Sprint](#criterios-de-aceptación-del-primer-sprint)
+  - [Revisión y retrospectiva](#revisión-y-retrospectiva)
 
 
 ---
@@ -314,3 +327,31 @@ Si se confirma su existencia y autoridad, participará en la validación de la f
 * **Gestión financiera o de cobros:** No abarca facturación, pagos ni cobros de pólizas.
 
 ---
+
+## Semana 3
+
+## 1. Ciclo de vida del proyecto
+
+### Enfoque de Desarrollo del Proyecto
+
+
+Debido a las características del proyecto, se requerirá un enfoque híbrido, combinando la previsibilidad y el control de la gestión predictiva con la flexibilidad e iteración de la gestión adaptativa:
+
+**Predictivo (Control, Arquitectura y Reglas de Negocio):** Se empleará para definir formalmente la base del sistema antes del desarrollo masivo. Permitirá establecer la arquitectura de base de datos, las restricciones de infraestructura que se confirmen con la empresa (seguridad, autenticación y respaldos) y la matriz formal de roles y permisos (Administrador vs. Colaborador). Esto facilitará el cumplimiento de las reglas del negocio y el control del alcance, tiempo y presupuesto.
+
+
+**Adaptativo (Desarrollo incremental del sistema):** Se aplicará mediante ciclos iterativos (sprints) para construir e integrar las interfaces, la lógica de negocio y el almacenamiento de datos, con pruebas de las funcionalidades. Debido a que las solicitudes ingresarán por múltiples canales (WhatsApp, correo, llamadas y atención presencial), la capa visual se validará de forma incremental con los Colaboradores. Esto permitirá ajustar filtros, botones y vistas para optimizar la usabilidad y facilitar la adopción del sistema.
+
+
+En conclusión, el componente predictivo asegurará la gobernanza, la seguridad y los permisos de acceso del sistema, mientras que el componente adaptativo otorgará la flexibilidad necesaria para diseñar e iterar las pantallas web a la medida de la operación diaria de los colaboradores.
+
+### Etapas del ciclo de vida
+
+| Etapa | Trabajo y resultado esperado |
+| --- | --- |
+| Inicio | Definir el problema, la propuesta, el Product Goal y el equipo. |
+| Análisis inicial — Sprint 1 | Revisar la idea, los roles, los datos y las reglas del sistema para preparar el Product Backlog inicial. |
+| Desarrollo incremental — Sprints 2 a 5 | Seleccionar trabajo del backlog y construir, integrar, probar y revisar funcionalidades. La distribución se definirá al priorizar el backlog. |
+| Entrega y cierre | Consolidar el expediente, el informe final y la demostración del sistema. |
+
+El análisis inicial forma parte de los cinco sprints indicados por el profesor. Las pruebas y revisiones acompañarán el desarrollo; no se reservan únicamente para el cierre.
