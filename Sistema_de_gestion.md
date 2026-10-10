@@ -68,12 +68,16 @@ Este historial registra los avances realizados cada semana durante el desarrollo
   - [Etapas del ciclo de vida](#etapas-del-ciclo-de-vida)
 
 - [2. Primer Sprint](#2-primer-sprint)
-  - [Sprint Goal](#sprint-goal)
-  - [Duración y participantes](#duración-y-participantes)
-  - [Trabajo seleccionado (Análisis de la idea y reglas del sistema)](#trabajo-seleccionado-análisis-de-la-idea-y-reglas-del-sistema)
-  - [Incremento esperado](#incremento-esperado)
-  - [Criterios de aceptación del primer Sprint](#criterios-de-aceptación-del-primer-sprint)
-  - [Revisión y retrospectiva](#revisión-y-retrospectiva)
+    - [Plan del Sprint — Sprint #1](#plan-del-sprint--sprint-1)
+      - [1. Información General](#1-información-general)
+      - [2. Meta del Sprint (Sprint Goal)](#2-meta-del-sprint-sprint-goal)
+      - [3. Sprint Backlog (Tareas de Análisis)](#3-sprint-backlog-tareas-de-análisis)
+      - [4. Plan de Ejecución y Estrategia](#4-plan-de-ejecución-y-estrategia)
+      - [5. Criterios de Aceptación Globales y Definición de Terminado (DoD)](#5-criterios-de-aceptación-globales-y-definición-de-terminado-dod)
+    - [Eventos de Cierre del Sprint 1](#eventos-de-cierre-del-sprint-1)
+      - [Revisión del Sprint (Sprint Review)](#revisión-del-sprint-sprint-review)
+      - [Retrospectiva del Sprint (Sprint Retrospective)](#retrospectiva-del-sprint-sprint-retrospective)
+
 
 
 ---
@@ -358,3 +362,59 @@ En conclusión, el componente predictivo asegurará la gobernanza, la seguridad 
 
 El análisis inicial se ejecuta como el primer sprint dentro de los cinco sprints contemplados en el proyecto. Tal como establece la dinámica metodológica, es necesario iniciar este ciclo de trabajo para analizar la idea del negocio antes de disponer de la lista definitiva de requerimientos (Product Backlog).
 
+## 2. Primer Sprint 
+
+**Estado:** Sprint finalizado y completado.
+
+### Plan del Sprint — Sprint #1
+
+#### 1. Información General
+* **Nombre del Sprint:** Sprint 1 — Análisis de Requerimientos y Reglas de Negocio
+* **Fecha de Inicio:** 30/09/2026 (Semana 3)
+* **Fecha de Fin:** 07/10/2026 (Semana 4)
+* **Duración:** 1 semana
+* **Capacidad del Equipo:** 2 personas (Seidy Alanis y Walbyn González) / ~40 horas totales (11 SP)
+
+#### 2. Meta del Sprint (Sprint Goal)
+> Analizar la problemática de atención de solicitudes en la corredora de seguros y definir la estructura inicial del sistema para preparar la lista de requerimientos que conformará el Product Backlog.
+
+#### 3. Sprint Backlog (Tareas de Análisis)
+
+| ID | Historia de Usuario / Tarea | Estimación | Responsable |
+| :--- | :--- | :---: | :--- |
+| **TASK-01** | **Análisis del Problema:** Estudio de la recepción dispersa de solicitudes (WhatsApp, correo, llamadas, presencial) para definir la centralización del trámite. | **3 SP** | Seidy Alanis |
+| **TASK-02** | **Definición de Campos:** Identificación de los 8 datos del registro (*cliente, consulta, fecha, canal, aseguradora, prioridad, estado y responsable*). | **3 SP** | Seidy Alanis |
+| **TASK-03** | **Roles y Asignación:** Definición de la matriz de permisos (*Administrador vs. Colaborador*) y la regla de asignación automática del responsable. | **3 SP** | Walbyn González |
+| **TASK-04** | **Flujo de Estados:** Propuesta y documentación del flujo de estados (*recibido, pendiente de requisito, enviado a aseguradora, finalizado*). | **2 SP** | Walbyn González |
+
+#### 4. Plan de Ejecución y Estrategia
+* **Arquitectura/Diseño:** Análisis conceptual y diagramación del flujo de datos multi-canal. Definición del modelo de datos preliminar, entidad de solicitudes y matriz de roles.
+* **Dependencias:** Requisito previo de recopilación de información operativa inicial efectuada durante la propuesta del proyecto.
+* **Riesgos Identificados:** Ambigüedad en la obligatoriedad y formatos de entrada para cada campo de la solicitud.
+
+#### 5. Criterios de Aceptación Globales y Definición de Terminado (DoD)
+Para considerar este Sprint de análisis como Terminado, se debió cumplir con:
+* Especificación completa de los 8 datos clave de la solicitud y su tipo de asignación (manual vs. automática).
+* Matriz de permisos funcionales entre los roles de Administrador y Colaborador definida.
+* Regla de negocio de asignación automática formalmente documentada.
+* Documento de especificación de requerimientos revisado y validado por la Product Owner.
+
+### Eventos de Cierre del Sprint 1
+
+#### Revisión del Sprint (Sprint Review)
+* **Fecha de realización:** Cierre de la Semana 3 / Inicio de la Semana 4.
+* **Participantes:** Seidy Alanis (Product Owner / Developer) y Walbyn González (Scrum Master / Developer).
+* **Evaluación de entregables y Criterios de Aceptación:**
+  * **Verificación:** Se revisó la especificación de los ocho datos clave del registro (*cliente, tipo de consulta, fecha de ingreso, canal de recepción, aseguradora, prioridad, estado y responsable automático*).
+  * **Roles y Permisos:** Se verificó y aprobó la matriz funcional de accesos entre Administrador y Colaborador.
+  * **Flujo de estados:** Se validaron preliminarmente los cuatro estados del trámite (*recibido, pendiente de requisito, enviado a aseguradora y finalizado*).
+  * **Resultado:** El incremento analítico fue revisado, comprobado contra los criterios de aceptación y aprobado por la Product Owner. El entregable queda oficialmente aceptado para estructurar el Product Backlog en la Semana 4.
+
+#### Retrospectiva del Sprint (Sprint Retrospective)
+* **¿Qué funcionó bien?**
+  * La comunicación constante y fluida entre Seidy y Walbyn facilitó la toma de decisiones rápidas en la definición de permisos y reglas del negocio.
+  * La combinación de roles de Scrum con responsabilidades de desarrollo Full-Stack se adaptó adecuadamente a la estructura de un equipo de dos personas.
+* **¿Qué se puede mejorar?**
+  * Definir con un mayor nivel de detalle las validaciones de entrada, formatos exactos y obligatoriedad de campos antes de iniciar con la programación de interfaces.
+* **Compromiso de mejora para el Sprint 2:**
+  * Redactar Criterios de Aceptación detallados y especificaciones claras de validación de datos en cada Historia de Usuario dentro del Product Backlog.
