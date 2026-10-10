@@ -16,7 +16,7 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 | 0.3 | 3 | 01/10/2026 | Definición del Scrum Team y distribución de responsabilidades de gestión, desarrollo, diseño, arquitectura y calidad. |
 | 0.4 | 3 | 03/10/2026 | Incorporación acta de inicio, factores ambientales (EEFs) y diseño del Canvas del Proyecto |
 | 0.5 | 4 | 10/10/2026 | Reorganización del documento basado en la guía para conformar el expediente. Además, incuye producto goal y etapas del cliclo de vida|
-
+| 0.6 | 4 | 10/10/2026 | Planteamiento del primer spring del proyecto|
 
 
 ---
