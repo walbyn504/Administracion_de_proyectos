@@ -356,4 +356,5 @@ En conclusión, el componente predictivo asegurará la gobernanza, la seguridad 
 | Desarrollo incremental — Sprints 2 a 5 | Seleccionar trabajo del backlog y construir, integrar, probar y revisar funcionalidades. La distribución se definirá al priorizar el backlog. |
 | Entrega y cierre | Consolidar el expediente, el informe final y la demostración del sistema. |
 
-El análisis inicial forma parte de los cinco sprints indicados por el profesor. Las pruebas y revisiones acompañarán el desarrollo; no se reservan únicamente para el cierre.
+El análisis inicial se ejecuta como el primer sprint dentro de los cinco sprints contemplados en el proyecto. Tal como establece la dinámica metodológica, es necesario iniciar este ciclo de trabajo para analizar la idea del negocio antes de disponer de la lista definitiva de requerimientos (Product Backlog).
+
