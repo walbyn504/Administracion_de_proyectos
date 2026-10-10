@@ -46,20 +46,20 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 
 [Semana 2](#semana-2)
 
-- [4. Contexto organizacional](#4-contexto-organizacional)
+- [1. Contexto organizacional](#4-contexto-organizacional)
   - [Factores Ambientales de la Empresa (EEFs)](#factores-ambientales-de-la-empresa-eefs)
     - [Factores Internos](#factores-internos)
     - [Factores Externos](#factores-externos)
   - [Canvas del Proyecto](#canvas-del-proyecto)
 
-- [5. Mapa de interesados](#5-mapa-de-interesados)
+- [2. Mapa de interesados](#5-mapa-de-interesados)
   - [Identificación de los interesados](#identificación-de-los-interesados)
   - [Registro de interesados](#registro-de-interesados)
   - [Valoración del poder y el interés](#valoración-del-poder-y-el-interés)
   - [Mapa Poder–Interés](#mapa-poderinterés)
   - [Interesados críticos](#interesados-críticos)
 
-- [6. Restricciones](#6-restricciones)
+- [3. Restricciones](#6-restricciones)
 
 [Semana 3](#semana-3)
 
