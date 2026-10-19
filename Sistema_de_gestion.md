@@ -18,7 +18,8 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 | 0.5 | 4 | 10/10/2026 | Reorganización del documento basado en la guía para conformar el expediente. Además, incuye producto goal y etapas del cliclo de vida|
 | 0.6 | 4 | 10/10/2026 | Planteamiento del primer spring del proyecto.|
 | 0.7 | 4 | 10/10/2026 | Elaboración del backlog inicial, sprint backlog y mecanismo de seguimiento.|
-| 0.8 | 5 | 18/10/2026 | Redacción del detalle de las historias de usuario, corrección del backlog y ampliación de actividades en los sprits.|
+| 0.8 | 5 | 18/10/2026 | Redacción del detalle de las historias de usuario, corrección del backlog y ampliación de actividades en los sprints.|
+| 0.9 | 5 | 18/10/2026 | Se referencia los apartados solicitados para esta semana (alcance, product backlog y criterios de aceptación). |
 
 
 
@@ -104,6 +105,12 @@ Este historial registra los avances realizados cada semana durante el desarrollo
   - [Sprint 5 — Bitácora Avanzada, Reportes y Cierre del Sistema](#sprint-5--bitácora-avanzada-reportes-y-cierre-del-sistema)
 - [4. Mecanismos de Seguimiento y Control](#4-mecanismos-de-seguimiento-y-control)
 
+
+[Semana 5](#semana-5)
+
+- [Declaración de Alcance](#declaración-de-alcance)
+- [Product Backlog Priorizado](#product-backlog-priorizado)
+- [Criterios de Aceptación](#criterios-de-aceptación)
 
 
 ---
@@ -771,3 +778,19 @@ Para garantizar la visibilidad del avance diario y el control de impedimentos du
 
 
 
+---
+
+## Semana 5
+
+En esta sección se consolida formalmente el alcance del proyecto, el *Product Backlog* priorizado y la especificación detallada de los criterios de aceptación, tomando como base las definiciones establecidas previamente en el Acta de Inicio y los análisis del proceso de la corredora de seguros:
+
+### Declaración de Alcance
+El alcance detallado del sistema web se encuentra formalmente delimitado en los [alcances del proyecto](#inclusiones-dentro-del-alcance), enfocándose exclusivamente en el uso interno de la empresa corredora de seguros sin contemplar portales externos ni pasarelas de pago.
+
+### Product Backlog Priorizado
+La lista oficial de requerimientos priorizados se detalla a continuación en el apartado de [product backlog](#1-product-backlog-inicial).
+
+### Criterios de Aceptación
+Las especificaciones rigurosas de cada funcionalidad se encuentran documentadas en la [especificación detallada de las historias de usuario](#2-especificación-detallada-de-historias-de-usuario).
+
+---
