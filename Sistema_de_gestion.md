@@ -18,6 +18,8 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 | 0.5 | 4 | 10/10/2026 | Reorganización del documento basado en la guía para conformar el expediente. Además, incuye producto goal y etapas del cliclo de vida|
 | 0.6 | 4 | 10/10/2026 | Planteamiento del primer spring del proyecto.|
 | 0.7 | 4 | 10/10/2026 | Elaboración del backlog inicial, sprint backlog y mecanismo de seguimiento.|
+| 0.8 | 5 | 18/10/2026 | Redacción del detalle de las historias de usuario, corrección del backlog y ampliación de actividades en los sprits.|
+
 
 
 ---
@@ -82,13 +84,25 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 [Semana 4](#semana-4)
 
 - [1. Product Backlog Inicial](#1-product-backlog-inicial)
-- [2. Planificación de Sprints del Proyecto](#2-planificación-de-sprints-del-proyecto)
-  - [Sprint 1 — Análisis de Requerimientos e Incepción](#sprint-1--análisis-de-requerimientos-e-incepción-previo-al-backlog-formal)
+
+- [2. Especificación Detallada de Historias de Usuario](#2-especificación-detallada-de-historias-de-usuario)
+    - [HU-01: Autenticación y Control de Acceso](#hu-01-autenticación-y-control-de-acceso)
+    - [HU-02: Registro Centralizado de Solicitudes](#hu-02-registro-centralizado-de-solicitudes)
+    - [HU-03: Actualización de Estados y Seguimiento](#hu-03-actualización-de-estados-y-seguimiento)
+    - [HU-04: Búsqueda y Filtros de Trámites](#hu-04-búsqueda-y-filtros-de-trámites)
+    - [HU-05: Gestión de Usuarios (Módulo Administrador)](#hu-05-gestión-de-usuarios-módulo-administrador)
+    - [HU-06: Panel de Control y Visibilidad General (Módulo Administrador)](#hu-06-panel-de-control-y-visibilidad-general-módulo-administrador)
+    - [HU-07: Bitácora de Observaciones y Comentarios](#hu-07-bitácora-de-observaciones-y-comentarios)
+    - [HU-08: Módulo de Reportes y Exportación](#hu-08-módulo-de-reportes-y-exportación)
+
+
+- [3. Planificación de Sprints del Proyecto](#3-planificación-de-sprints-del-proyecto)
+  - [Sprint 1 — Análisis de Requerimientos e Incepción](#sprint-1--análisis-de-requerimientos-e-incepción)
   - [Sprint 2 — Autenticación y Módulo de Registro de Solicitudes](#sprint-2--autenticación-y-módulo-de-registro-de-solicitudes)
   - [Sprint 3 — Gestión de Estados, Seguimiento y Búsqueda con Filtros](#sprint-3--gestión-de-estados-seguimiento-y-búsqueda-con-filtros)
   - [Sprint 4 — Módulo de Administración de Usuarios y Panel de Control](#sprint-4--módulo-de-administración-de-usuarios-y-panel-de-control)
   - [Sprint 5 — Bitácora Avanzada, Reportes y Cierre del Sistema](#sprint-5--bitácora-avanzada-reportes-y-cierre-del-sistema)
-- [3. Mecanismos de Seguimiento y Control](#3-mecanismos-de-seguimiento-y-control)
+- [4. Mecanismos de Seguimiento y Control](#4-mecanismos-de-seguimiento-y-control)
 
 
 
@@ -657,7 +671,9 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 ---
 
-#### Sprint 1 — Análisis de Requerimientos e Incepción [Ver detalle](#2-primer-sprint )
+#### Sprint 1 — Análisis de Requerimientos e Incepción
+
+ [Ver detalle](#2-primer-sprint )
 * **Estado:** Finalizado y completado.
 * **Duración:** 1 semana (30/09/2026 – 07/10/2026) | Capacidad: ~40 horas (11 SP analíticos)
 * **Meta del Sprint:** Analizar la problemática de atención de solicitudes en la corredora y definir la estructura inicial del sistema y reglas de negocio.
@@ -752,4 +768,6 @@ Para garantizar la visibilidad del avance diario y el control de impedimentos du
 
 3. **Métricas de Rendimiento (*Burn-down Chart* / Control de Puntos):**
    * Seguimiento al consumo de Puntos de Historia (SP) a lo largo del Sprint de dos semanas para asegurar que la meta se complete dentro del plazo acordado.
+
+
 
