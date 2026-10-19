@@ -439,79 +439,280 @@ El **Product Backlog** del proyecto se construyó a partir de los hallazgos y re
 
 ---
 
-### 1. Product Backlog Inicial
+---
 
-El *Product Backlog* reúne todas las funcionalidades estimadas en Puntos de Historia (SP) según su complejidad técnica y de negocio.
+## 1. Product Backlog Inicial
 
-| ID | Historia de Usuario | Prioridad | Estimación | Sprint Asignado | Estado |
+El *Product Backlog* reúne todas las funcionalidades estimadas en Puntos de Historia (SP) según su complejidad técnica y de negocio, priorizadas para el desarrollo del sistema de gestión y seguimiento de solicitudes.
+
+| ID | Historia de Usuario (Título) | Prioridad | Estimación | Sprint Asignado | Estado |
 | :--- | :--- | :---: | :---: | :---: | :---: |
-| **HU-01** | **Autenticación y Control de Acceso:** Como usuario del sistema (Administrador/Colaborador), quiero iniciar sesión con credenciales seguras para acceder a las funciones según mi rol. | Alta | 5 SP | Sprint 2 | Finalizado |
-| **HU-02** | **Registro Centralizado de Solicitudes:** Como colaborador, quiero registrar una solicitud con los 9 datos clave (*cliente, número de póliza, tipo de consulta, fecha de ingreso, canal de recepción, aseguradora responsable, prioridad, estado inicial y responsable automático*) para centralizar el trámite. | Alta | 8 SP | Sprint 2 | Finalizado |
-| **HU-03** | **Actualización de Estados y Seguimiento:** Como colaborador/administrador, quiero cambiar el estado del trámite (*Recibido, Pendiente de requisito, Enviado a aseguradora, Finalizado*) y registrar observaciones en la bitácora. | Alta | 5 SP | Sprint 3 | Pendiente |
-| **HU-04** | **Búsqueda y Filtros de Trámites:** Como usuario, quiero buscar solicitudes por cliente, número de póliza, estado, aseguradora o canal de ingreso para dar seguimiento oportuno a casos pendientes. | Media | 5 SP | Sprint 3 | Pendiente |
-| **HU-05** | **Gestión de Usuarios (Módulo Administrador):** Como administrador, quiero crear, editar y desactivar usuarios del sistema para controlar los accesos del personal de la corredora. | Alta | 5 SP | Sprint 4 | Pendiente |
-| **HU-06** | **Panel de Control y Visibilidad General:** Como administrador, quiero visualizar un resumen de solicitudes abiertas vs. cerradas para monitorear la eficiencia en la atención. | Baja | 5 SP | Sprint 4 | Pendiente |
-| **HU-07** | **Bitácora de Observaciones y Comentarios:** Como colaborador, quiero añadir notas o comentarios cronológicos a una solicitud para mantener informado al equipo sobre los avances del caso. | Media | 3 SP | Sprint 5 | Pendiente |
-| **HU-08** | **Módulo de Reportes y Exportación:** Como administrador, quiero generar reportes básicos de trámites atendidos para la toma de decisiones gerenciales. | Baja | 5 SP | Sprint 5 | Pendiente |
+| **HU-01** | Autenticación segura y control de acceso por roles | Alta | 8 SP | Sprint 2 | Pendiente |
+| **HU-02** | Registro centralizado de solicitudes de clientes | Alta | 5 SP | Sprint 2 | Pendiente |
+| **HU-03** | Actualización de estados y seguimiento de solicitudes | Alta | 3 SP | Sprint 3 | Pendiente |
+| **HU-04** | Búsqueda y filtros de solicitudes de clientes | Media | 3 SP | Sprint 3 | Pendiente |
+| **HU-05** | Gestión y administración de usuarios del sistema | Alta | 5 SP | Sprint 4 | Pendiente |
+| **HU-06** | Panel de control y visualización de métricas de solicitudes | Baja | 5 SP | Sprint 4 | Pendiente |
+| **HU-07** | Registro de historial y observaciones cronológicas de la solicitud | Media | 3 SP | Sprint 5 | Pendiente |
+| **HU-08** | Generación y exportación de reportes de trámites de atención | Baja | 5 SP | Sprint 5 | Pendiente |
 
 ---
 
-### 2. Planificación de Sprints del Proyecto
+## 2. Especificación Detallada de Historias de Usuario
 
-A continuación se detalla la distribución del trabajo a lo largo de los 5 Sprints del proyecto, con una duración estándar de **2 semanas** por iteración (~80 horas totales de capacidad del equipo por Sprint).
+A continuación se detalla cada una de las Historias de Usuario que componen el Product Backlog del sistema:
 
 ---
 
-#### Sprint 1 — Análisis de Requerimientos e Incepción (Previo al Backlog Formal) [Ver detalle](#2-primer-sprint )
+### HU-01: Autenticación y Control de Acceso
 
+1. **Título**
+   "Autenticación segura y control de acceso por roles"
+
+2. **Estructura**
+
+   Como colaborador o administrador de la corredora de seguros quiero iniciar sesión en el sistema web con mis credenciales únicas para acceder de forma segura a las funciones y pantallas correspondientes según mi rol asignado, protegiendo los datos confidenciales de las solicitudes de los clientes.
+
+3. **Criterios de Aceptación**
+   * Dado que el usuario ingresa a la plataforma con un correo y contraseña válidos registrados en el sistema, cuando hace clic en el botón "Iniciar Sesión", entonces el sistema valida las credenciales y lo redirige al panel principal correspondiente a su rol (Administrador o Colaborador).
+   * Dado que el usuario introduce credenciales incorrectas o un correo no registrado, cuando intenta iniciar sesión, entonces el sistema muestra un mensaje de error claro indicando que los datos son incorrectos y deniega el acceso.
+   * Dado que inicio sesión como colaborador, cuando el sistema carga la interfaz principal, entonces el menú muestra únicamente las opciones autorizadas para mi rol ocultando los apartados exclusivos del administrador, y si intento ingresar por URL directa a dichas secciones restringidas, entonces el sistema bloquea el acceso mostrando una advertencia de permisos insuficientes.
+
+4. **Estimación y Prioridad (Metadata de Gestión)**
+   * **Prioridad:** Alta
+   * **Estimación:** 8 puntos de historia *(Porque tiene una complejidad alta al incluir autenticación, seguridad de contraseñas, gestión de sesiones y control de acceso según los roles).*
+
+5. **Notas Adicionales o Anexos**
+   * **Notas Técnicas:** Utilizar hashing seguro de contraseñas mediante bcrypt y control de sesiones mediante tokens seguros.
+
+---
+
+### HU-02: Registro Centralizado de Solicitudes
+
+1. **Título**
+   "Registro centralizado de solicitudes de clientes"
+
+2. **Estructura**
+
+   Como colaborador/administrador de la corredora de seguros quiero registrar una nueva solicitud ingresando los datos clave del cliente, trámite y canal de recepción en un formulario web para centralizar la información en un solo lugar y evitar la pérdida de seguimiento de los casos que ingresan por diversos medios (WhatsApp, correo, llamadas o presencial).
+
+3. **Criterios de Aceptación**
+   * Dado que el colaborador/administrador se encuentra en el formulario de nueva solicitud, cuando completa los campos obligatorios (nombre del cliente, número de póliza, tipo de consulta, canal de recepción, aseguradora responsable y prioridad) y presiona "Guardar", entonces el sistema almacena la información correctamente en la base de datos y muestra un mensaje de éxito.
+   * Dado que el colaborador/administrador crea una nueva solicitud, cuando el sistema procesa el registro, entonces asigna automáticamente al usuario que ha iniciado sesión como el colaborador responsable del trámite y le define el estado inicial como "Recibido".
+   * Dado que el colaborador intenta guardar la solicitud dejando campos obligatorios vacíos (como el número de póliza o el tipo de consulta), cuando presiona "Guardar", entonces el sistema detiene el registro y resalta en rojo los campos faltantes que deben completarse.
+
+4. **Estimación y Prioridad (Metadata de Gestión)**
+   * **Prioridad:** Alta
+   * **Estimación:** 5 puntos de historia *(Porque tiene una complejidad intermedia, ya que requiere crear formularios, validar datos, registrar solicitudes y asignar automáticamente al responsable).*
+
+5. **Notas Adicionales o Anexos**
+   * **Notas Técnicas:** Validar que el campo del número de póliza cumpla con el formato numérico esperado y que las listas desplegables (aseguradoras, canales, prioridades) provengan directamente de las tablas maestras del sistema.
+
+---
+
+### HU-03: Actualización de Estados y Seguimiento
+
+1. **Título**
+   “Actualización de estados y seguimiento de solicitudes”
+
+2. **Estructura**
+
+   Como colaborador o administrador de la corredora de seguros, quiero actualizar el estado de las solicitudes y registrar observaciones sobre los trámites realizados para mantener un seguimiento de cada caso y conocer los avances durante su gestión.
+
+3. **Criterios de Aceptación**
+   * Dado que el colaborador/administrador ingresa al apartado de solicitudes, cuando el sistema carga la información, entonces muestra las solicitudes registradas con sus datos principales y el estado actual de cada trámite.
+   * Dado que el colaborador/administrador visualiza una solicitud registrada, cuando selecciona un nuevo estado mediante la lista desplegable (Recibido, Pendiente de requisito, Enviado a aseguradora o Finalizado), entonces el sistema actualiza el estado de la solicitud.
+   * Dado que el colaborador/administrador modifica el estado de una solicitud, cuando el sistema guarda el cambio correctamente, entonces muestra un mensaje de confirmación indicando que el estado fue actualizado.
+   * Dado que el colaborador/administrador necesita agregar un comentario sobre el seguimiento de una solicitud, cuando selecciona la opción de agregar comentario, escribe la información y presiona "Guardar", entonces el sistema registra el comentario junto con la fecha en la bitácora del trámite.
+
+4. **Estimación y Prioridad (Metadata de Gestión)**
+   * **Prioridad:** Alta
+   * **Estimación:** 3 puntos de historia
+
+5. **Notas Adicionales o Anexos**
+   * **Notas Técnicas:** Garantizar que los cambios de estado queden registrados en la base de datos conservando la trazabilidad del usuario que realizó la modificación.
+
+---
+
+### HU-04: Búsqueda y Filtros de Trámites
+
+1. **Título**
+   “Búsqueda y filtros de solicitudes de clientes”
+
+2. **Estructura**
+   Como colaborador o administrador de la corredora de seguros, quiero buscar y filtrar las solicitudes registradas por cliente, número de póliza, estado, aseguradora o canal de ingreso para localizar los trámites de manera rápida y facilitar el seguimiento de los casos pendientes.
+
+3. **Criterios de Aceptación**
+   * Dado que el colaborador/administrador se encuentra en el apartado de solicitudes, cuando ingresa el nombre de un cliente o número de póliza en el campo de búsqueda, entonces el sistema muestra las solicitudes que coinciden con la información ingresada.
+   * Dado que el colaborador/administrador necesita consultar solicitudes específicas, cuando selecciona uno o varios filtros disponibles (estado, aseguradora o canal de ingreso), entonces el sistema muestra únicamente los trámites que cumplen con los criterios seleccionados.
+   * Dado que el colaborador/administrador realiza una búsqueda y no existen solicitudes que coincidan con los criterios ingresados, cuando el sistema procesa la consulta, entonces muestra un mensaje indicando que no se encontraron resultados.
+
+4. **Estimación y Prioridad (Metadata de Gestión)**
+   * **Prioridad:** Media
+   * **Estimación:** 3 puntos de historia
+
+5. **Notas Adicionales o Anexos**
+   * **Notas Técnicas:** Implementar consultas a la base de datos que permitan combinar diferentes filtros y utilizar listas desplegables para los estados, aseguradoras y canales de ingreso.
+
+---
+
+### HU-05: Gestión de Usuarios (Módulo Administrador)
+
+1. **Título**
+   “Gestión y administración de usuarios del sistema”
+
+2. **Estructura**
+
+   Como administrador de la corredora de seguros, quiero crear, editar y desactivar usuarios del sistema para mantener actualizada la información del personal y controlar los accesos según las funciones que desempeña cada colaborador.
+
+3. **Criterios de Aceptación**
+   * Dado que el administrador se encuentra en el módulo de gestión de usuarios, cuando completa los datos obligatorios de un nuevo usuario (nombre, correo electrónico y rol) y presiona "Guardar", entonces el sistema registra al usuario, muestra un mensaje de confirmación y envía automáticamente un correo electrónico al colaborador con las instrucciones e información para acceder a la plataforma.
+   * Dado que el administrador necesita modificar la información de un usuario registrado, cuando selecciona la opción "Editar", realiza los cambios correspondientes y presiona "Guardar", entonces el sistema actualiza la información del usuario correctamente y muestra un mensaje de confirmación.
+   * Dado que el administrador necesita desactivar el acceso de un colaborador, cuando selecciona la opción "Desactivar" y confirma la acción, entonces el sistema cambia el estado del usuario a inactivo e impide que pueda iniciar sesión, sin eliminar su información registrada en la base de datos.
+   * Dado que el administrador se encuentra en el formulario de registro o edición de usuarios, cuando intenta guardar sin completar los campos obligatorios (nombre, correo electrónico o rol), entonces el sistema impide la acción y muestra un mensaje de advertencia, resaltando los campos que deben completarse.
+   * Dado que el administrador intenta registrar o modificar un usuario utilizando una dirección de correo electrónico que ya existe en la plataforma, cuando presiona "Guardar", entonces el sistema detiene el registro y muestra un mensaje de advertencia indicando que el correo electrónico ya se encuentra registrado.
+
+4. **Estimación y Prioridad (Metadata de Gestión)**
+   * **Prioridad:** Alta
+   * **Estimación:** 5 puntos de historia
+
+5. **Notas Adicionales o Anexos**
+   * **Notas Técnicas:** Restringir el acceso al módulo exclusivamente al rol Administrador. A nivel de base de datos, aplicar borrado lógico (*soft delete*) para conservar el historial de los usuarios desactivados y configurar la columna de correo electrónico con restricción única (*UNIQUE constraint*). Asimismo, integrar un servicio transaccional (SMTP/Mailer) para gestionar el envío automático de accesos.
+
+---
+
+### HU-06: Panel de Control y Visibilidad General (Módulo Administrador)
+
+1. **Título**
+   “Panel de control y visualización de métricas de solicitudes”
+
+2. **Estructura**
+
+   Como administrador de la corredora de seguros, quiero visualizar un panel de control con indicadores y gráficos del estado general de los trámites, para monitorear la eficiencia operativa, identificar cuellos de botella y supervisar la carga de trabajo del equipo.
+
+3. **Criterios de Aceptación**
+   * Dado que el usuario con rol de Administrador ingresa al sistema, cuando accede al panel de control principal, entonces el sistema despliega de forma clara e intuitiva los indicadores clave de rendimiento (solicitudes totales, abiertas, en proceso con aseguradora y finalizadas).
+   * Dado que el administrador consulta la información del panel, cuando selecciona un rango de fechas específico o un filtro por colaborador o aseguradora, entonces el sistema actualiza dinámicamente las gráficas e indicadores mostrando únicamente la información correspondiente al filtro aplicado.
+   * Dado que un usuario con rol de Colaborador intenta ingresar a la dirección web o sección del panel de control general, cuando el sistema valida sus permisos de acceso, entonces le restringe el paso e informa que la vista es exclusiva para el nivel administrativo.
+
+4. **Estimación y Prioridad (Metadata de Gestión)**
+   * **Prioridad:** Baja
+   * **Estimación:** 5 puntos de historia
+
+5. **Notas Adicionales o Anexos**
+   * **Notas Técnicas:** Restringir la vista y sus consultas exclusivamente al rol Administrador. Optimizar las consultas a la base de datos mediante agregaciones para garantizar una rápida carga de los contadores y utilizar una librería de gráficos para la renderización visual.
+
+---
+
+### HU-07: Bitácora de Observaciones y Comentarios
+
+1. **Título**
+   “Registro de historial y observaciones cronológicas de la solicitud”
+
+2. **Estructura**
+
+   Como colaborador o administrador de la corredora de seguros, quiero agregar notas y observaciones cronológicas a una solicitud registrada, para mantener un historial detallado de las gestiones realizadas y permitir que cualquier miembro del equipo conozca el avance del caso.
+
+3. **Criterios de Aceptación**
+   * Dado que un usuario autenticado se encuentra en la vista detallada de una solicitud, cuando redacta un comentario en el campo de observaciones y presiona "Agregar nota", entonces el sistema guarda la entrada, muestra un mensaje de confirmación y la despliega en el historial de forma cronológica.
+   * Dado que una observación ha sido registrada exitosamente en el sistema, cuando cualquier usuario autorizado consulte la bitácora de la solicitud, entonces el sistema muestra el nombre del autor, la fecha, la hora exacta del registro y el contenido de la nota de forma inalterable.
+   * Dado que un usuario intenta guardar una nota en blanco o que supera el límite de caracteres permitido, cuando presiona el botón de guardar, entonces el sistema detiene la acción y muestra un mensaje de advertencia indicando la restricción del campo.
+
+4. **Estimación y Prioridad (Metadata de Gestión)**
+   * **Prioridad:** Media
+   * **Estimación:** 3 puntos de historia
+
+5. **Notas Adicionales o Anexos**
+   * **Notas Técnicas:** Diseñar la bitácora como una tabla o entidad relacionada (1 a muchos) asociada a la solicitud, registrando automáticamente el ID del usuario en sesión y el sello de tiempo (*timestamp*). Garantizar que los registros de la bitácora sean de solo lectura (*append-only*) para preservar la trazabilidad.
+
+---
+
+### HU-08: Módulo de Reportes y Exportación
+
+1. **Título**
+   “Generación y exportación de reportes de trámites de atención”
+
+2. **Estructura**
+
+   Como administrador de la corredora de seguros, quiero generar reportes consolidados de los trámites registrados y exportarlos en formatos estándar (PDF/Excel), para analizar el rendimiento del servicio, respaldar la información y tomar decisiones gerenciales fundamentadas.
+
+3. **Criterios de Aceptación**
+   * Dado que el administrador se encuentra en el módulo de reportes, cuando define los parámetros de consulta (rango de fechas, estado del trámite, colaborador o aseguradora) y presiona "Generar reporte", entonces el sistema consulta la información y muestra una vista previa tabulada de los datos solicitados.
+   * Dado que el administrador tiene desplegada la vista previa de un reporte, cuando selecciona la opción "Exportar a Excel" o "Exportar a PDF", entonces el sistema procesa la solicitud y descarga automáticamente un archivo estructurado con el resumen detallado de la información.
+   * Dado que la búsqueda aplicada por el administrador no arroja registros dentro del período o parámetros seleccionados, cuando presiona "Generar reporte", entonces el sistema muestra un mensaje informativo indicando que no se encontraron coincidencias para la generación del documento.
+
+4. **Estimación y Prioridad (Metadata de Gestión)**
+   * **Prioridad:** Baja
+   * **Estimación:** 5 puntos de historia
+
+5. **Notas Adicionales o Anexos**
+   * **Notas Técnicas:** Limitar la generación y exportación de reportes al rol Administrador. Integrar librerías del lado del servidor para la generación de archivos PDF y hojas de cálculo (Excel/CSV), procesando las consultas de manera eficiente.
+
+---
+
+
+---
+
+---
+
+## 2. Planificación de Sprints del Proyecto
+
+A continuación se detalla la distribución de las Historias de Usuario a lo largo de los Sprints del proyecto, considerando una duración estándar de **2 semanas** por iteración (~80 horas totales de capacidad del equipo por Sprint).
+
+---
+
+#### Sprint 1 — Análisis de Requerimientos e Incepción [Ver detalle](#2-primer-sprint )
+* **Estado:** Finalizado y completado.
+* **Duración:** 1 semana (30/09/2026 – 07/10/2026) | Capacidad: ~40 horas (11 SP analíticos)
+* **Meta del Sprint:** Analizar la problemática de atención de solicitudes en la corredora y definir la estructura inicial del sistema y reglas de negocio.
 
 ---
 
 #### Sprint 2 — Autenticación y Módulo de Registro de Solicitudes
-- **Estado:** Planificado / En Proceso.
-- **Duración:** 2 semanas (07/10/2026 – 21/10/2026) | Capacidad: ~80 horas (13 SP)
-- **Meta del Sprint:** Implementar el módulo de autenticación con control de roles y el formulario funcional de registro centralizado con los 9 campos clave y asignación automática del colaborador.
+* **Estado:** Planificado / En Proceso.
+* **Duración:** 2 semanas (07/10/2026 – 21/10/2026) | Capacidad: ~80 horas (13 SP)
+* **Meta del Sprint:** Implementar el módulo de autenticación con control de roles y el formulario funcional de registro centralizado de solicitudes con asignación automática.
 
 | ID | Historia de Usuario | Estimación | Responsable |
 | :--- | :--- | :---: | :--- |
-| **HU-01** | **Módulo de Login y Permisos:** Creación del formulario de inicio de sesión, manejo de sesiones y protección de rutas según rol (Administrador vs. Colaborador). | 5 SP | Walbyn González |
-| **HU-02** | **Formulario de Registro de Solicitudes:** Desarrollo del formulario web con los 9 datos clave, validaciones de obligatoriedad y la regla de asignación automática del usuario en sesión. | 8 SP | Seidy Alanis |
+| **HU-01** | **Autenticación y Control de Acceso:** Iniciar sesión con credenciales únicas y control de acceso por roles. | 8 SP | Walbyn González |
+| **HU-02** | **Registro Centralizado de Solicitudes:** Registrar solicitudes ingresando datos clave, canal y aseguradora responsable. | 5 SP | Seidy Alanis |
 
 ---
 
 #### Sprint 3 — Gestión de Estados, Seguimiento y Búsqueda con Filtros
-- **Estado:** Planificado / Siguiente Iteración.
-- **Duración:** 2 semanas (21/10/2026 – 04/11/2026) | Capacidad: ~80 horas (10 SP)
-- **Meta del Sprint:** Desarrollar la bandeja principal de solicitudes para permitir el cambio de estados del trámite y la búsqueda multi-criterio.
+* **Estado:** Planificado.
+* **Duración:** 2 semanas (21/10/2026 – 04/11/2026) | Capacidad: ~80 horas (6 SP)
+* **Meta del Sprint:** Desarrollar la bandeja principal de solicitudes para permitir el cambio dinámico de estados del trámite y la búsqueda multi-criterio.
 
 | ID | Historia de Usuario | Estimación | Responsable |
 | :--- | :--- | :---: | :--- |
-| **HU-03** | **Actualización de Estados y Seguimiento:** Cambiar el estado entre los 4 oficiales (*Recibido, Pendiente de requisito, Enviado a aseguradora, Finalizado*). | 5 SP | Walbyn González |
-| **HU-04** | **Búsqueda y Filtros de Trámites:** Filtros dinámicos por cliente, N° de póliza, estado, aseguradora y canal de ingreso. | 5 SP | Seidy Alanis |
+| **HU-03** | **Actualización de Estados y Seguimiento:** Actualizar el estado de las solicitudes y registrar observaciones. | 3 SP | Walbyn González |
+| **HU-04** | **Búsqueda y Filtros de Trámites:** Buscar y filtrar solicitudes por cliente, póliza, estado, aseguradora o canal. | 3 SP | Seidy Alanis |
 
 ---
 
 #### Sprint 4 — Módulo de Administración de Usuarios y Panel de Control
-- **Estado:** Planificado.
-- **Duración:** 2 semanas (04/11/2026 – 18/11/2026) | Capacidad: ~80 horas (10 SP)
-- **Meta del Sprint:** Implementar las funcionalidades exclusivas del Administrador para la gestión del personal y la visualización del panel general.
+* **Estado:** Planificado.
+* **Duración:** 2 semanas (04/11/2026 – 18/11/2026) | Capacidad: ~80 horas (10 SP)
+* **Meta del Sprint:** Implementar las funcionalidades exclusivas del Administrador para la gestión del personal y la visualización del panel general de métricas.
 
 | ID | Historia de Usuario | Estimación | Responsable |
 | :--- | :--- | :---: | :--- |
-| **HU-05** | **Gestión de Usuarios (Módulo Admin):** CRUD completo de usuarios (crear, editar, activar/desactivar colaboradores). | 5 SP | Walbyn González |
-| **HU-06** | **Panel de Control y Visibilidad General:** Dashboard con tarjetas de métricas y resumen de trámites abiertos vs. cerrados. | 5 SP | Seidy Alanis |
+| **HU-05** | **Gestión de Usuarios (Módulo Admin):** Crear, editar y desactivar usuarios del sistema con control de accesos. | 5 SP | Walbyn González |
+| **HU-06** | **Panel de Control y Visibilidad General:** Visualizar panel de control con indicadores y gráficos del estado de los trámites. | 5 SP | Seidy Alanis |
 
 ---
 
 #### Sprint 5 — Bitácora Avanzada, Reportes y Cierre del Sistema
-- **Estado:** Planificado.
-- **Duración:** 2 semanas (18/11/2026 – 02/12/2026) | Capacidad: ~80 horas (8 SP)
-- **Meta del Sprint:** Integrar el historial de comentarios cronológicos, la generación de reportes gerenciales y realizar las pruebas finales de entrega.
+* **Estado:** Planificado.
+* **Duración:** 2 semanas (18/11/2026 – 02/12/2026) | Capacidad: ~80 horas (8 SP)
+* **Meta del Sprint:** Integrar el historial de observaciones cronológicas, la generación de reportes gerenciales y realizar el cierre del proyecto.
 
 | ID | Historia de Usuario | Estimación | Responsable |
 | :--- | :--- | :---: | :--- |
-| **HU-07** | **Bitácora de Observaciones y Comentarios:** Historial cronológico de notas agregadas a cada solicitud por los colaboradores. | 3 SP | Seidy Alanis |
-| **HU-08** | **Módulo de Reportes y Exportación:** Generación de reportes de atención filtrados por fechas con opción de exportación. | 5 SP | Walbyn González |
+| **HU-07** | **Bitácora de Observaciones y Comentarios:** Agregar notas y observaciones cronológicas a una solicitud registrada. | 3 SP | Seidy Alanis |
+| **HU-08** | **Módulo de Reportes y Exportación:** Generar reportes consolidados y exportarlos a formatos estándar (PDF/Excel). | 5 SP | Walbyn González |
 
 ---
 
