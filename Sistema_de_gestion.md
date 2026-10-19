@@ -439,7 +439,6 @@ El **Product Backlog** del proyecto se construyó a partir de los hallazgos y re
 
 ---
 
----
 
 ## 1. Product Backlog Inicial
 
@@ -651,13 +650,10 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
 ---
 
 
----
 
----
+## 3. Planificación de Sprints del Proyecto
 
-## 2. Planificación de Sprints del Proyecto
-
-A continuación se detalla la distribución de las Historias de Usuario a lo largo de los Sprints del proyecto, considerando una duración estándar de **2 semanas** por iteración (~80 horas totales de capacidad del equipo por Sprint).
+A continuación se detalla la distribución del trabajo a lo largo de los Sprints del proyecto, considerando una duración estándar de **2 semanas** por iteración (~80 horas totales de capacidad del equipo por Sprint) y el desglose de tareas técnicas.
 
 ---
 
@@ -673,10 +669,17 @@ A continuación se detalla la distribución de las Historias de Usuario a lo lar
 * **Duración:** 2 semanas (07/10/2026 – 21/10/2026) | Capacidad: ~80 horas (13 SP)
 * **Meta del Sprint:** Implementar el módulo de autenticación con control de roles y el formulario funcional de registro centralizado de solicitudes con asignación automática.
 
-| ID | Historia de Usuario | Estimación | Responsable |
-| :--- | :--- | :---: | :--- |
-| **HU-01** | **Autenticación y Control de Acceso:** Iniciar sesión con credenciales únicas y control de acceso por roles. | 8 SP | Walbyn González |
-| **HU-02** | **Registro Centralizado de Solicitudes:** Registrar solicitudes ingresando datos clave, canal y aseguradora responsable. | 5 SP | Seidy Alanis |
+**Sprint Backlog (Desglose de Tareas Técnicas):**
+
+| ID Tarea | Historia de Usuario | Descripción de la Tarea Técnica | Estimación | Responsable |
+| :--- | :--- | :--- | :---: | :--- |
+| **TSK-02.1** | **HU-01** (8 SP) | Diseñar maquetación y formulario de inicio de sesión (Frontend) | **2 SP** | Seidy Alanis |
+| **TSK-02.2** | **HU-01** (8 SP) | Implementar endpoint de autenticación y hashing bcrypt (Backend) | **3 SP** | Walbyn González |
+| **TSK-02.3** | **HU-01** (8 SP) | Configuración de middleware RBAC, tokens JWT y protección de rutas | **3 SP** | Walbyn González |
+| **TSK-02.4** | **HU-02** (5 SP) | Crear formulario web de registro con validaciones de campos clave | **2 SP** | Seidy Alanis |
+| **TSK-02.5** | **HU-02** (5 SP) | Lógica de asignación automática de usuario y estado inicial "Recibido" | **2 SP** | Walbyn González |
+| **TSK-02.6** | **HU-02** (5 SP) | Pruebas integradas de registro y almacenamiento en base de datos | **1 SP** | Seidy / Walbyn |
+| **TOTAL** | **HU-01 + HU-02** | **Suma total de Puntos del Sprint 2** | **13 SP** | **Equipo Completo** |
 
 ---
 
@@ -685,10 +688,15 @@ A continuación se detalla la distribución de las Historias de Usuario a lo lar
 * **Duración:** 2 semanas (21/10/2026 – 04/11/2026) | Capacidad: ~80 horas (6 SP)
 * **Meta del Sprint:** Desarrollar la bandeja principal de solicitudes para permitir el cambio dinámico de estados del trámite y la búsqueda multi-criterio.
 
-| ID | Historia de Usuario | Estimación | Responsable |
-| :--- | :--- | :---: | :--- |
-| **HU-03** | **Actualización de Estados y Seguimiento:** Actualizar el estado de las solicitudes y registrar observaciones. | 3 SP | Walbyn González |
-| **HU-04** | **Búsqueda y Filtros de Trámites:** Buscar y filtrar solicitudes por cliente, póliza, estado, aseguradora o canal. | 3 SP | Seidy Alanis |
+**Sprint Backlog (Desglose de Tareas Técnicas):**
+
+| ID Tarea | Historia de Usuario | Descripción de la Tarea Técnica | Estimación | Responsable |
+| :--- | :--- | :--- | :---: | :--- |
+| **TSK-03.1** | **HU-03** (3 SP) | Desarrollar interfaz de actualización de estados por lista desplegable | **1 SP** | Seidy Alanis |
+| **TSK-03.2** | **HU-03** (3 SP) | Implementar lógica de guardado y registro en bitácora de seguimiento | **2 SP** | Walbyn González |
+| **TSK-03.3** | **HU-04** (3 SP) | Diseñar componentes de barra de búsqueda y filtros dinámicos | **1 SP** | Seidy Alanis |
+| **TSK-03.4** | **HU-04** (3 SP) | Construir consultas SQL optimizadas para filtros combinados | **2 SP** | Walbyn González |
+| **TOTAL** | **HU-03 + HU-04** | **Suma total de Puntos del Sprint 3** | **6 SP** | **Equipo Completo** |
 
 ---
 
@@ -697,10 +705,15 @@ A continuación se detalla la distribución de las Historias de Usuario a lo lar
 * **Duración:** 2 semanas (04/11/2026 – 18/11/2026) | Capacidad: ~80 horas (10 SP)
 * **Meta del Sprint:** Implementar las funcionalidades exclusivas del Administrador para la gestión del personal y la visualización del panel general de métricas.
 
-| ID | Historia de Usuario | Estimación | Responsable |
-| :--- | :--- | :---: | :--- |
-| **HU-05** | **Gestión de Usuarios (Módulo Admin):** Crear, editar y desactivar usuarios del sistema con control de accesos. | 5 SP | Walbyn González |
-| **HU-06** | **Panel de Control y Visibilidad General:** Visualizar panel de control con indicadores y gráficos del estado de los trámites. | 5 SP | Seidy Alanis |
+**Sprint Backlog (Desglose de Tareas Técnicas):**
+
+| ID Tarea | Historia de Usuario | Descripción de la Tarea Técnica | Estimación | Responsable |
+| :--- | :--- | :--- | :---: | :--- |
+| **TSK-04.1** | **HU-05** (5 SP) | Diseñar pantallas CRUD de gestión de usuarios (Crear/Editar/Desactivar) | **2 SP** | Seidy Alanis |
+| **TSK-04.2** | **HU-05** (5 SP) | Implementar lógica de borrado lógico (*soft delete*) y envío de credenciales SMTP | **3 SP** | Walbyn González |
+| **TSK-04.3** | **HU-06** (5 SP) | Diseñar componentes visuales y gráficos interactivos del panel de control | **2 SP** | Seidy Alanis |
+| **TSK-04.4** | **HU-06** (5 SP) | Programar consultas agregadas en base de datos para contadores del Dashboard | **3 SP** | Walbyn González |
+| **TOTAL** | **HU-05 + HU-06** | **Suma total de Puntos del Sprint 4** | **10 SP** | **Equipo Completo** |
 
 ---
 
@@ -709,14 +722,22 @@ A continuación se detalla la distribución de las Historias de Usuario a lo lar
 * **Duración:** 2 semanas (18/11/2026 – 02/12/2026) | Capacidad: ~80 horas (8 SP)
 * **Meta del Sprint:** Integrar el historial de observaciones cronológicas, la generación de reportes gerenciales y realizar el cierre del proyecto.
 
-| ID | Historia de Usuario | Estimación | Responsable |
-| :--- | :--- | :---: | :--- |
-| **HU-07** | **Bitácora de Observaciones y Comentarios:** Agregar notas y observaciones cronológicas a una solicitud registrada. | 3 SP | Seidy Alanis |
-| **HU-08** | **Módulo de Reportes y Exportación:** Generar reportes consolidados y exportarlos a formatos estándar (PDF/Excel). | 5 SP | Walbyn González |
+**Sprint Backlog (Desglose de Tareas Técnicas):**
+
+| ID Tarea | Historia de Usuario | Descripción de la Tarea Técnica | Estimación | Responsable |
+| :--- | :--- | :--- | :---: | :--- |
+| **TSK-05.1** | **HU-07** (3 SP) | Desarrollar sección de notas y observaciones de solo lectura (*append-only*) | **1 SP** | Seidy Alanis |
+| **TSK-05.2** | **HU-07** (3 SP) | Integrar sellos de tiempo automáticos y trazabilidad de autor en bitácora | **2 SP** | Walbyn González |
+| **TSK-05.3** | **HU-08** (5 SP) | Diseñar interfaz para parámetros de consulta y vista previa de reportes | **2 SP** | Seidy Alanis |
+| **TSK-05.4** | **HU-08** (5 SP) | Programar motor backend de exportación a formatos estándar (PDF/Excel) | **3 SP** | Walbyn González |
+| **TOTAL** | **HU-07 + HU-08** | **Suma total de Puntos del Sprint 5** | **8 SP** | **Equipo Completo** |
 
 ---
 
-### 3. Mecanismos de Seguimiento y Control
+
+---
+
+## 4. Mecanismos de Seguimiento y Control
 
 Para garantizar la visibilidad del avance diario y el control de impedimentos durante las iteraciones de dos semanas, el equipo utiliza los siguientes mecanismos:
 
