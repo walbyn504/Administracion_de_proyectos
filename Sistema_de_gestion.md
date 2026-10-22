@@ -22,6 +22,7 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 | 0.9 | 5 | 18/10/2026 | Se referencia los apartados solicitados para esta semana (alcance, product backlog y criterios de aceptación). |
 | 0.10 | 6 | 22/10/2026 | Ampliación y ajuste de los criterios de aceptación dentro de cada historia de usuario, incluyendo validaciones, manejo de errores, conservación de datos, actualización del panel y restricciones de acceso por rol. Simplificación de su redacción y eliminación de la palabra «capacidad» en la planificación de los sprints. |
 | 0.11 | 6 | 22/10/2026 | Elaboración del plan temporal, matriz de estimaciones, cronograma de entregas por sprint, gráfico burndown planificado y estimación de costos del proyecto. |
+| 0.12 | 6 | 22/10/2026 | Incorporación de la edición de solicitudes en HU-02, con criterios de validación, guardado, cancelación y conservación del historial; actualización del alcance, tareas y cronograma de entregas. |
 
 
 
@@ -205,7 +206,7 @@ Con base en la descripción y roles definidos en el [proyecto propuesto](#proyec
 
 #### Inclusiones (Dentro del Alcance)
 
-* **Gestión de solicitudes:** Registro de trámites ingresando datos del cliente, tipo de consulta, número de póliza, fecha, canal de ingreso, aseguradora responsable, prioridad y estado inicial.
+* **Gestión de solicitudes:** Registro y edición de los datos de trámites ingresando datos del cliente, tipo de consulta, número de póliza, fecha, canal de ingreso, aseguradora responsable, prioridad y estado inicial.
 * **Asignación automática:** El usuario que registra la solicitud queda asignado automáticamente como el colaborador responsable.
 * **Seguimiento y bitácora:** Actualización de estados del trámite (*recibido, pendiente de requisito, enviado a aseguradora, finalizado*) y registro de observaciones/actualizaciones.
 * **Búsqueda y filtrado:** Motor de búsqueda con filtros por diversos criterios para localizar casos y dar seguimiento a trámites pendientes.
@@ -525,7 +526,7 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
 
 2. **Estructura**
 
-   Como colaborador/administrador de la corredora de seguros quiero registrar una nueva solicitud ingresando los datos clave del cliente, trámite y canal de recepción en un formulario web para centralizar la información en un solo lugar y evitar la pérdida de seguimiento de los casos que ingresan por diversos medios (WhatsApp, correo, llamadas o presencial).
+   Como colaborador/administrador de la corredora de seguros quiero registrar una nueva solicitud y editar sus datos cuando sea necesario mediante un formulario web para centralizar y mantener actualizada la información en un solo lugar y evitar la pérdida de seguimiento de los casos que ingresan por diversos medios (WhatsApp, correo, llamadas o presencial).
 
 3. **Criterios de Aceptación**
    * Dado que el colaborador/administrador se encuentra en el formulario de nueva solicitud, cuando completa los campos obligatorios (nombre del cliente, número de póliza, tipo de consulta, canal de recepción, aseguradora responsable y prioridad) y presiona "Guardar", entonces el sistema almacena la información correctamente en la base de datos y muestra un mensaje de éxito.
@@ -535,11 +536,17 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
    * Dado que una solicitud se guardó correctamente, cuando el usuario recarga la página y consulta su detalle, entonces se conservan los datos ingresados, el responsable asignado, la fecha de ingreso y el estado inicial "Recibido".
    * Dado que ocurre un fallo de comunicación o almacenamiento, cuando el usuario intenta guardar una solicitud, entonces el sistema informa que no se pudo confirmar el guardado y no muestra un mensaje de éxito. Al restablecerse el servicio, la consulta del registro debe reflejar únicamente los cambios efectivamente guardados.
 
+   * Dado que el colaborador o administrador consulta una solicitud registrada, cuando selecciona "Editar", entonces el sistema abre el formulario con los datos actuales del cliente, número de póliza, tipo de consulta, canal de recepción, aseguradora y prioridad.
+   * Dado que el usuario modifica los datos de una solicitud, cuando presiona "Guardar cambios" y los campos son válidos, entonces el sistema actualiza el mismo registro, muestra una confirmación y conserva los cambios al consultar nuevamente la solicitud.
+   * Dado que el usuario edita una solicitud, cuando intenta guardar campos obligatorios vacíos, con solo espacios o con valores inválidos, entonces el sistema impide la actualización, indica qué debe corregirse y conserva los últimos datos guardados.
+   * Dado que el usuario abrió una solicitud para editarla, cuando selecciona "Cancelar", entonces el sistema descarta los cambios del formulario y conserva la información guardada anteriormente.
+   * Dado que el usuario guarda cambios en los datos de una solicitud, cuando el sistema actualiza el registro, entonces conserva su identificador, fecha de ingreso, responsable, estado e historial, sin crear otra solicitud ni reiniciar su seguimiento.
 4. **Estimación y Prioridad (Metadata de Gestión)**
    * **Prioridad:** Alta
-   * **Estimación:** 5 puntos de historia *(Porque tiene una complejidad intermedia, ya que requiere crear formularios, validar datos, registrar solicitudes y asignar automáticamente al responsable).*
+   * **Estimación:** 5 puntos de historia *(Porque tiene una complejidad intermedia, ya que requiere crear formularios, validar datos, registrar y editar solicitudes y asignar automáticamente al responsable).*
 
 5. **Notas Adicionales o Anexos**
+   * **Revisión de estimación:** Se mantienen provisionalmente los 5 SP; el equipo deberá revisar si cubren la edición incorporada y ajustar la planificación si corresponde.
    * **Notas Técnicas:** Validar que el campo del número de póliza cumpla con el formato numérico esperado y que las listas desplegables (aseguradoras, canales, prioridades) provengan directamente de las tablas maestras del sistema.
 
 ---
@@ -723,9 +730,9 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 | **TSK-02.1** | **HU-01** (8 SP) | Diseñar maquetación y formulario de inicio de sesión (Frontend) | **2 SP** | Seidy Alanis |
 | **TSK-02.2** | **HU-01** (8 SP) | Implementar endpoint de autenticación y hashing bcrypt (Backend) | **3 SP** | Walbyn González |
 | **TSK-02.3** | **HU-01** (8 SP) | Configuración de middleware RBAC, tokens JWT y protección de rutas | **3 SP** | Walbyn González |
-| **TSK-02.4** | **HU-02** (5 SP) | Crear formulario web de registro con validaciones de campos clave | **2 SP** | Seidy Alanis |
-| **TSK-02.5** | **HU-02** (5 SP) | Lógica de asignación automática de usuario y estado inicial "Recibido" | **2 SP** | Walbyn González |
-| **TSK-02.6** | **HU-02** (5 SP) | Pruebas integradas de registro y almacenamiento en base de datos | **1 SP** | Seidy / Walbyn |
+| **TSK-02.4** | **HU-02** (5 SP) | Crear formularios de registro y edición de solicitudes con validaciones | **2 SP** | Seidy Alanis |
+| **TSK-02.5** | **HU-02** (5 SP) | Implementar registro y edición, asignación automática y estado inicial "Recibido", sin reiniciar datos de seguimiento al editar | **2 SP** | Walbyn González |
+| **TSK-02.6** | **HU-02** (5 SP) | Pruebas de registro, edición, cancelación y conservación de datos en base de datos | **1 SP** | Seidy / Walbyn |
 | **TOTAL** | **HU-01 + HU-02** | **Suma total de Puntos del Sprint 2** | **13 SP** | **Equipo Completo** |
 
 ---
@@ -893,7 +900,7 @@ El proyecto inicia con **48 SP pendientes: 11 de análisis y 37 de desarrollo**.
       <td><strong>HU-01: Autenticación y control de acceso</strong></td><td style="text-align: center;">8</td><td>Inicio y cierre de sesión, validación de credenciales, permisos por rol y bloqueo de accesos no autorizados.</td><td><strong>21/10/2026</strong><br>Revisión de credenciales, cierre de sesión y restricciones de acceso.</td>
     </tr>
     <tr>
-      <td><strong>HU-02: Registro centralizado de solicitudes</strong></td><td style="text-align: center;">5</td><td>Registro validado, conservación de datos, responsable automático y estado inicial «Recibido».</td><td><strong>21/10/2026</strong><br>Revisión de validaciones, guardado y asignación automática.</td>
+      <td><strong>HU-02: Registro centralizado de solicitudes</strong></td><td style="text-align: center;">5</td><td>Registro y edición con validaciones, conservación de datos, responsable automático y estado inicial «Recibido» al crear.</td><td><strong>21/10/2026</strong><br>Revisión de registro, edición, cancelación, validaciones y asignación automática.</td>
     </tr>
     <tr>
       <td rowspan="2" style="vertical-align: middle; text-align: center;"><strong>Sprint 3</strong><br><br></td>
