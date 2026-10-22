@@ -18,19 +18,19 @@
 <line x1="100" y1="85" x2="100" y2="365" stroke="#666"/>
 <line x1="100" y1="365" x2="860" y2="365" stroke="#666"/>
 <text x="28" y="230" transform="rotate(-90 28 230)" text-anchor="middle" font-size="14">Puntos pendientes del proyecto (SP)</text>
-<polyline points="100,125 252,180 404,245 556,275 708,325 860,365" fill="none" stroke="#ed9c29" stroke-width="3"/>
+<polyline points="100,110 252,165 404,230 556,275 708,325 860,365" fill="none" stroke="#ed9c29" stroke-width="3"/>
 <text x="100" y="391" text-anchor="middle" font-size="14">Inicio</text>
 <text x="100" y="411" text-anchor="middle" font-size="12" fill="#666">30/09</text>
-<circle cx="100" cy="125" r="4.5" fill="#ed9c29"/>
-<text x="112" y="113" font-size="13" fill="#a66a12">48</text>
+<circle cx="100" cy="110" r="4.5" fill="#ed9c29"/>
+<text x="112" y="98" font-size="13" fill="#a66a12">51</text>
 <text x="252" y="391" text-anchor="middle" font-size="14">Sprint 1</text>
 <text x="252" y="411" text-anchor="middle" font-size="12" fill="#666">07/10</text>
-<circle cx="252" cy="180" r="4.5" fill="#ed9c29"/>
-<text x="264" y="168" font-size="13" fill="#a66a12">37</text>
+<circle cx="252" cy="165" r="4.5" fill="#ed9c29"/>
+<text x="264" y="153" font-size="13" fill="#a66a12">40</text>
 <text x="404" y="391" text-anchor="middle" font-size="14">Sprint 2</text>
 <text x="404" y="411" text-anchor="middle" font-size="12" fill="#666">21/10</text>
-<circle cx="404" cy="245" r="4.5" fill="#ed9c29"/>
-<text x="416" y="233" font-size="13" fill="#a66a12">24</text>
+<circle cx="404" cy="230" r="4.5" fill="#ed9c29"/>
+<text x="416" y="218" font-size="13" fill="#a66a12">27</text>
 <text x="556" y="391" text-anchor="middle" font-size="14">Sprint 3</text>
 <text x="556" y="411" text-anchor="middle" font-size="12" fill="#666">04/11</text>
 <circle cx="556" cy="275" r="4.5" fill="#ed9c29"/>
@@ -43,6 +43,6 @@
 <text x="860" y="411" text-anchor="middle" font-size="12" fill="#666">02/12</text>
 <circle cx="860" cy="365" r="4.5" fill="#ed9c29"/>
 <text x="872" y="353" font-size="13" fill="#a66a12">0</text>
-<line x1="310" y1="449" x2="350" y2="449" stroke="#ed9c29" stroke-width="3"/><text x="365" y="454" font-size="14">Planificado (11, 13, 6, 10 y 8 SP)</text>
-<text x="500" y="489" text-anchor="middle" font-size="13" fill="#666">Inicio: 48 SP. Sprint 1: se completan 11 SP de análisis y quedan 37 SP de desarrollo.</text>
+<line x1="310" y1="449" x2="350" y2="449" stroke="#ed9c29" stroke-width="3"/><text x="365" y="454" font-size="14">Planificado (11, 13, 9, 10 y 8 SP)</text>
+<text x="500" y="489" text-anchor="middle" font-size="13" fill="#666">Inicio: 51 SP. Sprint 1: se completan 11 SP de análisis y quedan 40 SP de desarrollo.</text>
 </g></svg>
