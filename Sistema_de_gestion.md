@@ -20,6 +20,8 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 | 0.7 | 4 | 10/10/2026 | Elaboración del backlog inicial, sprint backlog y mecanismo de seguimiento.|
 | 0.8 | 5 | 18/10/2026 | Redacción del detalle de las historias de usuario, corrección del backlog y ampliación de actividades en los sprints.|
 | 0.9 | 5 | 18/10/2026 | Se referencia los apartados solicitados para esta semana (alcance, product backlog y criterios de aceptación). |
+| 0.10 | 6 | 22/10/2026 | Ampliación y ajuste de los criterios de aceptación dentro de cada historia de usuario, incluyendo validaciones, manejo de errores, conservación de datos, actualización del panel y restricciones de acceso por rol. Simplificación de su redacción y eliminación de la palabra «capacidad» en la planificación de los sprints. |
+
 
 
 
@@ -406,7 +408,7 @@ El análisis inicial se ejecuta como el primer sprint dentro de los cinco sprint
 * **Fecha de Inicio:** 30/09/2026 (Semana 3)
 * **Fecha de Fin:** 07/10/2026 (Semana 4)
 * **Duración:** 1 semana
-* **Capacidad del Equipo:** 2 personas (Seidy Alanis y Walbyn González) / ~40 horas totales (11 SP)
+* **Capacidad del Equipo:** 2 personas (Seidy Alanis y Walbyn González) / (11 SP)
 
 #### 2. Meta del Sprint (Sprint Goal)
 > Analizar la problemática de atención de solicitudes en la corredora de seguros y definir la estructura inicial del sistema para preparar la lista de requerimientos que conformará el Product Backlog.
@@ -497,6 +499,8 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
    * Dado que el usuario ingresa a la plataforma con un correo y contraseña válidos registrados en el sistema, cuando hace clic en el botón "Iniciar Sesión", entonces el sistema valida las credenciales y lo redirige al panel principal correspondiente a su rol (Administrador o Colaborador).
    * Dado que el usuario introduce credenciales incorrectas o un correo no registrado, cuando intenta iniciar sesión, entonces el sistema muestra un mensaje de error claro indicando que los datos son incorrectos y deniega el acceso.
    * Dado que inicio sesión como colaborador, cuando el sistema carga la interfaz principal, entonces el menú muestra únicamente las opciones autorizadas para mi rol ocultando los apartados exclusivos del administrador, y si intento ingresar por URL directa a dichas secciones restringidas, entonces el sistema bloquea el acceso mostrando una advertencia de permisos insuficientes.
+   * Dado que una persona no ha iniciado sesión, cuando intenta acceder directamente a una pantalla protegida o consultar sus datos, entonces el sistema deniega el acceso y no entrega información de solicitudes ni usuarios.
+   * Dado que un usuario tiene una sesión activa, cuando selecciona "Cerrar sesión" e intenta volver a consultar una pantalla protegida, entonces el sistema solicita autenticarse nuevamente y rechaza las consultas con la sesión cerrada.
 
 4. **Estimación y Prioridad (Metadata de Gestión)**
    * **Prioridad:** Alta
@@ -520,6 +524,9 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
    * Dado que el colaborador/administrador se encuentra en el formulario de nueva solicitud, cuando completa los campos obligatorios (nombre del cliente, número de póliza, tipo de consulta, canal de recepción, aseguradora responsable y prioridad) y presiona "Guardar", entonces el sistema almacena la información correctamente en la base de datos y muestra un mensaje de éxito.
    * Dado que el colaborador/administrador crea una nueva solicitud, cuando el sistema procesa el registro, entonces asigna automáticamente al usuario que ha iniciado sesión como el colaborador responsable del trámite y le define el estado inicial como "Recibido".
    * Dado que el colaborador intenta guardar la solicitud dejando campos obligatorios vacíos (como el número de póliza o el tipo de consulta), cuando presiona "Guardar", entonces el sistema detiene el registro y resalta en rojo los campos faltantes que deben completarse.
+   * Dado que un usuario completa un campo obligatorio únicamente con espacios, cuando intenta guardar la solicitud, entonces el sistema rechaza el registro e identifica el campo que debe corregirse.
+   * Dado que una solicitud se guardó correctamente, cuando el usuario recarga la página y consulta su detalle, entonces se conservan los datos ingresados, el responsable asignado, la fecha de ingreso y el estado inicial "Recibido".
+   * Dado que ocurre un fallo de comunicación o almacenamiento, cuando el usuario intenta guardar una solicitud, entonces el sistema informa que no se pudo confirmar el guardado y no muestra un mensaje de éxito. Al restablecerse el servicio, la consulta del registro debe reflejar únicamente los cambios efectivamente guardados.
 
 4. **Estimación y Prioridad (Metadata de Gestión)**
    * **Prioridad:** Alta
@@ -544,6 +551,7 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
    * Dado que el colaborador/administrador visualiza una solicitud registrada, cuando selecciona un nuevo estado mediante la lista desplegable (Recibido, Pendiente de requisito, Enviado a aseguradora o Finalizado), entonces el sistema actualiza el estado de la solicitud.
    * Dado que el colaborador/administrador modifica el estado de una solicitud, cuando el sistema guarda el cambio correctamente, entonces muestra un mensaje de confirmación indicando que el estado fue actualizado.
    * Dado que el colaborador/administrador necesita agregar un comentario sobre el seguimiento de una solicitud, cuando selecciona la opción de agregar comentario, escribe la información y presiona "Guardar", entonces el sistema registra el comentario junto con la fecha en la bitácora del trámite.
+   * Dado que un usuario cambia el estado de una solicitud, cuando el cambio se guarda y se consulta nuevamente el trámite, entonces aparece el nuevo estado y queda registrado el estado anterior, el nuevo estado, el autor y la fecha y hora del cambio.
 
 4. **Estimación y Prioridad (Metadata de Gestión)**
    * **Prioridad:** Alta
@@ -566,6 +574,8 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
    * Dado que el colaborador/administrador se encuentra en el apartado de solicitudes, cuando ingresa el nombre de un cliente o número de póliza en el campo de búsqueda, entonces el sistema muestra las solicitudes que coinciden con la información ingresada.
    * Dado que el colaborador/administrador necesita consultar solicitudes específicas, cuando selecciona uno o varios filtros disponibles (estado, aseguradora o canal de ingreso), entonces el sistema muestra únicamente los trámites que cumplen con los criterios seleccionados.
    * Dado que el colaborador/administrador realiza una búsqueda y no existen solicitudes que coincidan con los criterios ingresados, cuando el sistema procesa la consulta, entonces muestra un mensaje indicando que no se encontraron resultados.
+   * Dado que existen solicitudes con distintos estados y aseguradoras, cuando el usuario combina ambos filtros, entonces se muestran únicamente las solicitudes que cumplen simultáneamente las dos condiciones.
+   * Dado que el usuario aplicó una búsqueda y filtros, cuando borra el texto y restablece los filtros, entonces vuelve a visualizar el listado de solicitudes disponible para su rol sin las restricciones anteriores.
 
 4. **Estimación y Prioridad (Metadata de Gestión)**
    * **Prioridad:** Media
@@ -591,6 +601,8 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
    * Dado que el administrador necesita desactivar el acceso de un colaborador, cuando selecciona la opción "Desactivar" y confirma la acción, entonces el sistema cambia el estado del usuario a inactivo e impide que pueda iniciar sesión, sin eliminar su información registrada en la base de datos.
    * Dado que el administrador se encuentra en el formulario de registro o edición de usuarios, cuando intenta guardar sin completar los campos obligatorios (nombre, correo electrónico o rol), entonces el sistema impide la acción y muestra un mensaje de advertencia, resaltando los campos que deben completarse.
    * Dado que el administrador intenta registrar o modificar un usuario utilizando una dirección de correo electrónico que ya existe en la plataforma, cuando presiona "Guardar", entonces el sistema detiene el registro y muestra un mensaje de advertencia indicando que el correo electrónico ya se encuentra registrado.
+   * Dado que un usuario inicia sesión con el rol de Colaborador, cuando navega por el sistema, entonces no se muestra el módulo de gestión de usuarios; si intenta acceder mediante un enlace directo o una ruta alterna, el sistema bloquea el acceso, muestra un mensaje de permisos insuficientes e impide consultar, crear, editar o desactivar usuarios.
+   * Dado que un usuario tiene solicitudes y observaciones registradas, cuando el administrador lo desactiva, entonces ese usuario no puede iniciar sesión y sus solicitudes y observaciones conservan la identificación de su autor o responsable.
 
 4. **Estimación y Prioridad (Metadata de Gestión)**
    * **Prioridad:** Alta
@@ -611,9 +623,11 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
    Como administrador de la corredora de seguros, quiero visualizar un panel de control con indicadores y gráficos del estado general de los trámites, para monitorear la eficiencia operativa, identificar cuellos de botella y supervisar la carga de trabajo del equipo.
 
 3. **Criterios de Aceptación**
-   * Dado que el usuario con rol de Administrador ingresa al sistema, cuando accede al panel de control principal, entonces el sistema despliega de forma clara e intuitiva los indicadores clave de rendimiento (solicitudes totales, abiertas, en proceso con aseguradora y finalizadas).
+   * Dado que el usuario con rol de Administrador ingresa al sistema, cuando accede al panel de control principal, entonces el sistema despliega de forma clara e intuitiva los indicadores clave de rendimiento (solicitudes totales, solicitudes abiertas, en proceso con aseguradora y finalizadas).
    * Dado que el administrador consulta la información del panel, cuando selecciona un rango de fechas específico o un filtro por colaborador o aseguradora, entonces el sistema actualiza dinámicamente las gráficas e indicadores mostrando únicamente la información correspondiente al filtro aplicado.
    * Dado que un usuario con rol de Colaborador intenta ingresar a la dirección web o sección del panel de control general, cuando el sistema valida sus permisos de acceso, entonces le restringe el paso e informa que la vista es exclusiva para el nivel administrativo.
+   * Dado que una solicitud cambia del estado "Recibido" a "Finalizado", cuando el administrador vuelve a cargar el panel de control, entonces el total de solicitudes finalizadas aumenta en uno y el total general de solicitudes se mantiene igual.
+   * Dado que no existen solicitudes para los filtros seleccionados, cuando el administrador consulta el panel, entonces los contadores muestran cero y las gráficas informan la ausencia de datos sin presentar un error.
 
 4. **Estimación y Prioridad (Metadata de Gestión)**
    * **Prioridad:** Baja
@@ -636,7 +650,8 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
 3. **Criterios de Aceptación**
    * Dado que un usuario autenticado se encuentra en la vista detallada de una solicitud, cuando redacta un comentario en el campo de observaciones y presiona "Agregar nota", entonces el sistema guarda la entrada, muestra un mensaje de confirmación y la despliega en el historial de forma cronológica.
    * Dado que una observación ha sido registrada exitosamente en el sistema, cuando cualquier usuario autorizado consulte la bitácora de la solicitud, entonces el sistema muestra el nombre del autor, la fecha, la hora exacta del registro y el contenido de la nota de forma inalterable.
-   * Dado que un usuario intenta guardar una nota en blanco o que supera el límite de caracteres permitido, cuando presiona el botón de guardar, entonces el sistema detiene la acción y muestra un mensaje de advertencia indicando la restricción del campo.
+   * Dado que el usuario intenta guardar una observación, cuando la nota está en blanco, supera el límite de caracteres permitido o sucede un error que impide guardarla, entonces el sistema no confirma el registro, muestra un mensaje indicando el motivo y conserva el texto ingresado para que el usuario pueda corregirlo o volver a intentarlo.
+   * Dado que el usuario guardó una observación correctamente, cuando cierra el detalle de la solicitud y vuelve a abrirlo, entonces la observación continúa visible en el historial con el mismo contenido.
 
 4. **Estimación y Prioridad (Metadata de Gestión)**
    * **Prioridad:** Media
@@ -660,6 +675,8 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
    * Dado que el administrador se encuentra en el módulo de reportes, cuando define los parámetros de consulta (rango de fechas, estado del trámite, colaborador o aseguradora) y presiona "Generar reporte", entonces el sistema consulta la información y muestra una vista previa tabulada de los datos solicitados.
    * Dado que el administrador tiene desplegada la vista previa de un reporte, cuando selecciona la opción "Exportar a Excel" o "Exportar a PDF", entonces el sistema procesa la solicitud y descarga automáticamente un archivo estructurado con el resumen detallado de la información.
    * Dado que la búsqueda aplicada por el administrador no arroja registros dentro del período o parámetros seleccionados, cuando presiona "Generar reporte", entonces el sistema muestra un mensaje informativo indicando que no se encontraron coincidencias para la generación del documento.
+   * Dado que el administrador genera un reporte con filtros y lo exporta a PDF y Excel, cuando abra cada archivo, entonces los registros y sus datos coinciden con la vista previa mostrada anteriormente y respetan los filtros seleccionados.
+   * Dado que el administrador selecciona una fecha inicial posterior a la fecha final, cuando intenta generar un reporte, entonces el sistema indica que el rango es inválido e impide generar o exportar el reporte hasta corregirlo.
 
 4. **Estimación y Prioridad (Metadata de Gestión)**
    * **Prioridad:** Baja
@@ -674,7 +691,7 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
 
 ## 3. Planificación de Sprints del Proyecto
 
-A continuación se detalla la distribución del trabajo a lo largo de los Sprints del proyecto, considerando una duración estándar de **2 semanas** por iteración (~80 horas totales de capacidad del equipo por Sprint) y el desglose de tareas técnicas.
+A continuación se detalla la distribución del trabajo a lo largo de los Sprints del proyecto, considerando una duración estándar de **2 semanas** por iteración (~80 horas totales de trabajo del equipo por Sprint) y el desglose de tareas técnicas.
 
 ---
 
@@ -682,14 +699,14 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
  [Ver detalle](#2-primer-sprint )
 * **Estado:** Finalizado y completado.
-* **Duración:** 1 semana (30/09/2026 – 07/10/2026) | Capacidad: ~40 horas (11 SP analíticos)
+* **Duración:** 1 semana (30/09/2026 – 07/10/2026) | (11 SP analíticos)
 * **Meta del Sprint:** Analizar la problemática de atención de solicitudes en la corredora y definir la estructura inicial del sistema y reglas de negocio.
 
 ---
 
 #### Sprint 2 — Autenticación y Módulo de Registro de Solicitudes
 * **Estado:** Planificado / En Proceso.
-* **Duración:** 2 semanas (07/10/2026 – 21/10/2026) | Capacidad: ~80 horas (13 SP)
+* **Duración:** 2 semanas (07/10/2026 – 21/10/2026) | (13 SP)
 * **Meta del Sprint:** Implementar el módulo de autenticación con control de roles y el formulario funcional de registro centralizado de solicitudes con asignación automática.
 
 **Sprint Backlog (Desglose de Tareas Técnicas):**
@@ -708,7 +725,7 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 #### Sprint 3 — Gestión de Estados, Seguimiento y Búsqueda con Filtros
 * **Estado:** Planificado.
-* **Duración:** 2 semanas (21/10/2026 – 04/11/2026) | Capacidad: ~80 horas (6 SP)
+* **Duración:** 2 semanas (21/10/2026 – 04/11/2026) | (6 SP)
 * **Meta del Sprint:** Desarrollar la bandeja principal de solicitudes para permitir el cambio dinámico de estados del trámite y la búsqueda multi-criterio.
 
 **Sprint Backlog (Desglose de Tareas Técnicas):**
@@ -725,7 +742,7 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 #### Sprint 4 — Módulo de Administración de Usuarios y Panel de Control
 * **Estado:** Planificado.
-* **Duración:** 2 semanas (04/11/2026 – 18/11/2026) | Capacidad: ~80 horas (10 SP)
+* **Duración:** 2 semanas (04/11/2026 – 18/11/2026) | (10 SP)
 * **Meta del Sprint:** Implementar las funcionalidades exclusivas del Administrador para la gestión del personal y la visualización del panel general de métricas.
 
 **Sprint Backlog (Desglose de Tareas Técnicas):**
@@ -742,7 +759,7 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 #### Sprint 5 — Bitácora Avanzada, Reportes y Cierre del Sistema
 * **Estado:** Planificado.
-* **Duración:** 2 semanas (18/11/2026 – 02/12/2026) | Capacidad: ~80 horas (8 SP)
+* **Duración:** 2 semanas (18/11/2026 – 02/12/2026) | (8 SP)
 * **Meta del Sprint:** Integrar el historial de observaciones cronológicas, la generación de reportes gerenciales y realizar el cierre del proyecto.
 
 **Sprint Backlog (Desglose de Tareas Técnicas):**
@@ -791,6 +808,6 @@ El alcance detallado del sistema web se encuentra formalmente delimitado en los 
 La lista oficial de requerimientos priorizados se detalla a continuación en el apartado de [product backlog](#1-product-backlog-inicial).
 
 ### Criterios de Aceptación
-Las especificaciones rigurosas de cada funcionalidad se encuentran documentadas en la [especificación detallada de las historias de usuario](#2-especificación-detallada-de-historias-de-usuario).
+Las especificaciones de cada funcionalidad se encuentran documentadas en la [especificación detallada de las historias de usuario](#2-especificación-detallada-de-historias-de-usuario).
 
 ---
