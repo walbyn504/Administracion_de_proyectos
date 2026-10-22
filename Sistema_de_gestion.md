@@ -21,6 +21,7 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 | 0.8 | 5 | 18/10/2026 | Redacción del detalle de las historias de usuario, corrección del backlog y ampliación de actividades en los sprints.|
 | 0.9 | 5 | 18/10/2026 | Se referencia los apartados solicitados para esta semana (alcance, product backlog y criterios de aceptación). |
 | 0.10 | 6 | 22/10/2026 | Ampliación y ajuste de los criterios de aceptación dentro de cada historia de usuario, incluyendo validaciones, manejo de errores, conservación de datos, actualización del panel y restricciones de acceso por rol. Simplificación de su redacción y eliminación de la palabra «capacidad» en la planificación de los sprints. |
+| 0.11 | 6 | 22/10/2026 | Elaboración del plan temporal, matriz de estimaciones, cronograma de entregas por sprint, gráfico burndown planificado y estimación de costos del proyecto. |
 
 
 
@@ -114,6 +115,12 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 - [Product Backlog Priorizado](#product-backlog-priorizado)
 - [Criterios de Aceptación](#criterios-de-aceptación)
 
+[Semana 6](#semana-6)
+
+- [Plan temporal](#plan-temporal)
+- [Estimaciones](#estimaciones)
+- [Cronograma de entregas](#cronograma-de-entregas)
+- [Costos](#costos)
 
 ---
 
@@ -691,7 +698,7 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
 
 ## 3. Planificación de Sprints del Proyecto
 
-A continuación se detalla la distribución del trabajo a lo largo de los Sprints del proyecto, considerando una duración estándar de **2 semanas** por iteración (~80 horas totales de trabajo del equipo por Sprint) y el desglose de tareas técnicas.
+A continuación se detalla la distribución del trabajo a lo largo de los Sprints del proyecto, considerando **1 semana para el Sprint 1 de análisis** (20 horas de trabajo del equipo) y **2 semanas para cada sprint de desarrollo** (40 horas de trabajo del equipo) y el desglose de tareas técnicas.
 
 ---
 
@@ -809,5 +816,149 @@ La lista oficial de requerimientos priorizados se detalla a continuación en el 
 
 ### Criterios de Aceptación
 Las especificaciones de cada funcionalidad se encuentran documentadas en la [especificación detallada de las historias de usuario](#2-especificación-detallada-de-historias-de-usuario).
+
+---
+
+## Semana 6
+
+## Plan temporal
+
+El proyecto se organiza en cinco sprints, siguiendo la planificación establecida anteriormente:
+
+- **Inicio previsto:** 30/09/2026.
+- **Sprint 1 de análisis:** una semana, del 30/09/2026 al 07/10/2026.
+- **Sprints 2 a 5 de desarrollo:** dos semanas cada uno, del 07/10/2026 al 02/12/2026.
+- **Duración total prevista:** nueve semanas: una de análisis y ocho de desarrollo.
+- **Entrega final prevista:** 02/12/2026.
+- **Equipo:** Seidy Alanis y Walbyn González.
+
+Para estimar el trabajo y los costos se supone una dedicación de **10 horas semanales por integrante**. Entre las dos personas se suman **20 horas por semana**: el sprint de análisis requiere **20 horas del equipo** (2 × 10 × 1) y cada sprint de desarrollo requiere **40 horas del equipo** (2 × 10 × 2). En los cinco sprints se estiman **180 horas del equipo**: 20 + (4 × 40), equivalentes a **90 horas por integrante**. Las fechas corresponden al plan y no demuestran que las entregas ya estén terminadas.
+
+## Estimaciones
+
+Se conservan los puntos de historia (SP) del Product Backlog. Representan el tamaño relativo de cada funcionalidad según su esfuerzo, complejidad e incertidumbre. No equivalen a horas y siguen la escala de Fibonacci.
+
+| ID | Historia de usuario | Puntos | Prioridad | Dependencias principales |
+| --- | --- | --- | --- | --- |
+| HU-01 | Autenticación y control de acceso | 8 | Alta | Roles y estructura inicial de usuarios definidos en el análisis. |
+| HU-02 | Registro centralizado de solicitudes | 5 | Alta | HU-01 para identificar al usuario responsable. |
+| HU-03 | Actualización de estados y seguimiento | 3 | Alta | HU-01 y HU-02; solicitudes registradas y estructura básica del historial. |
+| HU-04 | Búsqueda y filtros de trámites | 3 | Media | HU-01 y HU-02; datos de prueba para comprobar los filtros. |
+| HU-05 | Gestión de usuarios | 5 | Alta | HU-01; servicio de correo disponible para la invitación contemplada en la historia. |
+| HU-06 | Panel de control | 5 | Baja | HU-02 y HU-03; datos y estados disponibles para calcular indicadores. |
+| HU-07 | Bitácora de observaciones y comentarios | 3 | Media | HU-01, HU-02 y el historial básico incorporado en HU-03. |
+| HU-08 | Reportes y exportación | 5 | Baja | HU-01, HU-02, HU-03 y criterios de consulta de HU-04. |
+| **Total** | **8 historias de desarrollo** | **37** | | |
+
+El desarrollo suma **37 SP**, distribuidos en cuatro sprints: 13, 6, 10 y 8 SP. Los 11 SP de análisis del Sprint 1 se contabilizan por separado. Los puntos de las tareas técnicas ya están incluidos en sus historias.
+
+Para esta propuesta se contemplan **cinco sprints: uno de análisis y cuatro de desarrollo**. Los 37 SP se distribuyen en los cuatro sprints de desarrollo con 13, 6, 10 y 8 SP, respectivamente. Esta distribución representa un **promedio planificado de 9,25 SP por sprint**: (13 + 6 + 10 + 8) ÷ 4. Las estimaciones de la matriz y las duraciones del cronograma sirven de base para proyectar las entregas y los costos del proyecto.
+
+## Cronograma de entregas
+
+El siguiente gráfico burndown muestra únicamente los puntos que se planifica tener pendientes al cierre de cada sprint. La línea amarilla representa la planificación, no el avance real. La línea real se agregará cuando se registren las historias efectivamente terminadas.
+
+![Burndown planificado: puntos pendientes por sprint](Imagenes/burndown-release.svg)
+
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th style="width: 65%; padding: 12px 32px 12px 16px; text-align: left;">Momento de revisión</th>
+      <th style="width: 35%; padding: 12px 16px; text-align: center;">Puntos pendientes<br>planificados (SP)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding: 12px 32px 12px 16px;">Inicio del proyecto (30/09/2026)</td><td style="padding: 12px 16px; text-align: center;">48</td></tr>
+    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 1: (07/10/2026)</td><td style="padding: 12px 16px; text-align: center;">37</td></tr>
+    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 2 (21/10/2026)</td><td style="padding: 12px 16px; text-align: center;">24</td></tr>
+    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 3 (04/11/2026)</td><td style="padding: 12px 16px; text-align: center;">18</td></tr>
+    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 4 (18/11/2026)</td><td style="padding: 12px 16px; text-align: center;">8</td></tr>
+    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 5 (02/12/2026)</td><td style="padding: 12px 16px; text-align: center;">0</td></tr>
+  </tbody>
+</table>
+
+El proyecto inicia con **48 SP pendientes: 11 de análisis y 37 de desarrollo**. Al cierre del Sprint 1 se planifica completar los 11 SP de análisis, por lo que **quedan 37 SP pendientes**. Los siguientes sprints reducen ese total hasta llegar a cero. Cada historia se planifica completa dentro de su sprint. Las fechas y entregables de los cinco sprints se detallan a continuación.
+
+<table style="width: 100%; border-collapse: collapse;" border="1" cellpadding="10">
+  <thead><tr><th>Sprint</th><th>Período</th><th>Historia / trabajo</th><th>SP</th><th>Entregable esperado</th><th>Hito de revisión</th></tr></thead>
+  <tbody>
+    <tr>
+      <td rowspan="1" style="vertical-align: middle; text-align: center;"><strong>Sprint 1</strong><br><br></td>
+      <td rowspan="1" style="vertical-align: middle;">30/09/2026 – 07/10/2026</td>
+      <td><strong>Análisis y documentación inicial</strong></td><td style="text-align: center;">11</td><td>Acta de inicio, proyecto propuesto, alcance, roles, reglas de negocio y Product Backlog inicial.</td><td><strong>07/10/2026</strong><br>Revisión del acta, alcance, reglas de negocio y backlog inicial.</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: middle; text-align: center;"><strong>Sprint 2</strong><br><br></td>
+      <td rowspan="2" style="vertical-align: middle;">07/10/2026 – 21/10/2026</td>
+      <td><strong>HU-01: Autenticación y control de acceso</strong></td><td style="text-align: center;">8</td><td>Inicio y cierre de sesión, validación de credenciales, permisos por rol y bloqueo de accesos no autorizados.</td><td><strong>21/10/2026</strong><br>Revisión de credenciales, cierre de sesión y restricciones de acceso.</td>
+    </tr>
+    <tr>
+      <td><strong>HU-02: Registro centralizado de solicitudes</strong></td><td style="text-align: center;">5</td><td>Registro validado, conservación de datos, responsable automático y estado inicial «Recibido».</td><td><strong>21/10/2026</strong><br>Revisión de validaciones, guardado y asignación automática.</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: middle; text-align: center;"><strong>Sprint 3</strong><br><br></td>
+      <td rowspan="2" style="vertical-align: middle;">21/10/2026 – 04/11/2026</td>
+      <td><strong>HU-03: Estados y seguimiento</strong></td><td style="text-align: center;">3</td><td>Consulta y actualización de estados, historial de cambios y comentarios de seguimiento.</td><td><strong>04/11/2026</strong><br>Revisión de cambios de estado, trazabilidad y comentarios.</td>
+    </tr>
+    <tr>
+      <td><strong>HU-04: Búsqueda y filtros</strong></td><td style="text-align: center;">3</td><td>Búsqueda por cliente o póliza y filtros combinados por estado, aseguradora y canal.</td><td><strong>04/11/2026</strong><br>Revisión de búsquedas, filtros y consultas sin resultados.</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: middle; text-align: center;"><strong>Sprint 4</strong><br><br></td>
+      <td rowspan="2" style="vertical-align: middle;">04/11/2026 – 18/11/2026</td>
+      <td><strong>HU-05: Gestión de usuarios</strong></td><td style="text-align: center;">5</td><td>Creación, edición y desactivación de usuarios, validaciones, correo de acceso y restricciones al colaborador.</td><td><strong>18/11/2026</strong><br>Revisión de usuarios, validaciones, correo y permisos.</td>
+    </tr>
+    <tr>
+      <td><strong>HU-06: Panel de control</strong></td><td style="text-align: center;">5</td><td>Panel administrativo con indicadores, gráficas y filtros por fecha, colaborador y aseguradora.</td><td><strong>18/11/2026</strong><br>Revisión de indicadores, filtros y acceso exclusivo del administrador.</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="vertical-align: middle; text-align: center;"><strong>Sprint 5</strong><br><br></td>
+      <td rowspan="2" style="vertical-align: middle;">18/11/2026 – 02/12/2026</td>
+      <td><strong>HU-07: Bitácora de observaciones</strong></td><td style="text-align: center;">3</td><td>Notas validadas y conservadas en orden cronológico, con autor, fecha y hora.</td><td><strong>02/12/2026</strong><br>Revisión de notas, validaciones y conservación del historial.</td>
+    </tr>
+    <tr>
+      <td><strong>HU-08: Reportes y exportación</strong></td><td style="text-align: center;">5</td><td>Reportes administrativos con filtros, vista previa y exportación a PDF y Excel.</td><td><strong>02/12/2026</strong><br>Revisión de filtros, fechas, vista previa y archivos exportados.</td>
+    </tr>
+  </tbody>
+</table>
+
+**Cierre del proyecto:** revisión de la integración del sistema y de la documentación final.
+
+Los hitos son fechas propuestas de revisión. Cada entrega se comprobará con los criterios de aceptación de sus historias y la Definición de Terminado. La autenticación y el registro permiten desarrollar el seguimiento; los datos de solicitudes y estados sirven de base para el panel y los reportes.
+
+## Costos
+
+<div style="display: block; width: 100%; box-sizing: border-box; border: 1px solid #cccccc; border-radius: 6px; padding: 8px 16px; margin: 12px 0;"><strong>Tarifa ilustrativa por hora: ₡4.000</strong></div>
+
+Para estimar los costos del proyecto consideramos el trabajo del equipo, las herramientas y la infraestructura necesaria en cada sprint. Los cuatro sprints de desarrollo tienen el mismo costo estimado porque duran dos semanas y mantienen la misma dedicación del equipo. El sprint de análisis se calcula por separado, ya que dura una semana.
+
+**Costo estimado por sprint de desarrollo:**
+
+| Componente | Base de cálculo o supuesto | Costo por sprint |
+| --- | --- | --- |
+| Mano de obra del equipo | 2 integrantes × 10 horas/semana × 2 semanas × ₡4.000 | ₡160.000 |
+| Herramientas | Uso previsto de herramientas gratuitas, sin licencias pagadas. | ₡0 adicionales |
+| Infraestructura de desarrollo | Uso de computadoras, conexión existentes y entorno local, sin compras ni contrataciones adicionales presupuestadas. | ₡0 adicionales |
+| **Total por sprint de desarrollo** | **Mano de obra + herramientas + infraestructura** | **₡160.000** |
+
+Para el desarrollo utilizaremos las computadoras y la conexión disponibles, junto con herramientas gratuitas, por lo que no presupuestamos gastos adicionales en estos recursos. Los servicios de hosting, dominio, correo y base de datos de producción quedan pendientes de cotización y se agregarán al presupuesto cuando se definan.
+
+**Costo del release = costo por sprint × sprints de desarrollo necesarios.**
+
+**₡160.000 × 4 sprints = ₡640.000.**
+
+El cálculo toma los cuatro sprints de desarrollo definidos en la propuesta, con una duración de dos semanas cada uno y la misma dedicación del equipo.
+
+| Concepto | Base de cálculo | Costo estimado |
+| --- | --- | --- |
+| Sprint 1 de análisis | 2 integrantes × 10 horas/semana × 1 semana × ₡4.000 | ₡80.000 |
+| Release de desarrollo: sprints 2 a 5 | ₡160.000 × 4 sprints | ₡640.000 |
+| **Costo base: análisis + desarrollo** | **₡80.000 + ₡640.000** | **₡720.000** |
+| Reserva de contingencia propuesta | 10% del costo base, para correcciones y ajustes de integración | ₡72.000 |
+| **Presupuesto inicial propuesto** | **Costo base + contingencia** | **₡792.000** |
+
+Estimamos **180 horas de trabajo del equipo**: 20 para el análisis y 160 para el desarrollo. Calculamos el presupuesto con la dedicación prevista y la tarifa por hora; los puntos de historia nos permiten distribuir las funcionalidades entre los sprints. Si necesitamos un sprint adicional de dos semanas, su costo estimado sería de **₡160.000**.
+
+**Presupuesto fijo y alcance flexible:** Proponemos ₡792.000 como límite inicial para el análisis y desarrollo bajo los supuestos anteriores. Si el trabajo pendiente supera ese monto, acordaremos con el Product Owner qué historias de menor prioridad, como HU-06 y HU-08, se posponen para entregar primero las funcionalidades terminadas de mayor valor. Mantendremos los criterios de aceptación y la Definición de Terminado. Si se requieren servicios pagados, revisaremos su impacto antes de contratarlos y acordaremos si se ajusta el alcance o se aprueba un aumento del presupuesto.
 
 ---
