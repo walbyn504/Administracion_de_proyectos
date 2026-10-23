@@ -427,7 +427,7 @@ El análisis inicial se ejecuta como el primer sprint dentro de los cinco sprint
 | ID | Historia de Usuario / Tarea | Estimación | Responsable |
 | :--- | :--- | :---: | :--- |
 | **TASK-01** | **Análisis del Problema:** Estudio de la recepción dispersa de solicitudes (WhatsApp, correo, llamadas, presencial) para definir la centralización del trámite. | **3 SP** | Seidy Alanis |
-| **TASK-02** | **Definición de Campos:** Identificación de los 8 datos del registro (*cliente, consulta, número de póliza, fecha, canal, aseguradora, prioridad, estado y responsable*). | **3 SP** | Seidy Alanis |
+| **TASK-02** | **Definición de Campos:** Identificación de los 9 datos del registro (*cliente, consulta, número de póliza, fecha, canal, aseguradora, prioridad, estado y responsable*). | **3 SP** | Seidy Alanis |
 | **TASK-03** | **Roles y Asignación:** Definición de la matriz de permisos (*Administrador vs. Colaborador*) y la regla de asignación automática del responsable. | **3 SP** | Walbyn González |
 | **TASK-04** | **Flujo de Estados:** Propuesta y documentación del flujo de estados (*recibido, pendiente de requisito, enviado a aseguradora, finalizado*). | **2 SP** | Walbyn González |
 
@@ -449,7 +449,7 @@ Para considerar este Sprint de análisis como Terminado, se debió cumplir con:
 * **Fecha de realización:** Cierre de la Semana 3 / Inicio de la Semana 4.
 * **Participantes:** Seidy Alanis (Product Owner / Developer) y Walbyn González (Scrum Master / Developer).
 * **Evaluación de entregables y Criterios de Aceptación:**
-  * **Verificación:** Se revisó la especificación de los ocho datos clave del registro (*cliente, tipo de consulta, fecha de ingreso, canal de recepción, aseguradora, prioridad, estado y responsable automático*).
+  * **Verificación:** Se revisó la especificación de los ocho datos clave del registro (*cliente, tipo de consulta, número de póliza, fecha de ingreso, canal de recepción, aseguradora, prioridad, estado y responsable automático*).
   * **Roles y Permisos:** Se verificó y aprobó la matriz funcional de accesos entre Administrador y Colaborador.
   * **Flujo de estados:** Se validaron preliminarmente los cuatro estados del trámite (*recibido, pendiente de requisito, enviado a aseguradora y finalizado*).
   * **Resultado:** El incremento analítico fue revisado, comprobado contra los criterios de aceptación y aprobado por la Product Owner. El entregable queda oficialmente aceptado para estructurar el Product Backlog en la Semana 4.
@@ -584,7 +584,6 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
    * Dado que el colaborador/administrador ingresa al apartado de solicitudes, cuando el sistema carga la información, entonces muestra las solicitudes registradas con sus datos principales y el estado actual de cada trámite.
    * Dado que el colaborador/administrador visualiza una solicitud registrada, cuando selecciona un nuevo estado mediante la lista desplegable (Recibido, Pendiente de requisito, Enviado a aseguradora o Finalizado), entonces el sistema actualiza el estado de la solicitud.
    * Dado que el colaborador/administrador modifica el estado de una solicitud, cuando el sistema guarda el cambio correctamente, entonces muestra un mensaje de confirmación indicando que el estado fue actualizado.
-   * Dado que el colaborador/administrador necesita agregar un comentario sobre el seguimiento de una solicitud, cuando selecciona la opción de agregar comentario, escribe la información y presiona "Guardar", entonces el sistema registra el comentario junto con la fecha en la bitácora del trámite.
    * Dado que un usuario cambia el estado de una solicitud, cuando el cambio se guarda y se consulta nuevamente el trámite, entonces aparece el nuevo estado y queda registrado el estado anterior, el nuevo estado, el autor y la fecha y hora del cambio.
 
 4. **Estimación y Prioridad (Metadata de Gestión)**
