@@ -930,7 +930,7 @@ El proyecto inicia con **51 SP pendientes: 11 de análisis y 40 de desarrollo**.
       <td><strong>HU-03: Edición de solicitudes</strong></td><td style="text-align: center;">3</td><td>Formulario de edición con validaciones, guardado y cancelación, conservando el seguimiento.</td><td><strong>04/11/2026</strong><br>Revisión de edición, cancelación y conservación de datos.</td>
     </tr>
     <tr>
-      <td><strong>HU-04: Estados y seguimiento</strong></td><td style="text-align: center;">3</td><td>Consulta y actualización de estados, historial de cambios y comentarios de seguimiento.</td><td><strong>04/11/2026</strong><br>Revisión de cambios de estado, trazabilidad y comentarios.</td>
+      <td><strong>HU-04: Estados y seguimiento</strong></td><td style="text-align: center;">3</td><td>Consulta y actualización de estados, historial automático de cambios y trazabilidad.</td><td><strong>04/11/2026</strong><br>Revisión de cambios de estado y trazabilidad.</td>
     </tr>
     <tr>
       <td><strong>HU-05: Búsqueda y filtros</strong></td><td style="text-align: center;">3</td><td>Búsqueda por cliente o póliza y filtros combinados por estado, aseguradora y canal.</td><td><strong>04/11/2026</strong><br>Revisión de búsquedas, filtros y consultas sin resultados.</td>
