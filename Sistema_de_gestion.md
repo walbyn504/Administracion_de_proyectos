@@ -578,7 +578,7 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
 
 2. **Estructura**
 
-   Como colaborador o administrador de la corredora de seguros, quiero actualizar el estado de las solicitudes y registrar observaciones sobre los trámites realizados para mantener un seguimiento de cada caso y conocer los avances durante su gestión.
+   Como colaborador o administrador, quiero cambiar el estado de una solicitud para reflejar la fase actual en la que se encuentra el trámite (Recibido, Pendiente de requisito, Enviado a aseguradora, Finalizado).
 
 3. **Criterios de Aceptación**
    * Dado que el colaborador/administrador ingresa al apartado de solicitudes, cuando el sistema carga la información, entonces muestra las solicitudes registradas con sus datos principales y el estado actual de cada trámite.
@@ -768,7 +768,7 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 | **TSK-03.1** | **HU-03** (3 SP) | Adaptar el formulario de agregar para cargar, editar, validar y guardar los datos de una solicitud | **2 SP** | Seidy / Walbyn |
 | **TSK-03.2** | **HU-03** (3 SP) | Probar edición, cancelación y conservación de los datos de seguimiento | **1 SP** | Seidy / Walbyn |
 | **TSK-03.3** | **HU-04** (3 SP) | Desarrollar interfaz de actualización de estados por lista desplegable | **1 SP** | Seidy Alanis |
-| **TSK-03.4** | **HU-04** (3 SP) | Implementar lógica de guardado y registro en bitácora de seguimiento | **2 SP** | Walbyn González |
+| **TSK-03.4** | **HU-04** (3 SP) | Implementar lógica backend para actualización de estado y registro automático del historial de cambios de estado | **2 SP** | Walbyn González |
 | **TSK-03.5** | **HU-05** (3 SP) | Diseñar componentes de barra de búsqueda y filtros dinámicos | **1 SP** | Seidy Alanis |
 | **TSK-03.6** | **HU-05** (3 SP) | Construir consultas SQL optimizadas para filtros combinados | **2 SP** | Walbyn González |
 | **TOTAL** | **HU-03 + HU-04 + HU-05** | **Suma total de Puntos del Sprint 3** | **9 SP** | **Equipo Completo** |
