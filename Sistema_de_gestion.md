@@ -438,7 +438,7 @@ El análisis inicial se ejecuta como el primer sprint dentro de los cinco sprint
 
 #### 5. Criterios de Aceptación Globales y Definición de Terminado (DoD)
 Para considerar este Sprint de análisis como Terminado, se debió cumplir con:
-* Especificación completa de los 8 datos clave de la solicitud y su tipo de asignación (manual vs. automática).
+* Especificación completa de los 9 datos clave de la solicitud y su tipo de asignación (manual vs. automática).
 * Matriz de permisos funcionales entre los roles de Administrador y Colaborador definida.
 * Regla de negocio de asignación automática formalmente documentada.
 * Documento de especificación de requerimientos revisado y validado por la Product Owner.
@@ -449,7 +449,7 @@ Para considerar este Sprint de análisis como Terminado, se debió cumplir con:
 * **Fecha de realización:** Cierre de la Semana 3 / Inicio de la Semana 4.
 * **Participantes:** Seidy Alanis (Product Owner / Developer) y Walbyn González (Scrum Master / Developer).
 * **Evaluación de entregables y Criterios de Aceptación:**
-  * **Verificación:** Se revisó la especificación de los ocho datos clave del registro (*cliente, tipo de consulta, número de póliza, fecha de ingreso, canal de recepción, aseguradora, prioridad, estado y responsable automático*).
+  * **Verificación:** Se revisó la especificación de los nueve datos clave del registro (*cliente, tipo de consulta, número de póliza, fecha de ingreso, canal de recepción, aseguradora, prioridad, estado y responsable automático*).
   * **Roles y Permisos:** Se verificó y aprobó la matriz funcional de accesos entre Administrador y Colaborador.
   * **Flujo de estados:** Se validaron preliminarmente los cuatro estados del trámite (*recibido, pendiente de requisito, enviado a aseguradora y finalizado*).
   * **Resultado:** El incremento analítico fue revisado, comprobado contra los criterios de aceptación y aprobado por la Product Owner. El entregable queda oficialmente aceptado para estructurar el Product Backlog en la Semana 4.
@@ -875,7 +875,7 @@ Se conservan los puntos de historia (SP) del Product Backlog. Representan el tam
 | HU-05 | Búsqueda y filtros de trámites | 3 | Media | HU-01 y HU-02; datos de prueba para comprobar los filtros. |
 | HU-06 | Gestión de usuarios | 5 | Alta | HU-01; servicio de correo disponible para la invitación contemplada en la historia. |
 | HU-07 | Panel de control | 5 | Baja | HU-02 y HU-04; datos y estados disponibles para calcular indicadores. |
-| HU-08 | Bitácora de observaciones y comentarios | 3 | Media | HU-01, HU-02 y el historial básico incorporado en HU-04. |
+| HU-08 | Bitácora de observaciones y comentarios | 3 | Media | HU-01, HU-02 y el historial de cambios de estado en HU-04. |
 | HU-09 | Reportes y exportación | 5 | Baja | HU-01, HU-02, HU-04 y criterios de consulta de HU-05. |
 | **Total** | **9 historias de desarrollo** | **40** | | |
 
