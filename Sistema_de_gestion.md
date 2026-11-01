@@ -23,6 +23,7 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 | 0.10 | 6 | 22/10/2026 | Ampliación y ajuste de los criterios de aceptación dentro de cada historia de usuario, incluyendo validaciones, manejo de errores, conservación de datos, actualización del panel y restricciones de acceso por rol. Simplificación de su redacción y eliminación de la palabra «capacidad» en la planificación de los sprints. |
 | 0.11 | 6 | 22/10/2026 | Elaboración del plan temporal, matriz de estimaciones, cronograma de entregas por sprint, gráfico burndown planificado y estimación de costos del proyecto. |
 | 0.12 | 6 | 22/10/2026 | Incorporación de HU-03 para editar solicitudes, con validación, guardado, cancelación y conservación del seguimiento; renumeración de historias y actualización del backlog, estimaciones y cronograma. |
+| 0.13 | 7 | 31/10/2026 | Elaboración del plan de comunicación: matriz de comunicación, eventos, reglas del equipo y escalamiento de impedimentos y conflictos. Ajuste del registro de interesados en la frecuencia de seguimiento de la Gerencia y la estrategia para las compañías aseguradoras. |
 
 
 
@@ -123,6 +124,14 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 - [Estimaciones](#estimaciones)
 - [Cronograma de entregas](#cronograma-de-entregas)
 - [Costos](#costos)
+
+[Semana 7](#semana-7)
+
+- [Plan de comunicación](#plan-de-comunicación)
+  - [1. Matriz de comunicación](#1-matriz-de-comunicación)
+  - [2. Eventos de comunicación](#2-eventos-de-comunicación)
+  - [3. Reglas del equipo](#3-reglas-del-equipo)
+  - [4. Escalamiento de impedimentos y conflictos](#4-escalamiento-de-impedimentos-y-conflictos)
 
 
 ---
@@ -997,7 +1006,7 @@ Estimamos **180 horas de trabajo del equipo**: 20 para el análisis y 160 para e
 ---
 
 
-## Semana 6
+## Semana 7
 
 ## Plan de comunicación
 
