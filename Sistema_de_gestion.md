@@ -1076,3 +1076,46 @@ Todo acuerdo tomado por WhatsApp o en una reunión se registra por escrito, medi
 3. Si el conflicto es de alcance o prioridad, la decisión final la toma el Product Owner. Si es técnico, se elige la opción de menor riesgo y se documenta la decisión.
 4. El conflicto y su resolución se revisan en la Sprint Retrospective para evitar que se repita.
 
+
+
+## Tablero Kanban en Jira
+
+### Definición de Terminado (DoD) del desarrollo
+
+Una tarea o historia de usuario se considera terminada cuando:
+
+1. El código está completo y funciona sin errores.
+2. Cumple todos los criterios de aceptación de su historia de usuario.
+3. Fue probada por el integrante que no la desarrolló.
+4. Está integrada en la rama principal sin afectar las funcionalidades existentes.
+5. La documentación técnica relacionada está actualizada.
+
+### Columnas del tablero
+
+| Columna | Significado | Relación con la DoD |
+| --- | --- | --- |
+| **Por hacer** | Tareas del Sprint Backlog seleccionadas en el Sprint Planning que aún no se han iniciado. | Todavía no cumplen ningún punto de la DoD. |
+| **En proceso** | Tareas que un integrante está desarrollando. | Se trabaja en el punto 1: código completo y funcionando. |
+| **En pruebas / revisión** | Tareas con el código terminado que el otro integrante prueba contra los criterios de aceptación. | Se verifican los puntos 2 y 3: criterios de aceptación y prueba por el otro integrante. |
+| **Hecho** | Tareas integradas y documentadas. | Cumplen los puntos 1 a 5 de la DoD. |
+
+### Límite WIP por columna
+
+| Columna | Límite WIP | Justificación |
+| --- | :---: | --- |
+| **Por hacer** | Sin límite | Contiene las tareas comprometidas para el sprint; su cantidad ya está limitada por los puntos planificados en el Sprint Planning. |
+| **En proceso** | 2 | Una tarea por integrante. El equipo tiene dos personas con 10 horas semanales cada una; trabajar varias tareas a la vez divide la atención y retrasa su finalización. |
+| **En pruebas / revisión** | 2 | Evita que se acumulen tareas sin probar. Si la columna está llena, el equipo prueba lo pendiente antes de iniciar una tarea nueva. |
+| **Hecho** | Sin límite | Es la columna final; acumula el trabajo terminado del sprint. |
+
+### Regla para mover una tarjeta a "Hecho"
+
+Una tarjeta solo pasa de **En pruebas / revisión** a **Hecho** cuando:
+
+1. El integrante que no desarrolló la tarea la probó y confirmó que cumple los criterios de aceptación.
+2. Se cumplen todos los puntos de la Definición de Terminado.
+3. Se deja un comentario en la tarjeta con el resultado de la prueba.
+
+Si la prueba falla, la tarjeta regresa a **En proceso** con un comentario que describe el error. Una historia de usuario se considera terminada cuando todas sus tareas están en **Hecho**, y su aceptación final se realiza en la Sprint Review.
+
+
