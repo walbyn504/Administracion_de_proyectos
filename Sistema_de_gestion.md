@@ -133,6 +133,12 @@ Este historial registra los avances realizados cada semana durante el desarrollo
   - [3. Reglas del equipo](#3-reglas-del-equipo)
   - [4. Escalamiento de impedimentos y conflictos](#4-escalamiento-de-impedimentos-y-conflictos)
 
+- [Tablero Kanban en Jira](#tablero-kanban-en-jira)
+  - [Definición de Terminado (DoD) del desarrollo](#definición-de-terminado-dod-del-desarrollo)
+  - [Columnas del tablero](#columnas-del-tablero)
+  - [Límite WIP por columna](#límite-wip-por-columna)
+  - [Regla para mover una tarjeta a "Hecho"](#regla-para-mover-una-tarjeta-a-hecho)
+
 
 ---
 
