@@ -24,7 +24,7 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 | 0.11 | 6 | 22/10/2026 | Elaboración del plan temporal, matriz de estimaciones, cronograma de entregas por sprint, gráfico burndown planificado y estimación de costos del proyecto. |
 | 0.12 | 6 | 22/10/2026 | Incorporación de HU-03 para editar solicitudes, con validación, guardado, cancelación y conservación del seguimiento; renumeración de historias y actualización del backlog, estimaciones y cronograma. |
 | 0.13 | 7 | 31/10/2026 | Elaboración del plan de comunicación: matriz de comunicación, eventos, reglas del equipo y escalamiento de impedimentos y conflictos. Ajuste del registro de interesados en la frecuencia de seguimiento de la Gerencia y la estrategia para las compañías aseguradoras. |
-
+| 0.14 | 7 | 31/10/2026 | Configuración del tablero Kanban en Jira: Definición de Terminado del desarrollo, columnas y su relación con la DoD, límites WIP por columna y regla para mover una tarjeta a «Hecho». |
 
 
 
@@ -1123,5 +1123,10 @@ Una tarjeta solo pasa de **En pruebas / revisión** a **Hecho** cuando:
 3. Se deja un comentario en la tarjeta con el resultado de la prueba.
 
 Si la prueba falla, la tarjeta regresa a **En proceso** con un comentario que describe el error. Una historia de usuario se considera terminada cuando todas sus tareas están en **Hecho**, y su aceptación final se realiza en la Sprint Review.
+
+
+### Link Tablero Jira
+
+https://walbyngonzalez-1793296365243.atlassian.net/jira/software/projects/TASK/boards/1/backlog?atlOrigin=eyJpIjoiMGI0MDkwZTg0ZTdkNDg0ZWIyODIxOGI3MmVlN2EyNDUiLCJwIjoiaiJ9
 
 
