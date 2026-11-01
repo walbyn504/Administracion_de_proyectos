@@ -124,6 +124,7 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 - [Cronograma de entregas](#cronograma-de-entregas)
 - [Costos](#costos)
 
+
 ---
 
 ## Semana 1
@@ -303,11 +304,11 @@ Las actitudes y puntuaciones son estimaciones iniciales pendientes de validar. L
 | Interesado | Rol / relación | Necesidad | Poder (1–5) | Interés (1–5) | Actitud | Estrategia |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1. Empresa corredora de seguros | Organización donde se implementará el sistema y principal beneficiaria. | Centralizar las solicitudes y mejorar la continuidad de la atención. | 5 | 5 | Favorable. | Gestionar de cerca: validar el beneficio y la adecuación del sistema a sus procesos mediante sus representantes. |
-| 2. Gerencia de la corredora | Autoriza decisiones, alcance y recursos del proyecto. | Conocer el avance y controlar el alcance y los recursos. | 5 | 5 | Favorable. | Gestionar de cerca: acordar prioridades y revisar avances semanalmente. |
+| 2. Gerencia de la corredora | Autoriza decisiones, alcance y recursos del proyecto. | Conocer el avance y controlar el alcance y los recursos. | 5 | 5 | Favorable. | Gestionar de cerca: acordar prioridades y revisar avances cada dos semanas. |
 | 3. Administradores | Gestionan usuarios, definen permisos y supervisan el flujo general de los trámites. | Gestionar usuarios, configurar roles y consultar el estado general de las solicitudes. | 4 | 5 | Favorable. | Gestionar de cerca: validar permisos, estados y consultas. |
 | 4. Colaboradores | Registran y gestionan diariamente las solicitudes recibidas por los diversos canales. | Registrar y dar seguimiento a los casos sin duplicar trabajo. | 3 | 5 | Mixta: valoran el seguimiento, pero podrían percibir una mayor carga de registro. | Gestionar de cerca: consultar sus requerimientos de captura, validar la facilidad de las pantallas y capacitarlos en el uso del sistema. |
 | 5. Clientes de la corredora | Beneficiarios externos; consultan el avance de sus trámites por medios tradicionales (llamadas, mensajes) sin acceso al sistema. | Recibir atención y seguimiento oportunos sobre sus solicitudes. | 2 | 3 | Favorable. | Mantener informados: asegurar que el sistema brinde datos precisos y actualizados para que el colaborador les responda con rapidez. |
-| 6. Compañías aseguradoras | Entidades externas; reciben las solicitudes canalizadas por la corredora mediante sus propias plataformas oficiales. | Recibir la información completa para tramitar las solicitudes en sus plataformas. | 3 | 2 | Neutral. | Monitorear y consultar sus requisitos al definir el flujo de solicitudes. |
+| 6. Compañías aseguradoras | Entidades externas; reciben las solicitudes canalizadas por la corredora mediante sus propias plataformas oficiales. | Recibir la información completa para tramitar las solicitudes en sus plataformas. | 3 | 2 | Neutral. | Monitorear: no interactúan con el sistema; solo se registra a qué aseguradora se envía cada trámite. |
 | 7. Equipo desarrollador | Diseña, desarrolla y documenta el sistema. | Contar con requisitos claros y un alcance viable. | 3 | 5 | Favorable. | Mantener informado e involucrar continuamente en las decisiones técnicas. |
 | 8. Encargado/área de TI | Apoya la implementación, operación y soporte técnico. | Garantizar funcionamiento, seguridad y soporte. | 4 | 4 | Favorable, sujeto a la viabilidad técnica. | Gestionar de cerca: consultar restricciones técnicas y validar las condiciones de operación. |
 
@@ -346,7 +347,7 @@ Autoriza recursos, aprueba el alcance y requiere visibilidad del control de soli
 
 **Involucramiento:** 
 
-- Reuniones semanales de avance y demostraciones funcionales. 
+- Reuniones de avance cada dos semanas y demostraciones funcionales. 
 - Validar el flujo de estados de solicitudes, revisar avances del cronograma y aprobar las entregas de cada etapa. 
 
 
@@ -356,7 +357,7 @@ Son los usuarios operativos finales que ingresan las solicitudes; su adopción d
 
 **Involucramiento:** 
 
-- Sesiones bisemanales de diseño y pruebas continuas de usabilidad.
+- Sesiones de diseño cada dos semanas y pruebas continuas de usabilidad.
 - Validar prototipos de las pantallas de registro, simplificar la actualización de estados e impartir capacitaciones del uso de la plataforma.
 
 
@@ -994,3 +995,75 @@ Estimamos **180 horas de trabajo del equipo**: 20 para el análisis y 160 para e
 **Presupuesto fijo y alcance flexible:** Proponemos ₡792.000 como límite inicial para el análisis y desarrollo bajo los supuestos anteriores. Si el trabajo pendiente supera ese monto, acordaremos con el Product Owner qué historias de menor prioridad, como HU-07 y HU-09, se posponen para entregar primero las funcionalidades terminadas de mayor valor. Mantendremos los criterios de aceptación y la Definición de Terminado. Si se requieren servicios pagados, revisaremos su impacto antes de contratarlos y acordaremos si se ajusta el alcance o se aprueba un aumento del presupuesto.
 
 ---
+
+
+## Semana 6
+
+## Plan de comunicación
+
+El plan de comunicación define qué información recibe cada interesado, con qué frecuencia, por qué medio y quién la transmite. Se basa en el [Mapa de interesados](#5-mapa-de-interesados): los de alto poder y alto interés se gestionan de cerca, y el resto se mantiene informado o se monitorea. La frecuencia y los canales se validarán con la Gerencia de la corredora.
+
+### 1. Matriz de comunicación
+
+| Interesado | Poder / Interés | Información que necesita | Evento | Frecuencia | Canal | Responsable |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gerencia de la corredora | 5 / 5 | Avance del cronograma, entregas, riesgos, cambios de alcance y presupuesto. | Sprint Review. | Cada dos semanas. | Reunión virtual o presencial y correo con resumen. | Seidy Alanis |
+| Empresa corredora de seguros | 5 / 5 | Beneficio esperado y aprobación de las entregas. | Sprint Review e informe de cierre. | Cada dos semanas / al cierre del proyecto. | Por medio de la Gerencia. | Seidy Alanis |
+| Administradores | 4 / 5 | Permisos, estados de las solicitudes, panel de control y reportes. | Sprint Review y validación funcional. | Cada dos semanas. | Reunión y demostración del sistema. | Walbyn González |
+| Colaboradores | 3 / 5 | Prototipos de pantallas, fechas de pruebas y capacitación. | Sesión de diseño y pruebas de usabilidad. | Cada dos semanas. | Reunión presencial y WhatsApp para coordinar. | Seidy Alanis |
+| Encargado/área de TI (si se confirma su existencia) | 4 / 4 | Requisitos técnicos, hosting, base de datos, respaldos y seguridad. | Mesa de trabajo técnica. | Al inicio, a mitad del desarrollo y antes del despliegue. | Reunión y correo. | Walbyn González |
+| Equipo desarrollador | 3 / 5 | Avance diario, bloqueos y prioridades del sprint. | Daily Scrum, Sprint Planning, Sprint Review y Retrospectiva. | Diaria / cada dos semanas. | WhatsApp del equipo y tablero Kanban. | Ambos integrantes |
+| Clientes de la corredora | 2 / 3 | Estado de su trámite (de forma indirecta). | Sin comunicación directa del proyecto. | — | Por medio del colaborador, por los canales tradicionales. | — |
+| Compañías aseguradoras | 3 / 2 | Ninguna del proyecto. | Sin comunicación directa del proyecto. | — | — | — |
+
+Los clientes y las compañías aseguradoras no reciben comunicación directa del proyecto, ya que no interactúan con el sistema. Los clientes se mantienen informados por medio de los colaboradores. Las compañías aseguradoras tampoco participan en el proyecto: el sistema solo registra a qué aseguradora se envía cada trámite, y este se gestiona en la plataforma propia de cada aseguradora.
+
+### 2. Eventos de comunicación
+
+| Evento | Frecuencia y duración | Participantes | Propósito |
+| --- | --- | --- | --- |
+| Sprint Planning | Inicio de cada sprint, 1 hora. | Product Owner y equipo. | Definir la meta del sprint y el Sprint Backlog. |
+| Daily Scrum | Diaria, de 10 a 15 minutos. | Equipo desarrollador. | Revisar qué se hizo, qué se hará y qué bloquea el avance. |
+| Sprint Review | Cierre de cada sprint, 1 hora. | Product Owner, equipo, Gerencia y Administradores. | Demostrar el incremento y validarlo contra los criterios de aceptación. |
+| Sprint Retrospective | Cierre de cada sprint, 30 minutos. | Equipo desarrollador. | Identificar mejoras del proceso de trabajo. |
+| Informe de avance | Cada dos semanas, por correo, después de la Sprint Review. | Product Owner hacia la Gerencia. | Informar las historias terminadas, los puntos de historia consumidos (burndown), los riesgos y los próximos pasos. |
+
+### 3. Reglas del equipo
+
+**Tiempos de respuesta:**
+
+- **WhatsApp del equipo:** respuesta el mismo día.
+- **Correo electrónico:** máximo 24 horas hábiles.
+- **Impedimentos que bloquean el trabajo:** se comunican el mismo día, sin esperar a la siguiente Daily Scrum.
+- **Tablero Kanban:** se actualiza en el momento en que una tarea cambia de estado, no al final del sprint.
+
+**Dónde se decide qué:**
+
+| Tipo de decisión | Dónde se toma | Quién decide |
+| --- | --- | --- |
+| Prioridad del backlog y alcance del sprint | Sprint Planning | Product Owner |
+| Cambios al alcance general del proyecto | Sprint Review | Gerencia |
+| Decisiones técnicas del desarrollo | Daily Scrum o reunión técnica del equipo | Equipo desarrollador |
+| Infraestructura, hosting y seguridad | Mesa de trabajo técnica | Equipo desarrollador y Encargado de TI |
+| Aceptación de un incremento | Sprint Review | Product Owner y Gerencia |
+| Cambios de presupuesto o fechas | Sprint Review | Gerencia |
+| Mejoras al proceso de trabajo | Sprint Retrospective | Equipo desarrollador |
+
+Todo acuerdo tomado por WhatsApp o en una reunión se registra por escrito, mediante un correo o un comentario en el tablero Kanban, para que quede evidencia de la decisión.
+
+### 4. Escalamiento de impedimentos y conflictos
+
+**Impedimentos:**
+
+1. **Nivel 1 — Desarrollador:** intenta resolver el impedimento por su cuenta. Plazo: 1 día.
+2. **Nivel 2 — Scrum Master:** recibe el impedimento en la Daily Scrum o por WhatsApp y facilita su eliminación. Plazo: 2 días.
+3. **Nivel 3 — Product Owner:** si el impedimento afecta el alcance o las prioridades, decide si se ajusta el Sprint Backlog.
+4. **Nivel 4 — Gerencia o Encargado de TI:** si el impedimento afecta el presupuesto, las fechas, los recursos o la infraestructura.
+
+**Conflictos:**
+
+1. Las personas involucradas conversan directamente para buscar un acuerdo dentro de las siguientes 24 horas.
+2. Si no se llega a un acuerdo, el Scrum Master media la conversación.
+3. Si el conflicto es de alcance o prioridad, la decisión final la toma el Product Owner. Si es técnico, se elige la opción de menor riesgo y se documenta la decisión.
+4. El conflicto y su resolución se revisan en la Sprint Retrospective para evitar que se repita.
+
