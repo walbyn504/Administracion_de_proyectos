@@ -756,7 +756,7 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 #### Sprint 2 — Autenticación y Módulo de Registro de Solicitudes
 * **Estado:** Planificado / En Proceso.
-* **Duración:** 2 semanas (07/10/2026 – 21/10/2026) | (13 SP)
+* **Duración:** 2 semanas (14/10/2026 – 28/10/2026) | (13 SP)
 * **Meta del Sprint:** Implementar el módulo de autenticación con control de roles y el formulario funcional de registro centralizado de solicitudes con asignación automática.
 
 **Sprint Backlog (Desglose de Tareas Técnicas):**
@@ -775,7 +775,7 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 #### Sprint 3 — Gestión de Estados, Seguimiento y Búsqueda con Filtros
 * **Estado:** Planificado.
-* **Duración:** 2 semanas (21/10/2026 – 04/11/2026) | (9 SP)
+* **Duración:** 2 semanas (28/10/2026 – 11/11/2026) | (9 SP)
 * **Meta del Sprint:** Desarrollar la bandeja de solicitudes para editar sus datos, actualizar estados y buscar trámites mediante filtros.
 
 **Sprint Backlog (Desglose de Tareas Técnicas):**
@@ -794,7 +794,7 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 #### Sprint 4 — Módulo de Administración de Usuarios y Panel de Control
 * **Estado:** Planificado.
-* **Duración:** 2 semanas (04/11/2026 – 18/11/2026) | (10 SP)
+* **Duración:** 2 semanas (11/11/2026 – 25/11/2026) | (10 SP)
 * **Meta del Sprint:** Implementar las funcionalidades exclusivas del Administrador para la gestión del personal y la visualización del panel general de métricas.
 
 **Sprint Backlog (Desglose de Tareas Técnicas):**
@@ -811,7 +811,7 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 #### Sprint 5 — Bitácora Avanzada, Reportes y Cierre del Sistema
 * **Estado:** Planificado.
-* **Duración:** 2 semanas (18/11/2026 – 02/12/2026) | (8 SP)
+* **Duración:** 2 semanas (25/11/2026 – 09/12/2026) | (8 SP)
 * **Meta del Sprint:** Integrar el historial de observaciones cronológicas, la generación de reportes gerenciales y realizar el cierre del proyecto.
 
 **Sprint Backlog (Desglose de Tareas Técnicas):**
@@ -871,13 +871,13 @@ Las especificaciones de cada funcionalidad se encuentran documentadas en la [esp
 El proyecto se organiza en cinco sprints, siguiendo la planificación establecida anteriormente:
 
 - **Inicio previsto:** 30/09/2026.
-- **Sprint 1 de análisis:** una semana, del 30/09/2026 al 07/10/2026.
-- **Sprints 2 a 5 de desarrollo:** dos semanas cada uno, del 07/10/2026 al 02/12/2026.
-- **Duración total prevista:** nueve semanas: una de análisis y ocho de desarrollo.
-- **Entrega final prevista:** 02/12/2026.
+- **Sprint 1 de análisis:** dos semanas, del 30/09/2026 al 14/10/2026.
+- **Sprints 2 a 5 de desarrollo:** dos semanas cada uno, del 14/10/2026 al 09/12/2026.
+- **Duración total prevista:** diez semanas: dos de análisis y ocho de desarrollo.
+- **Entrega final prevista:** 09/12/2026.
 - **Equipo:** Seidy Alanis y Walbyn González.
 
-Para estimar el trabajo y los costos se supone una dedicación de **10 horas semanales por integrante**. Entre las dos personas se suman **20 horas por semana**: el sprint de análisis requiere **20 horas del equipo** (2 × 10 × 1) y cada sprint de desarrollo requiere **40 horas del equipo** (2 × 10 × 2). En los cinco sprints se estiman **180 horas del equipo**: 20 + (4 × 40), equivalentes a **90 horas por integrante**. Las fechas corresponden al plan y no demuestran que las entregas ya estén terminadas.
+Para estimar el trabajo y los costos se supone una dedicación de **10 horas semanales por integrante**. Entre las dos personas se suman **20 horas por semana**, por lo que cada sprint, tanto el de análisis como los de desarrollo, requiere **40 horas del equipo** (2 × 10 × 2). En los cinco sprints se estiman **200 horas del equipo**: 5 × 40, equivalentes a **100 horas por integrante**. Las fechas corresponden al plan y no demuestran que las entregas ya estén terminadas.
 
 ## Estimaciones
 
