@@ -7,7 +7,7 @@
 
 ## Historial de versiones
 
-Este historial registra los avances realizados cada semana durante el desarrollo del proyecto.
+Este historial registra las entregas y los cambios importantes del documento. Una versión puede incluir varios commits; no se crea una versión por cada ajuste de un borrador.
 
 | Versión | Semana | Fecha | Autor | Avance realizado |
 | --- | --- | --- | --- | --- |
@@ -28,6 +28,7 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 | 0.15 | 8 | 10/11/2026 | Walbyn González | Incorporación de la columna «Autor» en el historial de versiones. Corrección de errores ortográficos y de redacción. |
 | 0.16 | 8 | 10/11/2026 | Walbyn González | Ajuste de la duración del Sprint 1 de análisis a dos semanas (30/09/2026 – 14/10/2026), con el Product Backlog inicial como entregable, y desplazamiento de los Sprints 2 a 5 para completar diez semanas con entrega final el 09/12/2026. Actualización del plan temporal, la planificación de sprints, el cronograma de entregas y el gráfico burndown. |
 | 0.17 | 8 | 10/11/2026 | Walbyn González | Actualización de los costos por la nueva duración del Sprint 1: 200 horas del equipo, costo base de ₡800.000 y presupuesto inicial propuesto de ₡880.000 con contingencia. |
+| 0.18 | 8 | 10/11/2026 | Walbyn González | Incorporación de la matriz de 17 riesgos y su imagen de probabilidad e impacto; plan de mitigación con respuesta, dueño, fecha de revisión y disparador; acciones completas en los Sprint Backlogs, con bordes, divisiones verticales y encabezados grises. Los criterios de aceptación se mantienen sin cambios. |
 
 
 
@@ -141,6 +142,11 @@ Este historial registra los avances realizados cada semana durante el desarrollo
   - [Columnas del tablero](#columnas-del-tablero)
   - [Límite WIP por columna](#límite-wip-por-columna)
   - [Regla para mover una tarjeta a "Hecho"](#regla-para-mover-una-tarjeta-a-hecho)
+
+[Semana 8](#semana-8)
+
+- [1. Matriz de riesgos](#1-matriz-de-riesgos)
+- [2. Plan de mitigación](#2-plan-de-mitigación)
 
 
 ---
@@ -441,12 +447,64 @@ El análisis inicial se ejecuta como el primer sprint dentro de los cinco sprint
 
 #### 3. Sprint Backlog (Tareas de Análisis)
 
-| ID | Historia de Usuario / Tarea | Estimación | Responsable |
-| :--- | :--- | :---: | :--- |
-| **TASK-01** | **Análisis del Problema:** Estudio de la recepción dispersa de solicitudes (WhatsApp, correo, llamadas, presencial) para definir la centralización del trámite. | **3 SP** | Seidy Alanis |
-| **TASK-02** | **Definición de Campos:** Identificación de los 9 datos del registro (*cliente, consulta, número de póliza, fecha, canal, aseguradora, prioridad, estado y responsable*). | **3 SP** | Seidy Alanis |
-| **TASK-03** | **Roles y Asignación:** Definición de la matriz de permisos (*Administrador vs. Colaborador*) y la regla de asignación automática del responsable. | **3 SP** | Walbyn González |
-| **TASK-04** | **Flujo de Estados:** Propuesta y documentación del flujo de estados (*recibido, pendiente de requisito, enviado a aseguradora, finalizado*). | **2 SP** | Walbyn González |
+<div style="overflow-x: auto; margin: 16px 0;">
+<table border="1" cellpadding="10" cellspacing="0" style="width: 100%; min-width: 1100px; border-collapse: collapse; table-layout: fixed; border: 1px solid #8b949e;">
+  <colgroup>
+    <col style='width: 8%;' />
+    <col style='width: 32%;' />
+    <col style='width: 7%;' />
+    <col style='width: 11%;' />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">ID</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Historia de Usuario / Tarea</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Estimaci&#243;n</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Responsable</th>
+      <th bgcolor="#d0d0d0" scope="colgroup" colspan="6" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: center;">Acciones de mitigación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TASK-01</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>An&#225;lisis del Problema:</strong> Estudio de la recepci&#243;n dispersa de solicitudes (WhatsApp, correo, llamadas, presencial) para definir la centralizaci&#243;n del tr&#225;mite.</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>3 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-04:</strong> Revisar con la corredora ejemplos de casos reales antes de cerrar el an&#225;lisis y registrar el efecto de cualquier cambio solicitado.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TASK-02</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>Definici&#243;n de Campos:</strong> Identificaci&#243;n de los 9 datos del registro (<em>cliente, consulta, n&#250;mero de p&#243;liza, fecha, canal, aseguradora, prioridad, estado y responsable</em>).</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>3 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-08:</strong> Confirmar las opciones de aseguradoras, canales y prioridades y qui&#233;n realizar&#225; las actualizaciones de esos cat&#225;logos.</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-10:</strong> Acordar c&#243;mo se guardar&#225;n nombres con tildes y p&#243;lizas con ceros iniciales, usando ejemplos que despu&#233;s puedan buscarse.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TASK-03</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>Roles y Asignaci&#243;n:</strong> Definici&#243;n de la matriz de permisos (<em>Administrador vs. Colaborador</em>) y la regla de asignaci&#243;n autom&#225;tica del responsable.</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>3 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-01:</strong> Definir qu&#233; ocurrir&#225; con las sesiones abiertas cuando cambie el rol de un usuario, para que no conserve sus permisos anteriores.</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-16:</strong> Definir c&#243;mo se anular&#225;n las sesiones existentes al desactivar una cuenta, adem&#225;s de impedir nuevos inicios de sesi&#243;n.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TASK-04</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>Flujo de Estados:</strong> Propuesta y documentaci&#243;n del flujo de estados (<em>recibido, pendiente de requisito, enviado a aseguradora, finalizado</em>).</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-09:</strong> Documentar que el estado y su historial se guardar&#225;n juntos y c&#243;mo se recuperar&#225; el caso si se interrumpe esa operaci&#243;n.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 #### 4. Plan de Ejecución y Estrategia
 * **Arquitectura/Diseño:** Análisis conceptual y diagramación del flujo de datos multicanal. Definición del modelo de datos preliminar, entidad de solicitudes y matriz de roles.
@@ -506,6 +564,7 @@ El *Product Backlog* reúne todas las funcionalidades estimadas en Puntos de His
 | **HU-07** | Panel de control y visualización de métricas de solicitudes | Baja | 5 SP | Sprint 4 | Pendiente |
 | **HU-08** | Registro de historial y observaciones cronológicas de la solicitud | Media | 3 SP | Sprint 5 | Pendiente |
 | **HU-09** | Generación y exportación de reportes de trámites de atención | Baja | 5 SP | Sprint 5 | Pendiente |
+
 
 ---
 
@@ -747,6 +806,8 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 ---
 
+**Actualización de Semana 8:** cada tarea incluye sus acciones de mitigación completas. Una misma respuesta puede aparecer en varias tareas cuando se implementa o verifica en distintas partes del sistema; esto no implica sumar el esfuerzo dos veces. Las acciones están pendientes y el trabajo restante de sprints anteriores se retoma en el sprint vigente.
+
 #### Sprint 1 — Análisis de Requerimientos e Incepción
 
  [Ver detalle](#2-primer-sprint)
@@ -763,15 +824,97 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 **Sprint Backlog (Desglose de Tareas Técnicas):**
 
-| ID Tarea | Historia de Usuario | Descripción de la Tarea Técnica | Estimación | Responsable |
-| :--- | :--- | :--- | :---: | :--- |
-| **TSK-02.1** | **HU-01** (8 SP) | Diseñar maquetación y formulario de inicio de sesión (Frontend) | **2 SP** | Seidy Alanis |
-| **TSK-02.2** | **HU-01** (8 SP) | Implementar endpoint de autenticación y hashing bcrypt (Backend) | **3 SP** | Walbyn González |
-| **TSK-02.3** | **HU-01** (8 SP) | Configuración de middleware RBAC, tokens JWT y protección de rutas | **3 SP** | Walbyn González |
-| **TSK-02.4** | **HU-02** (5 SP) | Crear formulario de registro de solicitudes con validaciones | **2 SP** | Seidy Alanis |
-| **TSK-02.5** | **HU-02** (5 SP) | Implementar registro, asignación automática y estado inicial "Recibido" | **2 SP** | Walbyn González |
-| **TSK-02.6** | **HU-02** (5 SP) | Pruebas de registro y conservación de datos en base de datos | **1 SP** | Seidy / Walbyn |
-| **TOTAL** | **HU-01 + HU-02** | **Suma total de Puntos del Sprint 2** | **13 SP** | **Equipo Completo** |
+<div style="overflow-x: auto; margin: 16px 0;">
+<table border="1" cellpadding="10" cellspacing="0" style="width: 100%; min-width: 1100px; border-collapse: collapse; table-layout: fixed; border: 1px solid #8b949e;">
+  <colgroup>
+    <col style='width: 8%;' />
+    <col style='width: 9%;' />
+    <col style='width: 23%;' />
+    <col style='width: 7%;' />
+    <col style='width: 11%;' />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">ID Tarea</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Historia de Usuario</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Descripci&#243;n de la Tarea T&#233;cnica</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Estimaci&#243;n</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Responsable</th>
+      <th bgcolor="#d0d0d0" scope="colgroup" colspan="6" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: center;">Acciones de mitigación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-02.1</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-01</strong> (8 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Dise&#241;ar maquetaci&#243;n y formulario de inicio de sesi&#243;n (Frontend)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-05:</strong> Revisar la pantalla de acceso en los navegadores y tama&#241;os de pantalla que utilizar&#225; la corredora para evitar campos o botones inaccesibles.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-02.2</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-01</strong> (8 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Implementar endpoint de autenticaci&#243;n y hashing bcrypt (Backend)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>3 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-14:</strong> Excluir contrase&#241;as y tokens de los mensajes de diagn&#243;stico y revisar los registros generados al simular un error de acceso.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-02.3</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-01</strong> (8 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Configuraci&#243;n de middleware RBAC, tokens JWT y protecci&#243;n de rutas</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>3 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-01:</strong> Comprobar con una sesi&#243;n abierta que cambiar de administrador a colaborador retire los permisos anteriores sin depender de cerrar el navegador.</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-16:</strong> Consultar el sistema desde una sesi&#243;n abierta antes de desactivar la cuenta y comprobar que deje de aceptar sus peticiones.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-02.4</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-02</strong> (5 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Crear formulario de registro de solicitudes con validaciones</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td colspan='2' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-05:</strong> Revisar el formulario en pantallas peque&#241;as y ajustar campos y botones que queden fuera del &#225;rea visible.</td>
+      <td colspan='2' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-08:</strong> Cargar los cat&#225;logos confirmados de aseguradoras, canales y prioridades y acordar c&#243;mo a&#241;adir opciones necesarias sin seleccionar un valor incorrecto.</td>
+      <td colspan='2' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-13:</strong> Bloquear Guardar mientras se procesa el env&#237;o y mostrar que la operaci&#243;n sigue en curso para evitar reenv&#237;os por demora.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-02.5</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-02</strong> (5 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Implementar registro, asignaci&#243;n autom&#225;tica y estado inicial &quot;Recibido&quot;</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-07:</strong> Probar los cambios de estructura de la base junto con el formulario en un entorno compartido antes de integrarlos.</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-13:</strong> Identificar cada env&#237;o en el servidor para que un reintento despu&#233;s de perder la respuesta devuelva el registro existente y no cree otro.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-02.6</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-02</strong> (5 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Pruebas de registro y conservaci&#243;n de datos en base de datos</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>1 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy / Walbyn</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-03:</strong> Restaurar una copia en una base separada y comprobar que se recuperen las solicitudes y sus relaciones con usuarios e historial.</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-13:</strong> Simular que se pierde la respuesta despu&#233;s de guardar y reenviar la misma operaci&#243;n para comprobar que solo quede una solicitud.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TOTAL</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-01 + HU-02</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>Suma total de Puntos del Sprint 2</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>13 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>Equipo Completo</strong></td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'>—</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 ---
 
@@ -782,15 +925,95 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 **Sprint Backlog (Desglose de Tareas Técnicas):**
 
-| ID Tarea | Historia de Usuario | Descripción de la Tarea Técnica | Estimación | Responsable |
-| :--- | :--- | :--- | :---: | :--- |
-| **TSK-03.1** | **HU-03** (3 SP) | Adaptar el formulario de registro para cargar, editar, validar y guardar los datos de una solicitud | **2 SP** | Seidy / Walbyn |
-| **TSK-03.2** | **HU-03** (3 SP) | Probar edición, cancelación y conservación de los datos de seguimiento | **1 SP** | Seidy / Walbyn |
-| **TSK-03.3** | **HU-04** (3 SP) | Desarrollar interfaz de actualización de estados por lista desplegable | **1 SP** | Seidy Alanis |
-| **TSK-03.4** | **HU-04** (3 SP) | Implementar lógica backend para actualización de estado y registro automático del historial de cambios de estado | **2 SP** | Walbyn González |
-| **TSK-03.5** | **HU-05** (3 SP) | Diseñar componentes de barra de búsqueda y filtros dinámicos | **1 SP** | Seidy Alanis |
-| **TSK-03.6** | **HU-05** (3 SP) | Construir consultas SQL optimizadas para filtros combinados | **2 SP** | Walbyn González |
-| **TOTAL** | **HU-03 + HU-04 + HU-05** | **Suma total de Puntos del Sprint 3** | **9 SP** | **Equipo Completo** |
+<div style="overflow-x: auto; margin: 16px 0;">
+<table border="1" cellpadding="10" cellspacing="0" style="width: 100%; min-width: 1100px; border-collapse: collapse; table-layout: fixed; border: 1px solid #8b949e;">
+  <colgroup>
+    <col style='width: 8%;' />
+    <col style='width: 9%;' />
+    <col style='width: 23%;' />
+    <col style='width: 7%;' />
+    <col style='width: 11%;' />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">ID Tarea</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Historia de Usuario</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Descripci&#243;n de la Tarea T&#233;cnica</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Estimaci&#243;n</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Responsable</th>
+      <th bgcolor="#d0d0d0" scope="colgroup" colspan="6" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: center;">Acciones de mitigación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-03.1</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-03</strong> (3 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Adaptar el formulario de registro para cargar, editar, validar y guardar los datos de una solicitud</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy / Walbyn</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-15:</strong> Detectar cambios realizados por otro usuario desde que se abri&#243; el formulario y pedir recargar antes de guardar una versi&#243;n anterior.</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-07:</strong> Comprobar que los cambios de campos de la base sigan siendo compatibles con los formularios de registro y edici&#243;n antes de integrarlos.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-03.2</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-03</strong> (3 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Probar edici&#243;n, cancelaci&#243;n y conservaci&#243;n de los datos de seguimiento</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>1 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy / Walbyn</td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-15:</strong> Abrir el mismo caso en dos sesiones, guardar cambios distintos y comprobar que el segundo guardado no sobrescriba silenciosamente el primero.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-03.3</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-04</strong> (3 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Desarrollar interfaz de actualizaci&#243;n de estados por lista desplegable</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>1 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-15:</strong> Volver a consultar el estado actual antes de confirmar un cambio si otro colaborador modific&#243; el caso mientras la pantalla estaba abierta.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-03.4</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-04</strong> (3 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Implementar l&#243;gica backend para actualizaci&#243;n de estado y registro autom&#225;tico del historial de cambios de estado</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-09:</strong> Guardar el estado y su historial en una sola operaci&#243;n y simular una ca&#237;da entre ambos pasos para comprobar que no quede un guardado parcial.</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-15:</strong> Comprobar la versi&#243;n del caso al cambiar su estado y rechazar una actualizaci&#243;n basada en datos anteriores a la &#250;ltima modificaci&#243;n.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-03.5</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-05</strong> (3 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Dise&#241;ar componentes de barra de b&#250;squeda y filtros din&#225;micos</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>1 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-10:</strong> Preparar b&#250;squedas con tildes, espacios y p&#243;lizas con ceros iniciales y conservar el texto escrito para que el usuario pueda corregirlo sin alterar el identificador.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-03.6</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-05</strong> (3 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Construir consultas SQL optimizadas para filtros combinados</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-06:</strong> Probar las consultas con un volumen representativo de solicitudes, mostrar resultados por p&#225;ginas y optimizar las b&#250;squedas que superen cinco segundos.</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-10:</strong> Tratar de forma consistente las tildes y los espacios de los nombres y conservar los ceros iniciales de las p&#243;lizas al comparar los datos.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TOTAL</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-03 + HU-04 + HU-05</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>Suma total de Puntos del Sprint 3</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>9 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>Equipo Completo</strong></td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'>—</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 ---
 
@@ -801,13 +1024,80 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 **Sprint Backlog (Desglose de Tareas Técnicas):**
 
-| ID Tarea | Historia de Usuario | Descripción de la Tarea Técnica | Estimación | Responsable |
-| :--- | :--- | :--- | :---: | :--- |
-| **TSK-04.1** | **HU-06** (5 SP) | Diseñar pantallas CRUD de gestión de usuarios (Crear/Editar/Desactivar) | **2 SP** | Seidy Alanis |
-| **TSK-04.2** | **HU-06** (5 SP) | Implementar lógica de borrado lógico (*soft delete*) y envío de credenciales SMTP | **3 SP** | Walbyn González |
-| **TSK-04.3** | **HU-07** (5 SP) | Diseñar componentes visuales y gráficos interactivos del panel de control | **2 SP** | Seidy Alanis |
-| **TSK-04.4** | **HU-07** (5 SP) | Programar consultas agregadas en base de datos para contadores del Dashboard | **3 SP** | Walbyn González |
-| **TOTAL** | **HU-06 + HU-07** | **Suma total de Puntos del Sprint 4** | **10 SP** | **Equipo Completo** |
+<div style="overflow-x: auto; margin: 16px 0;">
+<table border="1" cellpadding="10" cellspacing="0" style="width: 100%; min-width: 1100px; border-collapse: collapse; table-layout: fixed; border: 1px solid #8b949e;">
+  <colgroup>
+    <col style='width: 8%;' />
+    <col style='width: 9%;' />
+    <col style='width: 23%;' />
+    <col style='width: 7%;' />
+    <col style='width: 11%;' />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">ID Tarea</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Historia de Usuario</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Descripci&#243;n de la Tarea T&#233;cnica</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Estimaci&#243;n</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Responsable</th>
+      <th bgcolor="#d0d0d0" scope="colgroup" colspan="6" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: center;">Acciones de mitigación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-04.1</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-06</strong> (5 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Dise&#241;ar pantallas CRUD de gesti&#243;n de usuarios (Crear/Editar/Desactivar)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-01:</strong> Al cambiar el rol desde la pantalla de usuarios, comprobar en otra sesi&#243;n abierta que los permisos anteriores dejen de funcionar.</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-16:</strong> Desactivar una cuenta desde la pantalla de administraci&#243;n y comprobar que su sesi&#243;n abierta ya no permita consultar informaci&#243;n.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-04.2</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-06</strong> (5 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Implementar l&#243;gica de borrado l&#243;gico (<em>soft delete</em>) y env&#237;o de credenciales SMTP</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>3 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-11:</strong> Consultar la cuota del servicio de correo, registrar los env&#237;os rechazados y permitir reenviar la invitaci&#243;n sin crear otra cuenta.</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-16:</strong> Anular las sesiones emitidas antes de la desactivaci&#243;n y comprobar su rechazo en las consultas posteriores.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-04.3</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-07</strong> (5 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Dise&#241;ar componentes visuales y gr&#225;ficos interactivos del panel de control</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-12:</strong> Mostrar las fechas de los gr&#225;ficos en la zona horaria de la corredora y revisar casos cercanos a medianoche para que no se agrupen en otro d&#237;a.</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-05:</strong> Revisar las gr&#225;ficas y sus filtros en los navegadores y tama&#241;os de pantalla previstos para evitar controles fuera del &#225;rea visible.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-04.4</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-07</strong> (5 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Programar consultas agregadas en base de datos para contadores del Dashboard</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>3 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-12:</strong> Calcular los per&#237;odos con una zona horaria com&#250;n y comparar casos cercanos a medianoche entre el panel y los reportes.</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-06:</strong> Medir las consultas de indicadores con un volumen representativo y optimizar las que retrasen la carga del panel.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TOTAL</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-06 + HU-07</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>Suma total de Puntos del Sprint 4</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>10 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>Equipo Completo</strong></td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'>—</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 ---
 
@@ -818,13 +1108,77 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 **Sprint Backlog (Desglose de Tareas Técnicas):**
 
-| ID Tarea | Historia de Usuario | Descripción de la Tarea Técnica | Estimación | Responsable |
-| :--- | :--- | :--- | :---: | :--- |
-| **TSK-05.1** | **HU-08** (3 SP) | Desarrollar sección de notas y observaciones de solo lectura (*append-only*) | **1 SP** | Seidy Alanis |
-| **TSK-05.2** | **HU-08** (3 SP) | Integrar sellos de tiempo automáticos y trazabilidad de autor en bitácora | **2 SP** | Walbyn González |
-| **TSK-05.3** | **HU-09** (5 SP) | Diseñar interfaz para parámetros de consulta y vista previa de reportes | **2 SP** | Seidy Alanis |
-| **TSK-05.4** | **HU-09** (5 SP) | Programar motor backend de exportación a formatos estándar (PDF/Excel) | **3 SP** | Walbyn González |
-| **TOTAL** | **HU-08 + HU-09** | **Suma total de Puntos del Sprint 5** | **8 SP** | **Equipo Completo** |
+<div style="overflow-x: auto; margin: 16px 0;">
+<table border="1" cellpadding="10" cellspacing="0" style="width: 100%; min-width: 1100px; border-collapse: collapse; table-layout: fixed; border: 1px solid #8b949e;">
+  <colgroup>
+    <col style='width: 8%;' />
+    <col style='width: 9%;' />
+    <col style='width: 23%;' />
+    <col style='width: 7%;' />
+    <col style='width: 11%;' />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">ID Tarea</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Historia de Usuario</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Descripci&#243;n de la Tarea T&#233;cnica</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Estimaci&#243;n</th>
+      <th bgcolor="#d0d0d0" scope="col" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: left;">Responsable</th>
+      <th bgcolor="#d0d0d0" scope="colgroup" colspan="6" style="border: 1px solid #8b949e; padding: 10px; background-color: #d0d0d0 !important; color: #24292f !important; text-align: center;">Acciones de mitigación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-05.1</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-08</strong> (3 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Desarrollar secci&#243;n de notas y observaciones de solo lectura (<em>append-only</em>)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>1 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-03:</strong> Incluir las observaciones en las copias de seguridad y comprobar en una restauraci&#243;n que sigan asociadas a la solicitud correspondiente.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-05.2</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-08</strong> (3 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Integrar sellos de tiempo autom&#225;ticos y trazabilidad de autor en bit&#225;cora</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-12:</strong> Guardar las fechas con una referencia horaria com&#250;n y comprobar que las notas pr&#243;ximas a medianoche aparezcan en el d&#237;a correcto al consultarlas.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-05.3</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-09</strong> (5 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Dise&#241;ar interfaz para par&#225;metros de consulta y vista previa de reportes</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-12:</strong> Interpretar las fechas seleccionadas en la zona horaria de la corredora y comprobar casos en los l&#237;mites del d&#237;a antes de enviar la consulta al reporte.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-05.4</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-09</strong> (5 SP)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Programar motor backend de exportaci&#243;n a formatos est&#225;ndar (PDF/Excel)</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>3 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-02:</strong> Generar un PDF de muestra con nombres y observaciones extensas y ajustar los saltos de l&#237;nea y de p&#225;gina para que no se corte el contenido.</td>
+      <td colspan='3' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'><strong>RSK-17:</strong> Revisar la licencia de la biblioteca y generar PDF y Excel en el servidor previsto antes de desarrollar toda la exportaci&#243;n.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TOTAL</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-08 + HU-09</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>Suma total de Puntos del Sprint 5</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>8 SP</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>Equipo Completo</strong></td>
+      <td colspan='6' style='border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;'>—</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 ---
 
@@ -1132,4 +1486,60 @@ Si la prueba falla, la tarjeta regresa a **En proceso** con un comentario que de
 
 https://walbyngonzalez-1793296365243.atlassian.net/jira/software/projects/TASK/boards/1/backlog?atlOrigin=eyJpIjoiMGI0MDkwZTg0ZTdkNDg0ZWIyODIxOGI3MmVlN2EyNDUiLCJwIjoiaiJ9
 
+---
 
+## Semana 8
+
+## 1. Matriz de riesgos
+
+**Escala:** probabilidad e impacto de 1 a 3 (bajo, medio y alto). **Prioridad = probabilidad × impacto:** baja (1–2), media (3–4) y alta (6–9).
+
+Se consolidan 17 riesgos de implementación y uso. Cada uno identifica una situación que puede afectar al sistema; las comprobaciones funcionales habituales permanecen en los criterios de aceptación. Los riesgos se numeran consecutivamente del R-01 al R-17. Las valoraciones son iniciales y deben validarse con el equipo. Se propone probabilidad alta para R-07 porque varios módulos comparten la base de datos y los cambios durante el desarrollo pueden afectar a los formularios y consultas que dependen de ella.
+
+| ID | Registro del riesgo | Probabilidad | Impacto | Prioridad |
+| --- | --- | :---: | :---: | --- |
+| R-01 | Permisos anteriores que siguen activos: si cambia el rol de una persona mientras tiene sesión abierta, podría conservar funciones de administrador que ya no le corresponden. | 2 | 3 | Alta (6) |
+| R-02 | Formato del reporte desajustado: los nombres o las observaciones extensas podrían cortarse al exportar a PDF, aunque estén completos en el sistema. | 1 | 1 | Baja (1) |
+| R-03 | Pérdida de información: una falla grave en la base de datos podría borrar solicitudes e historial y detener su seguimiento. | 1 | 3 | Media (3) |
+| R-04 | Cambios tardíos en lo solicitado: la corredora podría cambiar campos o reglas después de desarrollar los formularios, obligando a repetir trabajo. | 3 | 2 | Alta (6) |
+| R-05 | Diferencias entre dispositivos: una pantalla diseñada en computadora podría dejar campos, filtros o botones fuera de la pantalla en algunos celulares. | 1 | 2 | Baja (2) |
+| R-06 | Consultas lentas al crecer los datos: una búsqueda que funciona con pocos casos podría tardar demasiado cuando se acumulen solicitudes. | 2 | 1 | Baja (2) |
+| R-07 | Cambios incompatibles entre las partes del sistema: una modificación en la base de datos podría dejar desactualizados los formularios o las consultas de otro módulo. | 3 | 3 | Alta (9) |
+| R-08 | Catálogos desactualizados: las listas desplegables de aseguradoras, canales de recepción o prioridades podrían no incluir una opción necesaria para registrar una solicitud y requerir una actualización puntual. | 3 | 1 | Media (3) |
+| R-09 | Interrupción durante un cambio de estado: una falla de conexión con la base de datos podría guardar el nuevo estado sin guardar su historial, dejando el caso inconsistente. | 2 | 3 | Alta (6) |
+| R-10 | Datos escritos con formatos distintos: nombres con tildes, espacios o pólizas con ceros iniciales podrían no encontrarse si la búsqueda interpreta esos datos de otra manera. | 2 | 2 | Media (4) |
+| R-11 | Límites del proveedor de correo: el servicio contratado o gratuito podría bloquear envíos por cuota y dejar invitaciones pendientes aunque las cuentas ya estén creadas. | 2 | 3 | Alta (6) |
+| R-12 | Fechas interpretadas de forma distinta: si el servidor y la corredora usan horarios diferentes, los movimientos cercanos a medianoche podrían aparecer en otro día en el historial, el panel y los reportes. | 2 | 2 | Media (4) |
+| R-13 | Solicitudes duplicadas por reintento: si la respuesta tarda o se pierde después de guardar, el usuario podría reenviar el formulario y registrar dos veces el mismo trámite. | 2 | 3 | Alta (6) |
+| R-14 | Contraseñas expuestas en registros de prueba: al investigar errores de acceso, el equipo podría guardar por accidente credenciales en mensajes o archivos compartidos. | 1 | 3 | Media (3) |
+| R-15 | Ediciones simultáneas: dos colaboradores podrían modificar el mismo caso y el último guardado sobrescribir los cambios del primero. | 2 | 3 | Alta (6) |
+| R-16 | Sesión activa de una cuenta desactivada: aunque se impidan nuevos accesos, una sesión emitida antes de la desactivación podría seguir consultando información. | 2 | 3 | Alta (6) |
+| R-17 | Dependencia de una biblioteca de exportación: la herramienta para crear PDF y Excel podría no funcionar en el servidor elegido o requerir una licencia no presupuestada. | 2 | 3 | Alta (6) |
+
+La imagen ubica los riesgos del registro según su probabilidad e impacto. Verde: aceptar; amarillo: vigilar; rojo: atender primero.
+
+![Matriz de probabilidad e impacto con los 17 riesgos del proyecto](Imagenes/matriz-riesgos.svg)
+
+## 2. Plan de mitigación
+
+Se atienden primero los riesgos de prioridad alta. Las acciones se incorporan a los Sprint Backlogs en su ubicación original: [análisis del Sprint 1](#3-sprint-backlog-tareas-de-análisis) y [tareas técnicas de los Sprints 2 a 5](#3-planificación-de-sprints-del-proyecto). Las tablas presentan cada acción completa y adaptada a la tarea, aunque un mismo riesgo afecte a varias; el esfuerzo compartido no se contabiliza dos veces. Las fechas de revisión son previstas y las acciones quedan pendientes de ejecución.
+
+| Riesgo | Respuesta | Dueño | Fecha de revisión | Disparador |
+| --- | --- | --- | --- | --- |
+| R-01 | **Mitigación (RSK-01):** Al cambiar un rol, renovar los permisos de la sesión y comprobar el cambio sin cerrar el navegador. | Walbyn González | 18/11/2026 | Una cuenta conserva funciones de administrador después de cambiarla a colaborador. |
+| R-02 | **Mitigación (RSK-02):** Preparar una muestra con textos largos y ajustar los saltos de línea y de página del PDF. | Walbyn González | 02/12/2026 | En la muestra exportada aparecen textos cortados o superpuestos. |
+| R-03 | **Mitigación (RSK-03):** Programar copias de seguridad y ensayar la recuperación en una base separada. | Walbyn González | 11/11/2026 | La base de datos pierde información o no puede recuperarse con la copia disponible. |
+| R-04 | **Mitigación (RSK-04):** Confirmar campos y reglas con ejemplos antes de desarrollar; registrar y estimar las solicitudes de cambio. | Seidy Alanis | 11/11/2026 | Se solicita cambiar una regla o un campo ya desarrollado. |
+| R-05 | **Mitigación (RSK-05):** Revisar formularios, filtros y gráficos en los navegadores y tamaños de pantalla acordados con la corredora. | Seidy Alanis | 11/11/2026 | En un dispositivo previsto para el uso no se puede utilizar un campo, filtro o botón necesario. |
+| R-06 | **Mitigación (RSK-06):** Probar las consultas con un volumen representativo, mostrar resultados por páginas y revisar los campos de búsqueda. | Walbyn González | 11/11/2026 | La carga del listado supera cinco segundos en las pruebas de volumen. |
+| R-07 | **Mitigación (RSK-07):** Acordar la estructura de datos, guardar los cambios de la base en scripts y probarlos en un entorno compartido antes de integrarlos. | Walbyn González | 11/11/2026 | Un módulo deja de guardar o consultar después de cambiar la estructura de datos. |
+| R-08 | **Mitigación (RSK-08):** Confirmar con la corredora las opciones de los catálogos de aseguradoras, canales y prioridades, y acordar quién solicita y realiza sus actualizaciones. | Seidy Alanis | 11/11/2026 | Al registrar una solicitud se necesita una opción que no aparece en una lista desplegable. |
+| R-09 | **Mitigación (RSK-09):** Guardar el estado y su historial en una sola operación y simular una interrupción entre ambos pasos. | Walbyn González | 11/11/2026 | Al simular la interrupción, el estado y el último movimiento del historial no coinciden. |
+| R-10 | **Mitigación (RSK-10):** Acordar el tratamiento de tildes y espacios y conservar las pólizas como identificadores; preparar ejemplos de búsqueda. | Seidy Alanis | 11/11/2026 | Un caso existente no aparece por diferencias de escritura o por perder ceros de la póliza. |
+| R-11 | **Mitigación (RSK-11):** Confirmar la cuota del servicio, registrar envíos fallidos y permitir reintentos sin crear otra cuenta. | Walbyn González | 18/11/2026 | El proveedor rechaza un envío por límite o indisponibilidad. |
+| R-12 | **Mitigación (RSK-12):** Definir una zona horaria común y preparar casos cercanos a medianoche para historial, panel y reportes. | Walbyn González | 25/11/2026 | Un movimiento aparece en un día distinto al esperado en el historial, el panel o el reporte. |
+| R-13 | **Mitigación (RSK-13):** Bloquear el botón durante el envío y controlar en el servidor que un reintento del mismo envío no cree otra solicitud. | Walbyn González | 11/11/2026 | Un doble clic o un reintento tras perder la respuesta crea más de una solicitud. |
+| R-14 | **Mitigación (RSK-14):** Excluir contraseñas y tokens de los registros y revisar los archivos de diagnóstico antes de compartirlos. | Walbyn González | 11/11/2026 | Se encuentra una contraseña o un token completo en un registro o archivo compartido. |
+| R-15 | **Mitigación (RSK-15):** Detectar si la solicitud cambió desde que se abrió y pedir recargar antes de aceptar un guardado desactualizado. | Walbyn González | 11/11/2026 | La prueba con dos sesiones reemplaza silenciosamente un cambio reciente. |
+| R-16 | **Mitigación (RSK-16):** Revocar las sesiones al desactivar una cuenta y verificar que sus consultas posteriores sean rechazadas. | Walbyn González | 18/11/2026 | Una sesión abierta antes de desactivar la cuenta todavía permite consultar información. |
+| R-17 | **Mitigación (RSK-17):** Revisar licencia y requisitos y realizar una prueba corta de PDF y Excel en el servidor previsto antes de desarrollar la exportación completa. | Walbyn González | 25/11/2026 | La prueba falla en el servidor o la licencia impide el uso previsto. |
