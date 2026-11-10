@@ -147,8 +147,6 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 
 ## 1. Acta de inicio (Project Charter)
 
-Este borrador del Acta de Inicio reúne la justificación, los objetivos y los límites generales del proyecto.
-
 ### Planteamiento del problema
 
 Una empresa corredora de seguros recibe diariamente solicitudes y consultas de sus clientes relacionadas con sus pólizas y servicios por diferentes medios, como llamadas telefónicas, correos electrónicos, presencial y WhatsApp. Al utilizar varios canales, se vuelve más difícil mantener las solicitudes organizadas y darles un seguimiento adecuado, debido a que no se cuenta con un mecanismo que permita conocer fácilmente el estado de cada solicitud, quién es el responsable y cuánto tiempo lleva siendo atendida.
