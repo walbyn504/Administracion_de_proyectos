@@ -24,23 +24,23 @@
 <circle cx="100" cy="110" r="4.5" fill="#ed9c29"/>
 <text x="112" y="98" font-size="13" fill="#a66a12">51</text>
 <text x="252" y="391" text-anchor="middle" font-size="14">Sprint 1</text>
-<text x="252" y="411" text-anchor="middle" font-size="12" fill="#666">07/10</text>
+<text x="252" y="411" text-anchor="middle" font-size="12" fill="#666">14/10</text>
 <circle cx="252" cy="165" r="4.5" fill="#ed9c29"/>
 <text x="264" y="153" font-size="13" fill="#a66a12">40</text>
 <text x="404" y="391" text-anchor="middle" font-size="14">Sprint 2</text>
-<text x="404" y="411" text-anchor="middle" font-size="12" fill="#666">21/10</text>
+<text x="404" y="411" text-anchor="middle" font-size="12" fill="#666">28/10</text>
 <circle cx="404" cy="230" r="4.5" fill="#ed9c29"/>
 <text x="416" y="218" font-size="13" fill="#a66a12">27</text>
 <text x="556" y="391" text-anchor="middle" font-size="14">Sprint 3</text>
-<text x="556" y="411" text-anchor="middle" font-size="12" fill="#666">04/11</text>
+<text x="556" y="411" text-anchor="middle" font-size="12" fill="#666">11/11</text>
 <circle cx="556" cy="275" r="4.5" fill="#ed9c29"/>
 <text x="568" y="263" font-size="13" fill="#a66a12">18</text>
 <text x="708" y="391" text-anchor="middle" font-size="14">Sprint 4</text>
-<text x="708" y="411" text-anchor="middle" font-size="12" fill="#666">18/11</text>
+<text x="708" y="411" text-anchor="middle" font-size="12" fill="#666">25/11</text>
 <circle cx="708" cy="325" r="4.5" fill="#ed9c29"/>
 <text x="720" y="313" font-size="13" fill="#a66a12">8</text>
 <text x="860" y="391" text-anchor="middle" font-size="14">Sprint 5</text>
-<text x="860" y="411" text-anchor="middle" font-size="12" fill="#666">02/12</text>
+<text x="860" y="411" text-anchor="middle" font-size="12" fill="#666">09/12</text>
 <circle cx="860" cy="365" r="4.5" fill="#ed9c29"/>
 <text x="872" y="353" font-size="13" fill="#a66a12">0</text>
 <line x1="310" y1="449" x2="350" y2="449" stroke="#ed9c29" stroke-width="3"/><text x="365" y="454" font-size="14">Planificado (11, 13, 9, 10 y 8 SP)</text>
