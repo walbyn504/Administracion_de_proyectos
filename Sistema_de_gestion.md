@@ -915,11 +915,11 @@ El siguiente gráfico burndown muestra únicamente los puntos que se planifica t
   </thead>
   <tbody>
     <tr><td style="padding: 12px 32px 12px 16px;">Inicio del proyecto (30/09/2026)</td><td style="padding: 12px 16px; text-align: center;">51</td></tr>
-    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 1 (07/10/2026)</td><td style="padding: 12px 16px; text-align: center;">40</td></tr>
-    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 2 (21/10/2026)</td><td style="padding: 12px 16px; text-align: center;">27</td></tr>
-    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 3 (04/11/2026)</td><td style="padding: 12px 16px; text-align: center;">18</td></tr>
-    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 4 (18/11/2026)</td><td style="padding: 12px 16px; text-align: center;">8</td></tr>
-    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 5 (02/12/2026)</td><td style="padding: 12px 16px; text-align: center;">0</td></tr>
+    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 1 (14/10/2026)</td><td style="padding: 12px 16px; text-align: center;">40</td></tr>
+    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 2 (28/10/2026)</td><td style="padding: 12px 16px; text-align: center;">27</td></tr>
+    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 3 (11/11/2026)</td><td style="padding: 12px 16px; text-align: center;">18</td></tr>
+    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 4 (25/11/2026)</td><td style="padding: 12px 16px; text-align: center;">8</td></tr>
+    <tr><td style="padding: 12px 32px 12px 16px;">Cierre del Sprint 5 (09/12/2026)</td><td style="padding: 12px 16px; text-align: center;">0</td></tr>
   </tbody>
 </table>
 
@@ -930,43 +930,43 @@ El proyecto inicia con **51 SP pendientes: 11 de análisis y 40 de desarrollo**.
   <tbody>
     <tr>
       <td rowspan="1" style="vertical-align: middle; text-align: center;"><strong>Sprint 1</strong><br><br></td>
-      <td rowspan="1" style="vertical-align: middle;">30/09/2026 – 07/10/2026</td>
-      <td><strong>Análisis y documentación inicial</strong></td><td style="text-align: center;">11</td><td>Acta de inicio, proyecto propuesto, alcance, roles, reglas de negocio y Product Backlog inicial.</td><td><strong>07/10/2026</strong><br>Revisión del acta, alcance, reglas de negocio y backlog inicial.</td>
+      <td rowspan="1" style="vertical-align: middle;">30/09/2026 – 14/10/2026</td>
+      <td><strong>Análisis y documentación inicial</strong></td><td style="text-align: center;">11</td><td>Acta de inicio, proyecto propuesto, alcance, roles, reglas de negocio y Product Backlog inicial.</td><td><strong>14/10/2026</strong><br>Revisión del acta, alcance, reglas de negocio y backlog inicial.</td>
     </tr>
     <tr>
       <td rowspan="2" style="vertical-align: middle; text-align: center;"><strong>Sprint 2</strong><br><br></td>
-      <td rowspan="2" style="vertical-align: middle;">07/10/2026 – 21/10/2026</td>
-      <td><strong>HU-01: Autenticación y control de acceso</strong></td><td style="text-align: center;">8</td><td>Inicio y cierre de sesión, validación de credenciales, permisos por rol y bloqueo de accesos no autorizados.</td><td><strong>21/10/2026</strong><br>Revisión de credenciales, cierre de sesión y restricciones de acceso.</td>
+      <td rowspan="2" style="vertical-align: middle;">14/10/2026 – 28/10/2026</td>
+      <td><strong>HU-01: Autenticación y control de acceso</strong></td><td style="text-align: center;">8</td><td>Inicio y cierre de sesión, validación de credenciales, permisos por rol y bloqueo de accesos no autorizados.</td><td><strong>28/10/2026</strong><br>Revisión de credenciales, cierre de sesión y restricciones de acceso.</td>
     </tr>
     <tr>
-      <td><strong>HU-02: Registro centralizado de solicitudes</strong></td><td style="text-align: center;">5</td><td>Registro con validaciones, conservación de datos, responsable automático y estado inicial «Recibido».</td><td><strong>21/10/2026</strong><br>Revisión de registro, validaciones, guardado y asignación automática.</td>
+      <td><strong>HU-02: Registro centralizado de solicitudes</strong></td><td style="text-align: center;">5</td><td>Registro con validaciones, conservación de datos, responsable automático y estado inicial «Recibido».</td><td><strong>28/10/2026</strong><br>Revisión de registro, validaciones, guardado y asignación automática.</td>
     </tr>
     <tr>
       <td rowspan="3" style="vertical-align: middle; text-align: center;"><strong>Sprint 3</strong><br><br></td>
-      <td rowspan="3" style="vertical-align: middle;">21/10/2026 – 04/11/2026</td>
-      <td><strong>HU-03: Edición de solicitudes</strong></td><td style="text-align: center;">3</td><td>Formulario de edición con validaciones, guardado y cancelación, conservando el seguimiento.</td><td><strong>04/11/2026</strong><br>Revisión de edición, cancelación y conservación de datos.</td>
+      <td rowspan="3" style="vertical-align: middle;">28/10/2026 – 11/11/2026</td>
+      <td><strong>HU-03: Edición de solicitudes</strong></td><td style="text-align: center;">3</td><td>Formulario de edición con validaciones, guardado y cancelación, conservando el seguimiento.</td><td><strong>11/11/2026</strong><br>Revisión de edición, cancelación y conservación de datos.</td>
     </tr>
     <tr>
-      <td><strong>HU-04: Estados y seguimiento</strong></td><td style="text-align: center;">3</td><td>Consulta y actualización de estados, historial automático de cambios y trazabilidad.</td><td><strong>04/11/2026</strong><br>Revisión de cambios de estado y trazabilidad.</td>
+      <td><strong>HU-04: Estados y seguimiento</strong></td><td style="text-align: center;">3</td><td>Consulta y actualización de estados, historial automático de cambios y trazabilidad.</td><td><strong>11/11/2026</strong><br>Revisión de cambios de estado y trazabilidad.</td>
     </tr>
     <tr>
-      <td><strong>HU-05: Búsqueda y filtros</strong></td><td style="text-align: center;">3</td><td>Búsqueda por cliente o póliza y filtros combinados por estado, aseguradora y canal.</td><td><strong>04/11/2026</strong><br>Revisión de búsquedas, filtros y consultas sin resultados.</td>
+      <td><strong>HU-05: Búsqueda y filtros</strong></td><td style="text-align: center;">3</td><td>Búsqueda por cliente o póliza y filtros combinados por estado, aseguradora y canal.</td><td><strong>11/11/2026</strong><br>Revisión de búsquedas, filtros y consultas sin resultados.</td>
     </tr>
     <tr>
       <td rowspan="2" style="vertical-align: middle; text-align: center;"><strong>Sprint 4</strong><br><br></td>
-      <td rowspan="2" style="vertical-align: middle;">04/11/2026 – 18/11/2026</td>
-      <td><strong>HU-06: Gestión de usuarios</strong></td><td style="text-align: center;">5</td><td>Creación, edición y desactivación de usuarios, validaciones, correo de acceso y restricciones al colaborador.</td><td><strong>18/11/2026</strong><br>Revisión de usuarios, validaciones, correo y permisos.</td>
+      <td rowspan="2" style="vertical-align: middle;">11/11/2026 – 25/11/2026</td>
+      <td><strong>HU-06: Gestión de usuarios</strong></td><td style="text-align: center;">5</td><td>Creación, edición y desactivación de usuarios, validaciones, correo de acceso y restricciones al colaborador.</td><td><strong>25/11/2026</strong><br>Revisión de usuarios, validaciones, correo y permisos.</td>
     </tr>
     <tr>
-      <td><strong>HU-07: Panel de control</strong></td><td style="text-align: center;">5</td><td>Panel administrativo con indicadores, gráficas y filtros por fecha, colaborador y aseguradora.</td><td><strong>18/11/2026</strong><br>Revisión de indicadores, filtros y acceso exclusivo del administrador.</td>
+      <td><strong>HU-07: Panel de control</strong></td><td style="text-align: center;">5</td><td>Panel administrativo con indicadores, gráficas y filtros por fecha, colaborador y aseguradora.</td><td><strong>25/11/2026</strong><br>Revisión de indicadores, filtros y acceso exclusivo del administrador.</td>
     </tr>
     <tr>
       <td rowspan="2" style="vertical-align: middle; text-align: center;"><strong>Sprint 5</strong><br><br></td>
-      <td rowspan="2" style="vertical-align: middle;">18/11/2026 – 02/12/2026</td>
-      <td><strong>HU-08: Bitácora de observaciones</strong></td><td style="text-align: center;">3</td><td>Notas validadas y conservadas en orden cronológico, con autor, fecha y hora.</td><td><strong>02/12/2026</strong><br>Revisión de notas, validaciones y conservación del historial.</td>
+      <td rowspan="2" style="vertical-align: middle;">25/11/2026 – 09/12/2026</td>
+      <td><strong>HU-08: Bitácora de observaciones</strong></td><td style="text-align: center;">3</td><td>Notas validadas y conservadas en orden cronológico, con autor, fecha y hora.</td><td><strong>09/12/2026</strong><br>Revisión de notas, validaciones y conservación del historial.</td>
     </tr>
     <tr>
-      <td><strong>HU-09: Reportes y exportación</strong></td><td style="text-align: center;">5</td><td>Reportes administrativos con filtros, vista previa y exportación a PDF y Excel.</td><td><strong>02/12/2026</strong><br>Revisión de filtros, fechas, vista previa y archivos exportados.</td>
+      <td><strong>HU-09: Reportes y exportación</strong></td><td style="text-align: center;">5</td><td>Reportes administrativos con filtros, vista previa y exportación a PDF y Excel.</td><td><strong>09/12/2026</strong><br>Revisión de filtros, fechas, vista previa y archivos exportados.</td>
     </tr>
   </tbody>
 </table>
@@ -979,7 +979,7 @@ Los hitos son fechas propuestas de revisión. Cada entrega se comprobará con lo
 
 <div style="display: block; width: 100%; box-sizing: border-box; border: 1px solid #cccccc; border-radius: 6px; padding: 8px 16px; margin: 12px 0;"><strong>Tarifa ilustrativa por hora: ₡4.000</strong></div>
 
-Para estimar los costos del proyecto consideramos el trabajo del equipo, las herramientas y la infraestructura necesaria en cada sprint. Los cuatro sprints de desarrollo tienen el mismo costo estimado porque duran dos semanas y mantienen la misma dedicación del equipo. El sprint de análisis se calcula por separado, ya que dura una semana.
+Para estimar los costos del proyecto consideramos el trabajo del equipo, las herramientas y la infraestructura necesaria en cada sprint. Los cuatro sprints de desarrollo tienen el mismo costo estimado porque duran dos semanas y mantienen la misma dedicación del equipo. El sprint de análisis también dura dos semanas, por lo que su costo es el mismo; se muestra por separado porque no forma parte del release de desarrollo.
 
 **Costo estimado por sprint de desarrollo:**
 
@@ -1000,15 +1000,15 @@ El cálculo toma los cuatro sprints de desarrollo definidos en la propuesta, con
 
 | Concepto | Base de cálculo | Costo estimado |
 | --- | --- | --- |
-| Sprint 1 de análisis | 2 integrantes × 10 horas/semana × 1 semana × ₡4.000 | ₡80.000 |
+| Sprint 1 de análisis | 2 integrantes × 10 horas/semana × 2 semanas × ₡4.000 | ₡160.000 |
 | Release de desarrollo: sprints 2 a 5 | ₡160.000 × 4 sprints | ₡640.000 |
-| **Costo base: análisis + desarrollo** | **₡80.000 + ₡640.000** | **₡720.000** |
-| Reserva de contingencia propuesta | 10% del costo base, para correcciones y ajustes de integración | ₡72.000 |
-| **Presupuesto inicial propuesto** | **Costo base + contingencia** | **₡792.000** |
+| **Costo base: análisis + desarrollo** | **₡160.000 + ₡640.000** | **₡800.000** |
+| Reserva de contingencia propuesta | 10% del costo base, para correcciones y ajustes de integración | ₡80.000 |
+| **Presupuesto inicial propuesto** | **Costo base + contingencia** | **₡880.000** |
 
-Estimamos **180 horas de trabajo del equipo**: 20 para el análisis y 160 para el desarrollo. Calculamos el presupuesto con la dedicación prevista y la tarifa por hora; los puntos de historia nos permiten distribuir las funcionalidades entre los sprints. Si necesitamos un sprint adicional de dos semanas, su costo estimado sería de **₡160.000**.
+Estimamos **200 horas de trabajo del equipo**: 40 para el análisis y 160 para el desarrollo. Calculamos el presupuesto con la dedicación prevista y la tarifa por hora; los puntos de historia nos permiten distribuir las funcionalidades entre los sprints. Si necesitamos un sprint adicional de dos semanas, su costo estimado sería de **₡160.000**.
 
-**Presupuesto fijo y alcance flexible:** Proponemos ₡792.000 como límite inicial para el análisis y desarrollo bajo los supuestos anteriores. Si el trabajo pendiente supera ese monto, acordaremos con el Product Owner qué historias de menor prioridad, como HU-07 y HU-09, se posponen para entregar primero las funcionalidades terminadas de mayor valor. Mantendremos los criterios de aceptación y la Definición de Terminado. Si se requieren servicios pagados, revisaremos su impacto antes de contratarlos y acordaremos si se ajusta el alcance o se aprueba un aumento del presupuesto.
+**Presupuesto fijo y alcance flexible:** Proponemos ₡880.000 como límite inicial para el análisis y desarrollo bajo los supuestos anteriores. Si el trabajo pendiente supera ese monto, acordaremos con el Product Owner qué historias de menor prioridad, como HU-07 y HU-09, se posponen para entregar primero las funcionalidades terminadas de mayor valor. Mantendremos los criterios de aceptación y la Definición de Terminado. Si se requieren servicios pagados, revisaremos su impacto antes de contratarlos y acordaremos si se ajusta el alcance o se aprueba un aumento del presupuesto.
 
 ---
 
