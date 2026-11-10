@@ -430,8 +430,8 @@ El análisis inicial se ejecuta como el primer sprint dentro de los cinco sprint
 #### 1. Información General
 * **Nombre del Sprint:** Sprint 1 — Análisis de Requerimientos y Reglas de Negocio
 * **Fecha de Inicio:** 30/09/2026 (Semana 3)
-* **Fecha de Fin:** 07/10/2026 (Semana 4)
-* **Duración:** 1 semana
+* **Fecha de Fin:** 14/10/2026 (Semana 5)
+* **Duración:** 2 semanas
 * **Equipo:** 2 personas (Seidy Alanis y Walbyn González) / 11 SP
 
 #### 2. Meta del Sprint (Sprint Goal)
@@ -457,17 +457,19 @@ Para considerar este Sprint de análisis como Terminado, se debió cumplir con:
 * Matriz de permisos funcionales entre los roles de Administrador y Colaborador definida.
 * Regla de negocio de asignación automática formalmente documentada.
 * Documento de especificación de requerimientos revisado y validado por la Product Owner.
+* Product Backlog inicial elaborado, con las historias de usuario identificadas, priorizadas y estimadas.
 
 ### Eventos de Cierre del Sprint 1
 
 #### Revisión del Sprint (Sprint Review)
-* **Fecha de realización:** Cierre de la Semana 3 / Inicio de la Semana 4.
+* **Fecha de realización:** 14/10/2026, cierre de la Semana 4 / inicio de la Semana 5.
 * **Participantes:** Seidy Alanis (Product Owner / Developer) y Walbyn González (Scrum Master / Developer).
 * **Evaluación de entregables y Criterios de Aceptación:**
   * **Verificación:** Se revisó la especificación de los nueve datos clave del registro (*cliente, tipo de consulta, número de póliza, fecha de ingreso, canal de recepción, aseguradora, prioridad, estado y responsable automático*).
   * **Roles y Permisos:** Se verificó y aprobó la matriz funcional de accesos entre Administrador y Colaborador.
   * **Flujo de estados:** Se validaron preliminarmente los cuatro estados del trámite (*recibido, pendiente de requisito, enviado a aseguradora y finalizado*).
-  * **Resultado:** El incremento analítico fue revisado, comprobado contra los criterios de aceptación y aprobado por la Product Owner. El entregable queda oficialmente aceptado para estructurar el Product Backlog en la Semana 4.
+  * **Product Backlog:** Se revisó el Product Backlog inicial con las historias de usuario, su prioridad y su estimación.
+  * **Resultado:** El incremento analítico fue revisado, comprobado contra los criterios de aceptación y aprobado por la Product Owner. El Product Backlog inicial queda aceptado como base para planificar el Sprint 2.
 
 #### Retrospectiva del Sprint (Sprint Retrospective)
 * **¿Qué funcionó bien?**
@@ -739,7 +741,7 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
 
 ## 3. Planificación de Sprints del Proyecto
 
-A continuación se detalla la distribución del trabajo a lo largo de los Sprints del proyecto, considerando **1 semana para el Sprint 1 de análisis** (20 horas de trabajo del equipo) y **2 semanas para cada sprint de desarrollo** (40 horas de trabajo del equipo) y el desglose de tareas técnicas.
+A continuación se detalla la distribución del trabajo a lo largo de los Sprints del proyecto, considerando **2 semanas para cada sprint**, tanto para el Sprint 1 de análisis como para los sprints de desarrollo (40 horas de trabajo del equipo por sprint), y el desglose de tareas técnicas.
 
 ---
 
@@ -747,7 +749,7 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
  [Ver detalle](#2-primer-sprint)
 * **Estado:** Finalizado y completado.
-* **Duración:** 1 semana (30/09/2026 – 07/10/2026) | (11 SP analíticos)
+* **Duración:** 2 semanas (30/09/2026 – 14/10/2026) | (11 SP analíticos)
 * **Meta del Sprint:** Analizar la problemática de atención de solicitudes en la corredora y definir la estructura inicial del sistema y reglas de negocio.
 
 ---
