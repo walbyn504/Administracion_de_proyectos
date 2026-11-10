@@ -26,6 +26,8 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 | 0.13 | 7 | 31/10/2026 | Seidy Alanis | Elaboración del plan de comunicación: matriz de comunicación, eventos, reglas del equipo y escalamiento de impedimentos y conflictos. Ajuste del registro de interesados en la frecuencia de seguimiento de la Gerencia y la estrategia para las compañías aseguradoras. |
 | 0.14 | 7 | 31/10/2026 | Seidy Alanis | Configuración del tablero Kanban en Jira: definición de Terminado del desarrollo, columnas y su relación con la DoD, límites WIP por columna y regla para mover una tarjeta a «Hecho». |
 | 0.15 | 8 | 10/11/2026 | Walbyn González | Incorporación de la columna «Autor» en el historial de versiones. Corrección de errores ortográficos y de redacción. |
+| 0.16 | 8 | 10/11/2026 | Walbyn González | Ajuste de la duración del Sprint 1 de análisis a dos semanas (30/09/2026 – 14/10/2026), con el Product Backlog inicial como entregable, y desplazamiento de los Sprints 2 a 5 para completar diez semanas con entrega final el 09/12/2026. Actualización del plan temporal, la planificación de sprints, el cronograma de entregas y el gráfico burndown. |
+| 0.17 | 8 | 10/11/2026 | Walbyn González | Actualización de los costos por la nueva duración del Sprint 1: 200 horas del equipo, costo base de ₡800.000 y presupuesto inicial propuesto de ₡880.000 con contingencia. |
 
 
 
