@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="870" viewBox="0 0 1200 870" role="img" aria-labelledby="title desc">
+<title id="title">Matriz de probabilidad e impacto: 17 riesgos del sistema</title>
+<desc id="desc">Probabilidad 3 e impacto 1: R-08. Probabilidad 3 e impacto 2: R-04. Probabilidad 3 e impacto 3: R-07. Probabilidad 2 e impacto 1: R-06. Probabilidad 2 e impacto 2: R-10, R-12. Probabilidad 2 e impacto 3: R-01, R-09, R-11, R-13, R-15, R-16, R-17. Probabilidad 1 e impacto 1: R-02. Probabilidad 1 e impacto 2: R-05. Probabilidad 1 e impacto 3: R-03, R-14.</desc>
+<rect width="1200" height="870" rx="16" fill="white"/><g font-family="Segoe UI, Arial, sans-serif">
+<text x="40" y="48" font-size="28" font-weight="700" fill="#242b60">Matriz de probabilidad e impacto</text><text x="40" y="82" font-size="17" fill="#526078">Ubicación de los 17 riesgos según su valoración inicial</text>
+<text x='168' y='225' text-anchor='end' font-size='17' font-weight='600' fill='#52658d'>Prob. alta (3)</text>
+<rect x='185' y='125' width='315' height='200' rx='12' fill='#fce8b2'/><text x='343' y='162' text-anchor='middle' font-size='19' font-weight='700' fill='#262a32'>Vigilar</text>
+
+<rect x='510' y='125' width='315' height='200' rx='12' fill='#f2b8b0'/><text x='668' y='162' text-anchor='middle' font-size='19' font-weight='700' fill='#262a32'>Alta prioridad</text>
+
+<rect x='835' y='125' width='315' height='200' rx='12' fill='#f2b8b0'/><text x='993' y='162' text-anchor='middle' font-size='19' font-weight='700' fill='#262a32'>Alta prioridad</text>
+
+<text x='168' y='435' text-anchor='end' font-size='17' font-weight='600' fill='#52658d'>Prob. media (2)</text>
+<rect x='185' y='335' width='315' height='200' rx='12' fill='#cfe7d5'/><text x='343' y='372' text-anchor='middle' font-size='19' font-weight='700' fill='#262a32'>Aceptar</text>
+
+<rect x='510' y='335' width='315' height='200' rx='12' fill='#fce8b2'/><text x='668' y='372' text-anchor='middle' font-size='19' font-weight='700' fill='#262a32'>Vigilar</text>
+
+
+
+<rect x='835' y='335' width='315' height='200' rx='12' fill='#f2b8b0'/><text x='993' y='372' text-anchor='middle' font-size='19' font-weight='700' fill='#262a32'>Alta prioridad</text>
+
+
+
+
+<text x='168' y='645' text-anchor='end' font-size='17' font-weight='600' fill='#52658d'>Prob. baja (1)</text>
+<rect x='185' y='545' width='315' height='200' rx='12' fill='#cfe7d5'/><text x='343' y='582' text-anchor='middle' font-size='19' font-weight='700' fill='#262a32'>Aceptar</text>
+
+<rect x='510' y='545' width='315' height='200' rx='12' fill='#cfe7d5'/><text x='668' y='582' text-anchor='middle' font-size='19' font-weight='700' fill='#262a32'>Aceptar</text>
+
+<rect x='835' y='545' width='315' height='200' rx='12' fill='#fce8b2'/><text x='993' y='582' text-anchor='middle' font-size='19' font-weight='700' fill='#262a32'>Vigilar</text>
+
+<text x='343' y='795' text-anchor='middle' font-size='18' font-weight='600' fill='#52658d'>Impacto bajo (1)</text>
+<text x='668' y='795' text-anchor='middle' font-size='18' font-weight='600' fill='#52658d'>Impacto medio (2)</text>
+<text x='993' y='795' text-anchor='middle' font-size='18' font-weight='600' fill='#52658d'>Impacto alto (3)</text>
+<text x="185" y="840" font-size="16" fill="#526078">Aceptar = prioridad baja · Vigilar = prioridad media · Alta prioridad = atender primero</text>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<text x='343' y='202' text-anchor='middle' font-size='18' fill='#303844'>R-08</text>
+<text x='668' y='202' text-anchor='middle' font-size='18' fill='#303844'>R-04</text>
+<text x='993' y='202' text-anchor='middle' font-size='18' fill='#303844'>R-07</text>
+<text x='343' y='412' text-anchor='middle' font-size='18' fill='#303844'>R-06</text>
+<text x='668' y='412' text-anchor='middle' font-size='18' fill='#303844'>R-10 · R-12</text>
+<text x='993' y='412' text-anchor='middle' font-size='18' fill='#303844'>R-01 · R-09 · R-11</text>
+<text x='993' y='439' text-anchor='middle' font-size='18' fill='#303844'>R-13 · R-15 · R-16</text>
+<text x='993' y='466' text-anchor='middle' font-size='18' fill='#303844'>R-17</text>
+<text x='343' y='622' text-anchor='middle' font-size='18' fill='#303844'>R-02</text>
+<text x='668' y='622' text-anchor='middle' font-size='18' fill='#303844'>R-05</text>
+<text x='993' y='622' text-anchor='middle' font-size='18' fill='#303844'>R-03 · R-14</text></g></svg>
