@@ -9,22 +9,23 @@
 
 Este historial registra los avances realizados cada semana durante el desarrollo del proyecto.
 
-| Versión | Semana | Fecha | Avance realizado |
-| --- | --- | --- | --- |
-| 0.1 | 2 | 23/09/2026 | Documentación de la propuesta inicial: problema, sistema propuesto, roles, valor esperado y objetivos. |
-| 0.2 | 2 | 26/09/2026 | Análisis de interesados (registro, mapa Poder–Interés e interesados críticos) y selección del Enfoque Híbrido de desarrollo.|
-| 0.3 | 3 | 01/10/2026 | Definición del Scrum Team y distribución de responsabilidades de gestión, desarrollo, diseño, arquitectura y calidad. |
-| 0.4 | 3 | 03/10/2026 | Incorporación acta de inicio, factores ambientales (EEFs) y diseño del Canvas del Proyecto |
-| 0.5 | 4 | 10/10/2026 | Reorganización del documento basado en la guía para conformar el expediente. Además, incuye producto goal y etapas del cliclo de vida|
-| 0.6 | 4 | 10/10/2026 | Planteamiento del primer spring del proyecto.|
-| 0.7 | 4 | 10/10/2026 | Elaboración del backlog inicial, sprint backlog y mecanismo de seguimiento.|
-| 0.8 | 5 | 18/10/2026 | Redacción del detalle de las historias de usuario, corrección del backlog y ampliación de actividades en los sprints.|
-| 0.9 | 5 | 18/10/2026 | Se referencia los apartados solicitados para esta semana (alcance, product backlog y criterios de aceptación). |
-| 0.10 | 6 | 22/10/2026 | Ampliación y ajuste de los criterios de aceptación dentro de cada historia de usuario, incluyendo validaciones, manejo de errores, conservación de datos, actualización del panel y restricciones de acceso por rol. Simplificación de su redacción y eliminación de la palabra «capacidad» en la planificación de los sprints. |
-| 0.11 | 6 | 22/10/2026 | Elaboración del plan temporal, matriz de estimaciones, cronograma de entregas por sprint, gráfico burndown planificado y estimación de costos del proyecto. |
-| 0.12 | 6 | 22/10/2026 | Incorporación de HU-03 para editar solicitudes, con validación, guardado, cancelación y conservación del seguimiento; renumeración de historias y actualización del backlog, estimaciones y cronograma. |
-| 0.13 | 7 | 31/10/2026 | Elaboración del plan de comunicación: matriz de comunicación, eventos, reglas del equipo y escalamiento de impedimentos y conflictos. Ajuste del registro de interesados en la frecuencia de seguimiento de la Gerencia y la estrategia para las compañías aseguradoras. |
-| 0.14 | 7 | 31/10/2026 | Configuración del tablero Kanban en Jira: Definición de Terminado del desarrollo, columnas y su relación con la DoD, límites WIP por columna y regla para mover una tarjeta a «Hecho». |
+| Versión | Semana | Fecha | Autor | Avance realizado |
+| --- | --- | --- | --- | --- |
+| 0.1 | 2 | 23/09/2026 | Walbyn González | Documentación de la propuesta inicial: problema, sistema propuesto, roles, valor esperado y objetivos. |
+| 0.2 | 2 | 26/09/2026 | Walbyn González y Seidy Alanis | Análisis de interesados (registro, mapa Poder–Interés e interesados críticos) y selección del Enfoque Híbrido de desarrollo.|
+| 0.3 | 3 | 01/10/2026 | Walbyn González | Definición del Scrum Team y distribución de responsabilidades de gestión, desarrollo, diseño, arquitectura y calidad. |
+| 0.4 | 3 | 03/10/2026 | Seidy Alanis | Incorporación del acta de inicio, los factores ambientales (EEFs) y el diseño del Canvas del Proyecto. |
+| 0.5 | 4 | 10/10/2026 | Seidy Alanis | Reorganización del documento con base en la guía para conformar el expediente. Además, incluye el Product Goal y las etapas del ciclo de vida. |
+| 0.6 | 4 | 10/10/2026 | Seidy Alanis | Planteamiento del primer sprint del proyecto. |
+| 0.7 | 4 | 10/10/2026 | Seidy Alanis | Elaboración del backlog inicial, sprint backlog y mecanismo de seguimiento.|
+| 0.8 | 5 | 18/10/2026 | Seidy Alanis | Redacción del detalle de las historias de usuario, corrección del backlog y ampliación de actividades en los sprints.|
+| 0.9 | 5 | 18/10/2026 | Seidy Alanis | Referencia de los apartados solicitados para esta semana (alcance, product backlog y criterios de aceptación). |
+| 0.10 | 6 | 22/10/2026 | Walbyn González | Ampliación y ajuste de los criterios de aceptación dentro de cada historia de usuario, incluyendo validaciones, manejo de errores, conservación de datos, actualización del panel y restricciones de acceso por rol. Simplificación de su redacción y eliminación de la palabra «capacidad» en la planificación de los sprints. |
+| 0.11 | 6 | 22/10/2026 | Walbyn González | Elaboración del plan temporal, matriz de estimaciones, cronograma de entregas por sprint, gráfico burndown planificado y estimación de costos del proyecto. |
+| 0.12 | 6 | 22/10/2026 | Walbyn González y Seidy Alanis | Incorporación de HU-03 para editar solicitudes, con validación, guardado, cancelación y conservación del seguimiento; renumeración de historias y actualización del backlog, estimaciones y cronograma. |
+| 0.13 | 7 | 31/10/2026 | Seidy Alanis | Elaboración del plan de comunicación: matriz de comunicación, eventos, reglas del equipo y escalamiento de impedimentos y conflictos. Ajuste del registro de interesados en la frecuencia de seguimiento de la Gerencia y la estrategia para las compañías aseguradoras. |
+| 0.14 | 7 | 31/10/2026 | Seidy Alanis | Configuración del tablero Kanban en Jira: definición de Terminado del desarrollo, columnas y su relación con la DoD, límites WIP por columna y regla para mover una tarjeta a «Hecho». |
+| 0.15 | 8 | 10/11/2026 | Walbyn González | Incorporación de la columna «Autor» en el historial de versiones. Corrección de errores ortográficos y de redacción. |
 
 
 
@@ -55,20 +56,20 @@ Este historial registra los avances realizados cada semana durante el desarrollo
 
 [Semana 2](#semana-2)
 
-- [1. Contexto organizacional](#4-contexto-organizacional)
+- [4. Contexto organizacional](#4-contexto-organizacional)
   - [Factores Ambientales de la Empresa (EEFs)](#factores-ambientales-de-la-empresa-eefs)
     - [Factores Internos](#factores-internos)
     - [Factores Externos](#factores-externos)
   - [Canvas del Proyecto](#canvas-del-proyecto)
 
-- [2. Mapa de interesados](#5-mapa-de-interesados)
+- [5. Mapa de interesados](#5-mapa-de-interesados)
   - [Identificación de los interesados](#identificación-de-los-interesados)
   - [Registro de interesados](#registro-de-interesados)
   - [Valoración del poder y el interés](#valoración-del-poder-y-el-interés)
   - [Mapa Poder–Interés](#mapa-poderinterés)
   - [Interesados críticos](#interesados-críticos)
 
-- [3. Restricciones](#6-restricciones)
+- [6. Restricciones](#6-restricciones)
 
 [Semana 3](#semana-3)
 
@@ -251,7 +252,7 @@ El Scrum Team está conformado por Seidy Alanis y Walbyn González. Durante las 
 | Responsabilidad | Integrante asignado | Funciones principales |
 | --- | --- | --- |
 | **Product Owner** | Seidy Alanis | Definir el objetivo del producto; mantener actualizada la lista de tareas pendientes del producto; aclarar los requisitos de registro, seguimiento y consulta de solicitudes con los interesados; revisar que las funcionalidades respondan a las necesidades del negocio. |
-| **Scrum Master** | Walbyn González | ofrecerá asesoramiento sobre los procesos y metodologías al propietario del producto, a los desarrolladores y a las partes interesadas. Además, actúa como agente de cambio y facilita el desarrollo organizacional. |
+| **Scrum Master** | Walbyn González | Ofrece asesoramiento sobre los procesos y metodologías al propietario del producto, a los desarrolladores y a las partes interesadas. Además, actúa como agente de cambio y facilita el desarrollo organizacional. |
 | **Developers** | Seidy Alanis y Walbyn González | Planificar el trabajo de cada Sprint; analizar, diseñar, desarrollar y probar las funcionalidades; integrar los componentes del sistema y cumplir los criterios de calidad acordados en la Definición de Terminado. |
 
 ### Distribución de funciones técnicas
@@ -280,8 +281,8 @@ Los Factores Ambientales de la Empresa son condiciones internas y externas que n
 
 #### Factores Internos
 
-* **Cultura operacional y canales dispersos:** La corredora atiende clientes por teléfono, correo, WhatsApp y presencialmente sin un flujo estandarizado. El sistema debe adaptarse a esta realidad multi-canal para facilitar su adopción.
-* **Infraestructura de TI:** La elección de tecnologías, el servidor de alojamiento (*hosting*) y la base de datos deberá ajustarse a la infraestructura disponible y a las condiciones que se confirmen con la empresa.
+* **Cultura operacional y canales dispersos:** La corredora atiende clientes por teléfono, correo, WhatsApp y presencialmente sin un flujo estandarizado. El sistema debe adaptarse a esta realidad multicanal para facilitar su adopción.
+* **Infraestructura de TI:** La elección de tecnologías, el servidor de alojamiento (*hosting*) y la base de datos deberán ajustarse a la infraestructura disponible y a las condiciones que se confirmen con la empresa.
 * **Estructura organizacional:** Definición clara de permisos y roles de trabajo (Administrador y Colaborador) según las funciones de la empresa.
 
 #### Factores Externos
@@ -354,7 +355,7 @@ El mapa ubica a los ocho interesados según las puntuaciones del registro. El **
 
 ### Interesados críticos
 
-Basado en el mapa de poder-interés se determinan tres interesados críticos y cómo se involucrarán. 
+Con base en el mapa Poder–Interés, se determinan tres interesados críticos y la forma en que se involucrarán.
 
 #### **- Gerencia de la corredora (Alto poder y alto interés)**
 
@@ -387,7 +388,7 @@ Si se confirma su existencia y autoridad, participará en la validación de la f
 
 ## 6. Restricciones
 
-* **Infraestructura de TI:** La elección de tecnologías, el servidor de alojamiento (*hosting*) y la base de datos deberá ajustarse a la infraestructura disponible y a las condiciones que se confirmen con la empresa.
+* **Infraestructura de TI:** La elección de tecnologías, el servidor de alojamiento (*hosting*) y la base de datos deberán ajustarse a la infraestructura disponible y a las condiciones que se confirmen con la empresa.
 * **Acceso a clientes finales:** El sistema es para uso exclusivo del personal interno de la corredora; no contempla usuarios ni portal de consulta para clientes externos.
 * **Integraciones automáticas con aseguradoras o mensajería:** No incluye conexión API automatizada con sistemas de aseguradoras ni envío/recepción automática de mensajes (WhatsApp API, SMS, etc.).
 * **Gestión financiera o de cobros:** No abarca facturación, pagos ni cobros de pólizas.
@@ -422,7 +423,7 @@ En conclusión, el componente predictivo asegurará la gobernanza, la seguridad 
 
 El análisis inicial se ejecuta como el primer sprint dentro de los cinco sprints contemplados en el proyecto. Tal como establece la dinámica metodológica, es necesario iniciar este ciclo de trabajo para analizar la idea del negocio antes de disponer de la lista definitiva de requerimientos (Product Backlog).
 
-## 2. Primer Sprint 
+## 2. Primer Sprint
 
 **Estado:** Sprint finalizado y completado.
 
@@ -433,7 +434,7 @@ El análisis inicial se ejecuta como el primer sprint dentro de los cinco sprint
 * **Fecha de Inicio:** 30/09/2026 (Semana 3)
 * **Fecha de Fin:** 07/10/2026 (Semana 4)
 * **Duración:** 1 semana
-* **Capacidad del Equipo:** 2 personas (Seidy Alanis y Walbyn González) / (11 SP)
+* **Equipo:** 2 personas (Seidy Alanis y Walbyn González) / 11 SP
 
 #### 2. Meta del Sprint (Sprint Goal)
 > Analizar la problemática de atención de solicitudes en la corredora de seguros y definir la estructura inicial del sistema para preparar la lista de requerimientos que conformará el Product Backlog.
@@ -448,7 +449,7 @@ El análisis inicial se ejecuta como el primer sprint dentro de los cinco sprint
 | **TASK-04** | **Flujo de Estados:** Propuesta y documentación del flujo de estados (*recibido, pendiente de requisito, enviado a aseguradora, finalizado*). | **2 SP** | Walbyn González |
 
 #### 4. Plan de Ejecución y Estrategia
-* **Arquitectura/Diseño:** Análisis conceptual y diagramación del flujo de datos multi-canal. Definición del modelo de datos preliminar, entidad de solicitudes y matriz de roles.
+* **Arquitectura/Diseño:** Análisis conceptual y diagramación del flujo de datos multicanal. Definición del modelo de datos preliminar, entidad de solicitudes y matriz de roles.
 * **Dependencias:** Requisito previo de recopilación de información operativa inicial efectuada durante la propuesta del proyecto.
 * **Riesgos Identificados:** Ambigüedad en la obligatoriedad y formatos de entrada para cada campo de la solicitud.
 
@@ -524,7 +525,7 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
 3. **Criterios de Aceptación**
    * Dado que el usuario ingresa a la plataforma con un correo y contraseña válidos registrados en el sistema, cuando hace clic en el botón "Iniciar Sesión", entonces el sistema valida las credenciales y lo redirige al panel principal correspondiente a su rol (Administrador o Colaborador).
    * Dado que el usuario introduce credenciales incorrectas o un correo no registrado, cuando intenta iniciar sesión, entonces el sistema muestra un mensaje de error claro indicando que los datos son incorrectos y deniega el acceso.
-   * Dado que inicio sesión como colaborador, cuando el sistema carga la interfaz principal, entonces el menú muestra únicamente las opciones autorizadas para mi rol ocultando los apartados exclusivos del administrador, y si intento ingresar por URL directa a dichas secciones restringidas, entonces el sistema bloquea el acceso mostrando una advertencia de permisos insuficientes.
+   * Dado que el usuario inicia sesión como colaborador, cuando el sistema carga la interfaz principal, entonces el menú muestra únicamente las opciones autorizadas para su rol y oculta los apartados exclusivos del administrador; si intenta ingresar por URL directa a dichas secciones restringidas, el sistema bloquea el acceso y muestra una advertencia de permisos insuficientes.
    * Dado que una persona no ha iniciado sesión, cuando intenta acceder directamente a una pantalla protegida o consultar sus datos, entonces el sistema deniega el acceso y no entrega información de solicitudes ni usuarios.
    * Dado que un usuario tiene una sesión activa, cuando selecciona "Cerrar sesión" e intenta volver a consultar una pantalla protegida, entonces el sistema solicita autenticarse nuevamente y rechaza las consultas con la sesión cerrada.
 
@@ -581,7 +582,7 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
 
 4. **Estimación y Prioridad (Metadata de Gestión)**
    * **Prioridad:** Alta
-   * **Estimación propuesta:** 3 puntos de historia, considerando la reutilización del formulario y las validaciones de HU-02.
+   * **Estimación:** 3 puntos de historia *(considerando la reutilización del formulario y las validaciones de HU-02).*
 
 5. **Notas Adicionales o Anexos**
    * **Notas Técnicas:** Reutilizar el formulario y las validaciones del registro; validar los permisos en el servidor y actualizar la misma solicitud sin modificar su identificador, fecha de ingreso, responsable, estado ni historial. Los cambios de estado se gestionan en HU-04.
@@ -746,7 +747,7 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 #### Sprint 1 — Análisis de Requerimientos e Incepción
 
- [Ver detalle](#2-primer-sprint )
+ [Ver detalle](#2-primer-sprint)
 * **Estado:** Finalizado y completado.
 * **Duración:** 1 semana (30/09/2026 – 07/10/2026) | (11 SP analíticos)
 * **Meta del Sprint:** Analizar la problemática de atención de solicitudes en la corredora y definir la estructura inicial del sistema y reglas de negocio.
@@ -781,7 +782,7 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
 
 | ID Tarea | Historia de Usuario | Descripción de la Tarea Técnica | Estimación | Responsable |
 | :--- | :--- | :--- | :---: | :--- |
-| **TSK-03.1** | **HU-03** (3 SP) | Adaptar el formulario de agregar para cargar, editar, validar y guardar los datos de una solicitud | **2 SP** | Seidy / Walbyn |
+| **TSK-03.1** | **HU-03** (3 SP) | Adaptar el formulario de registro para cargar, editar, validar y guardar los datos de una solicitud | **2 SP** | Seidy / Walbyn |
 | **TSK-03.2** | **HU-03** (3 SP) | Probar edición, cancelación y conservación de los datos de seguimiento | **1 SP** | Seidy / Walbyn |
 | **TSK-03.3** | **HU-04** (3 SP) | Desarrollar interfaz de actualización de estados por lista desplegable | **1 SP** | Seidy Alanis |
 | **TSK-03.4** | **HU-04** (3 SP) | Implementar lógica backend para actualización de estado y registro automático del historial de cambios de estado | **2 SP** | Walbyn González |
@@ -1125,7 +1126,7 @@ Una tarjeta solo pasa de **En pruebas / revisión** a **Hecho** cuando:
 Si la prueba falla, la tarjeta regresa a **En proceso** con un comentario que describe el error. Una historia de usuario se considera terminada cuando todas sus tareas están en **Hecho**, y su aceptación final se realiza en la Sprint Review.
 
 
-### Link Tablero Jira
+### Enlace al tablero de Jira
 
 https://walbyngonzalez-1793296365243.atlassian.net/jira/software/projects/TASK/boards/1/backlog?atlOrigin=eyJpIjoiMGI0MDkwZTg0ZTdkNDg0ZWIyODIxOGI3MmVlN2EyNDUiLCJwIjoiaiJ9
 
