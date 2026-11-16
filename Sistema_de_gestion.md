@@ -89,9 +89,6 @@ Este historial registra las entregas y los cambios importantes del documento. Un
       - [3. Sprint Backlog (Tareas de Análisis)](#3-sprint-backlog-tareas-de-análisis)
       - [4. Plan de Ejecución y Estrategia](#4-plan-de-ejecución-y-estrategia)
       - [5. Criterios de Aceptación Globales y Definición de Terminado (DoD)](#5-criterios-de-aceptación-globales-y-definición-de-terminado-dod)
-    - [Eventos de Cierre del Sprint 1](#eventos-de-cierre-del-sprint-1)
-      - [Revisión del Sprint (Sprint Review)](#revisión-del-sprint-sprint-review)
-      - [Retrospectiva del Sprint (Sprint Retrospective)](#retrospectiva-del-sprint-sprint-retrospective)
     - [Acta de cierre del Sprint 1](#acta-de-cierre-del-sprint-1)
       - [Acta de Sprint Review — Sprint 1](#acta-de-sprint-review--sprint-1)
       - [Sprint Retrospective — Sprint 1](#sprint-retrospective--sprint-1)
@@ -513,26 +510,6 @@ Para considerar este Sprint de análisis como Terminado, se debió cumplir con:
 * Documento de especificación de requerimientos revisado y validado por la Product Owner.
 * Product Backlog inicial elaborado, con las historias de usuario identificadas, priorizadas y estimadas.
 
-### Eventos de Cierre del Sprint 1
-
-#### Revisión del Sprint (Sprint Review)
-* **Fecha de realización:** 14/10/2026, cierre de la Semana 4 / inicio de la Semana 5.
-* **Participantes:** Seidy Alanis (Product Owner / Developer) y Walbyn González (Scrum Master / Developer).
-* **Evaluación de entregables y Criterios de Aceptación:**
-  * **Verificación:** Se revisó la especificación de los nueve datos clave del registro (*cliente, tipo de consulta, número de póliza, fecha de ingreso, canal de recepción, aseguradora, prioridad, estado y responsable automático*).
-  * **Roles y Permisos:** Se verificó y aprobó la matriz funcional de accesos entre Administrador y Colaborador.
-  * **Flujo de estados:** Se validaron preliminarmente los cuatro estados del trámite (*recibido, pendiente de requisito, enviado a aseguradora y finalizado*).
-  * **Product Backlog:** Se revisó el Product Backlog inicial con las historias de usuario, su prioridad y su estimación.
-  * **Resultado:** El incremento analítico fue revisado, comprobado contra los criterios de aceptación y aprobado por la Product Owner. El Product Backlog inicial queda aceptado como base para planificar el Sprint 2.
-
-#### Retrospectiva del Sprint (Sprint Retrospective)
-* **¿Qué funcionó bien?**
-  * La comunicación constante y fluida entre Seidy y Walbyn facilitó la toma de decisiones rápidas en la definición de permisos y reglas del negocio.
-  * La combinación de roles de Scrum con responsabilidades de desarrollo Full-Stack se adaptó adecuadamente a la estructura de un equipo de dos personas.
-* **¿Qué se puede mejorar?**
-  * Definir con un mayor nivel de detalle las validaciones de entrada, formatos exactos y obligatoriedad de campos antes de iniciar con la programación de interfaces.
-* **Compromiso de mejora para el Sprint 2:**
-  * Redactar Criterios de Aceptación detallados y especificaciones claras de validación de datos en cada Historia de Usuario dentro del Product Backlog.
 
 ### Acta de cierre del Sprint 1
 
