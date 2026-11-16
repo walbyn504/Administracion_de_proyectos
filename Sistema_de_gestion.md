@@ -30,7 +30,7 @@ Este historial registra las entregas y los cambios importantes del documento. Un
 | 0.17 | 8 | 10/11/2026 | Walbyn González | Actualización de los costos por la nueva duración del Sprint 1: 200 horas del equipo, costo base de ₡800.000 y presupuesto inicial propuesto de ₡880.000 con contingencia. |
 | 0.18 | 8 | 10/11/2026 | Walbyn González | Incorporación de la matriz de 17 riesgos y su imagen de probabilidad e impacto; plan de mitigación con respuesta, dueño, fecha de revisión y disparador; acciones completas en los Sprint Backlogs, con bordes, divisiones verticales y encabezados grises. Los criterios de aceptación se mantienen sin cambios. |
 | 0.19 | 8 | 11/11/2026 | Walbyn González | Traslado de las 17 mitigaciones al Product Backlog Inicial. |
-| 0.20 | 9 | 11/11/2026 | Seidy Alanis | Elaboración del acta de cierre del Sprint 1 con la estructura de Sprint Review (asistentes, Sprint Goal, cumplimiento de la DoD, retroalimentación, cambios al backlog y estado del release) y de Sprint Retrospective (formato Start/Stop/Continue, evidencia y acciones de mejora con dueño, fecha y verificación). |
+| 0.20 | 9 | 11/11/2026 | Seidy Alanis | Elaboración del acta de cierre del Sprint 1, que reemplaza los eventos de cierre anteriores, con la estructura de Sprint Review (asistentes, Sprint Goal, cumplimiento de la DoD, retroalimentación, cambios al backlog y estado del release) y de Sprint Retrospective (formato Start/Stop/Continue, evidencia y acciones de mejora con dueño, fecha y verificación). |
 
 
 
@@ -1524,4 +1524,5 @@ Se atienden primero los riesgos de prioridad alta. Las 17 mitigaciones se regist
 ## Semana 9
 
 ### Acta de Sprint Review y Sprint Retrospective
-El acta de cierre del Sprint 1, con la Sprint Review y la Sprint Retrospective, se detalla en el apartado [Acta de cierre del Sprint 1](#acta-de-cierre-del-sprint-1), a continuación de los eventos de cierre del Sprint 1.
+El acta de cierre del Sprint 1, con la Sprint Review y la Sprint Retrospective, se detalla en el apartado [Acta de cierre del Sprint 1](#acta-de-cierre-del-sprint-1).
+
