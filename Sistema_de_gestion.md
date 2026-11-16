@@ -30,6 +30,7 @@ Este historial registra las entregas y los cambios importantes del documento. Un
 | 0.17 | 8 | 10/11/2026 | Walbyn González | Actualización de los costos por la nueva duración del Sprint 1: 200 horas del equipo, costo base de ₡800.000 y presupuesto inicial propuesto de ₡880.000 con contingencia. |
 | 0.18 | 8 | 10/11/2026 | Walbyn González | Incorporación de la matriz de 17 riesgos y su imagen de probabilidad e impacto; plan de mitigación con respuesta, dueño, fecha de revisión y disparador; acciones completas en los Sprint Backlogs, con bordes, divisiones verticales y encabezados grises. Los criterios de aceptación se mantienen sin cambios. |
 | 0.19 | 8 | 11/11/2026 | Walbyn González | Traslado de las 17 mitigaciones al Product Backlog Inicial. |
+| 0.20 | 9 | 11/11/2026 | Seidy Alanis | Elaboración del acta de cierre del Sprint 1 con la estructura de Sprint Review (asistentes, Sprint Goal, cumplimiento de la DoD, retroalimentación, cambios al backlog y estado del release) y de Sprint Retrospective (formato Start/Stop/Continue, evidencia y acciones de mejora con dueño, fecha y verificación). |
 
 
 
@@ -91,6 +92,9 @@ Este historial registra las entregas y los cambios importantes del documento. Un
     - [Eventos de Cierre del Sprint 1](#eventos-de-cierre-del-sprint-1)
       - [Revisión del Sprint (Sprint Review)](#revisión-del-sprint-sprint-review)
       - [Retrospectiva del Sprint (Sprint Retrospective)](#retrospectiva-del-sprint-sprint-retrospective)
+    - [Acta de cierre del Sprint 1](#acta-de-cierre-del-sprint-1)
+      - [Acta de Sprint Review — Sprint 1](#acta-de-sprint-review--sprint-1)
+      - [Sprint Retrospective — Sprint 1](#sprint-retrospective--sprint-1)
 
 [Semana 4](#semana-4)
 
@@ -148,6 +152,10 @@ Este historial registra las entregas y los cambios importantes del documento. Un
 
 - [1. Matriz de riesgos](#1-matriz-de-riesgos)
 - [2. Plan de mitigación](#2-plan-de-mitigación)
+
+[Semana 9](#semana-9)
+
+- [Acta de Sprint Review y Sprint Retrospective](#acta-de-sprint-review-y-sprint-retrospective)
 
 
 ---
@@ -525,6 +533,69 @@ Para considerar este Sprint de análisis como Terminado, se debió cumplir con:
   * Definir con un mayor nivel de detalle las validaciones de entrada, formatos exactos y obligatoriedad de campos antes de iniciar con la programación de interfaces.
 * **Compromiso de mejora para el Sprint 2:**
   * Redactar Criterios de Aceptación detallados y especificaciones claras de validación de datos en cada Historia de Usuario dentro del Product Backlog.
+
+### Acta de cierre del Sprint 1
+
+#### Acta de Sprint Review — Sprint 1
+
+* **Fecha:** 14/10/2026, cierre de la Semana 4 / inicio de la Semana 5.
+* **Duración:** 1 hora.
+* **Asistentes:**
+  * **Equipo:** Seidy Alanis (Product Owner / Developer) y Walbyn González (Scrum Master / Developer).
+  * **Interesados:** no participaron interesados externos. La revisión se realizó con la información operativa recopilada durante la propuesta del proyecto.
+* **Sprint Goal:** Analizar la problemática de atención de solicitudes en la corredora de seguros y definir la estructura inicial del sistema para preparar la lista de requerimientos que conformará el Product Backlog.
+* **¿Se cumplió?** Sí. Se completaron las cuatro tareas de análisis (11 SP) y se elaboró el Product Backlog inicial.
+
+**Tareas mostradas y cumplimiento de la DoD del Sprint 1:**
+
+| Tarea | SP | Qué se revisó | Criterio de la DoD | ¿Cumple? |
+| --- | :---: | --- | --- | --- |
+| TASK-01: Análisis del problema | 3 | Recepción dispersa de solicitudes por WhatsApp, correo, llamadas y atención presencial, y la necesidad de centralizarlas. | Especificación revisada y validada por la Product Owner. | Sí |
+| TASK-02: Definición de campos | 3 | Los nueve datos del registro y su tipo de asignación (manual o automática). | Especificación completa de los 9 datos clave. | Sí |
+| TASK-03: Roles y asignación | 3 | Matriz de permisos entre Administrador y Colaborador, y regla de asignación automática del responsable. | Matriz de permisos definida y regla de asignación documentada. | Sí |
+| TASK-04: Flujo de estados | 2 | Los cuatro estados del trámite: recibido, pendiente de requisito, enviado a aseguradora y finalizado. | Especificación revisada por la Product Owner. | Sí, con validación preliminar |
+| Product Backlog inicial | — | Historias de usuario identificadas, priorizadas y estimadas. | Product Backlog inicial elaborado. | Sí |
+
+**Retroalimentación recibida:**
+* La Product Owner aprobó el incremento analítico después de comprobarlo contra los criterios de aceptación.
+* Se observó que los formatos y la obligatoriedad de algunos campos aún no estaban definidos con suficiente detalle. Este era el riesgo identificado en el plan del sprint: ambigüedad en la obligatoriedad y los formatos de entrada.
+* El flujo de estados queda validado de forma preliminar y se confirmará antes de desarrollar su historia de usuario.
+
+**Cambios al Product Backlog acordados:**
+* Se acepta el Product Backlog inicial como base para planificar el Sprint 2.
+* Para el Sprint 2 se seleccionan HU-01 «Autenticación y control de acceso» (8 SP) y HU-02 «Registro centralizado de solicitudes» (5 SP), que suman 13 SP.
+* Se acuerda detallar los criterios de aceptación de cada historia con validaciones de datos, formatos y obligatoriedad de campos.
+
+**Estado del release frente al Cronograma de Entregas:**
+* **Puntos pendientes planificados al cierre del Sprint 1:** 40 SP.
+* **Puntos pendientes reales:** 40 SP (51 iniciales − 11 de análisis completados).
+* El avance coincide con el [burndown planificado](#cronograma-de-entregas). El hito del 14/10/2026 (revisión del acta, el alcance, las reglas de negocio y el backlog inicial) se cumplió en la fecha prevista.
+
+#### Sprint Retrospective — Sprint 1
+
+* **Fecha y duración:** 14/10/2026, 30 minutos, después de la Sprint Review.
+* **Participantes:** Seidy Alanis y Walbyn González.
+* **Formato usado:** Start / Stop / Continue.
+
+**Seguimiento de las acciones del Sprint anterior:** no aplica. El Sprint 1 es el primer sprint del proyecto.
+
+**Qué funcionó bien y qué no:**
+
+| | Observación | Evidencia |
+| --- | --- | --- |
+| **Continue** | La comunicación constante y fluida entre Seidy y Walbyn facilitó tomar decisiones rápidas sobre los permisos y las reglas del negocio. | La matriz de permisos y la regla de asignación automática (TASK-03) se aprobaron en la Sprint Review sin cambios. |
+| **Continue** | La combinación de roles de Scrum con las responsabilidades de desarrollo full-stack se adaptó bien a un equipo de dos personas. | Las cuatro tareas se repartieron entre ambos integrantes (TASK-01 y TASK-02 para Seidy; TASK-03 y TASK-04 para Walbyn) y se completaron los 11 SP. |
+| **Start** | Definir con más detalle las validaciones de entrada, los formatos exactos y la obligatoriedad de los campos antes de programar las interfaces. | El riesgo «ambigüedad en la obligatoriedad y formatos de entrada» se identificó en el plan del sprint y seguía abierto al cierre. |
+| **Stop** | Dejar definiciones como preliminares sin una fecha para confirmarlas. | El flujo de estados (TASK-04) quedó validado solo de forma preliminar. |
+
+**Acciones de mejora:**
+
+| # | Acción | Dueño | Fecha | Cómo se verificará |
+| --- | --- | --- | --- | --- |
+| 1 | Redactar criterios de aceptación detallados y especificaciones claras de validación de datos en cada historia de usuario del Product Backlog. | Walbyn González | 22/10/2026 | Cada historia incluye criterios de validación, manejo de errores, conservación de datos y restricciones por rol, y la Product Owner los revisa antes de que una tarea pase a «En proceso». |
+| 2 | Confirmar los cuatro estados del trámite antes de desarrollar la historia de seguimiento. | Seidy Alanis | 28/10/2026, antes del Sprint 3 | La HU-04 incluye los cuatro estados confirmados y el registro del estado anterior, el nuevo estado, el autor, la fecha y la hora. |
+
+**Acciones incorporadas al Sprint Backlog siguiente:** la acción 1 se incorpora al Sprint 2 como actividad de preparación, antes de TSK-02.1 y TSK-02.4. La acción 2 se completa antes de iniciar el Sprint 3. Ninguna suma puntos de historia, por lo que el Sprint 2 mantiene sus 13 SP.
 
 
 
@@ -1470,3 +1541,10 @@ Se atienden primero los riesgos de prioridad alta. Las 17 mitigaciones se regist
 | R-15 | **Mitigación (RSK-15):** Detectar si la solicitud cambió desde que se abrió y pedir recargar antes de aceptar un guardado desactualizado. | Walbyn González | 11/11/2026 | La prueba con dos sesiones reemplaza silenciosamente un cambio reciente. |
 | R-16 | **Mitigación (RSK-16):** Revocar las sesiones al desactivar una cuenta y verificar que sus consultas posteriores sean rechazadas. | Walbyn González | 18/11/2026 | Una sesión abierta antes de desactivar la cuenta todavía permite consultar información. |
 | R-17 | **Mitigación (RSK-17):** Revisar licencia y requisitos y realizar una prueba corta de PDF y Excel en el servidor previsto antes de desarrollar la exportación completa. | Walbyn González | 25/11/2026 | La prueba falla en el servidor o la licencia impide el uso previsto. |
+
+---
+
+## Semana 9
+
+### Acta de Sprint Review y Sprint Retrospective
+El acta de cierre del Sprint 1, con la Sprint Review y la Sprint Retrospective, se detalla en el apartado [Acta de cierre del Sprint 1](#acta-de-cierre-del-sprint-1), a continuación de los eventos de cierre del Sprint 1.
