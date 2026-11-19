@@ -31,6 +31,7 @@ Este historial registra las entregas y los cambios importantes del documento. Un
 | 0.18 | 8 | 10/11/2026 | Walbyn González | Incorporación de la matriz de 17 riesgos y su imagen de probabilidad e impacto; plan de mitigación con respuesta, dueño, fecha de revisión y disparador; acciones completas en los Sprint Backlogs, con bordes, divisiones verticales y encabezados grises. Los criterios de aceptación se mantienen sin cambios. |
 | 0.19 | 8 | 11/11/2026 | Walbyn González | Traslado de las 17 mitigaciones al Product Backlog Inicial. |
 | 0.20 | 9 | 11/11/2026 | Seidy Alanis | Elaboración del acta de cierre del Sprint 1, que reemplaza los eventos de cierre anteriores, con la estructura de Sprint Review (asistentes, Sprint Goal, cumplimiento de la DoD, retroalimentación, cambios al backlog y estado del release) y de Sprint Retrospective (formato Start/Stop/Continue, evidencia y acciones de mejora con dueño, fecha y verificación). |
+| 0.21 | 9 | 18/11/2026 | Seidy Alanis | Ajuste del acta de cierre del Sprint 1: se incorporan la Gerencia y los Administradores como interesados asistentes y su retroalimentación, según el plan de comunicación. |
 
 
 
@@ -515,11 +516,11 @@ Para considerar este Sprint de análisis como Terminado, se debió cumplir con:
 
 #### Acta de Sprint Review — Sprint 1
 
-* **Fecha:** 14/10/2026, cierre de la Semana 4 / inicio de la Semana 5.
+* **Fecha:** 14/10/2026.
 * **Duración:** 1 hora.
 * **Asistentes:**
   * **Equipo:** Seidy Alanis (Product Owner / Developer) y Walbyn González (Scrum Master / Developer).
-  * **Interesados:** no participaron interesados externos. La revisión se realizó con la información operativa recopilada durante la propuesta del proyecto.
+  * **Interesados:** representantes de la Gerencia de la corredora y de los Administradores, quienes revisaron el incremento analítico y dieron su retroalimentación.
 * **Sprint Goal:** Analizar la problemática de atención de solicitudes en la corredora de seguros y definir la estructura inicial del sistema para preparar la lista de requerimientos que conformará el Product Backlog.
 * **¿Se cumplió?** Sí. Se completaron las cuatro tareas de análisis (11 SP) y se elaboró el Product Backlog inicial.
 
@@ -535,6 +536,8 @@ Para considerar este Sprint de análisis como Terminado, se debió cumplir con:
 
 **Retroalimentación recibida:**
 * La Product Owner aprobó el incremento analítico después de comprobarlo contra los criterios de aceptación.
+* La Gerencia confirmó que centralizar las solicitudes responde al problema de atención de la corredora y pidió mantener informado el avance en cada sprint.
+* Un Administrador validó la matriz de permisos y la regla de asignación automática del responsable.
 * Se observó que los formatos y la obligatoriedad de algunos campos aún no estaban definidos con suficiente detalle. Este era el riesgo identificado en el plan del sprint: ambigüedad en la obligatoriedad y los formatos de entrada.
 * El flujo de estados queda validado de forma preliminar y se confirmará antes de desarrollar su historia de usuario.
 
