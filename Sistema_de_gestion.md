@@ -35,7 +35,8 @@ Este historial registra las entregas y los cambios importantes del documento. Un
 | 0.19 | 8 | 11/11/2026 | Walbyn González | Traslado de las 17 mitigaciones al Product Backlog Inicial. |
 | 0.20 | 9 | 11/11/2026 | Seidy Alanis | Elaboración del acta de cierre del Sprint 1, que reemplaza los eventos de cierre anteriores, con la estructura de Sprint Review (asistentes, Sprint Goal, cumplimiento de la DoD, retroalimentación, cambios al backlog y estado del release) y de Sprint Retrospective (formato Start/Stop/Continue, evidencia y acciones de mejora con dueño, fecha y verificación). |
 | 0.21 | 9 | 18/11/2026 | Seidy Alanis | Ajuste del acta de cierre del Sprint 1: se incorporan la Gerencia y los Administradores como interesados asistentes y su retroalimentación, según el plan de comunicación. |
-| 0.22 | 9 | 25/11/2026 | Equipo del proyecto | Definición del equipo Scrum de cinco integrantes, con dos en el Sprint 1 y cinco en los sprints 2 a 5. Presupuesto de ₡1.936.000 con contingencia y selección de los nueve riesgos de prioridad alta. |
+| 0.22 | 9 | 25/11/2026 | Walbyn González | Definición del equipo Scrum de cinco integrantes, con dos en el Sprint 1 y cinco en los sprints 2 a 5. Presupuesto de ₡1.936.000 con contingencia y selección de los nueve riesgos de prioridad alta. |
+| 0.23 | 10 | 25/11/2026 | Walbyn González | Incorporación del registro de cambios con dos solicitudes simuladas a partir del R-13 y propuesta de diez acuerdos de trabajo verificables. |
 
 
 
@@ -152,12 +153,17 @@ Este historial registra las entregas y los cambios importantes del documento. Un
 
 [Semana 8](#semana-8)
 
-- [1. Matriz de riesgos](#1-matriz-de-riesgos)
-- [2. Plan de mitigación](#2-plan-de-mitigación)
+- [Matriz de riesgos](#matriz-de-riesgos)
+- [Plan de mitigación](#plan-de-mitigación)
 
 [Semana 9](#semana-9)
 
 - [Acta de Sprint Review y Sprint Retrospective](#acta-de-sprint-review-y-sprint-retrospective)
+
+[Semana 10](#semana-10)
+
+- [Registro de Solicitudes de Cambio](#registro-de-solicitudes-de-cambio)
+- [Acuerdos de trabajo (Working Agreements)](#acuerdos-de-trabajo-working-agreements)
 
 
 ---
@@ -608,7 +614,7 @@ El *Product Backlog* reúne todas las funcionalidades estimadas en Puntos de His
 | **RSK-07** | Coordinación de cambios en la base de datos | Alta | Por estimar | Sin asignar | Pendiente |
 | **RSK-09** | Guardado conjunto del estado y su historial | Alta | Por estimar | Sin asignar | Pendiente |
 | **RSK-11** | Control de límites y reintentos de correo | Alta | Por estimar | Sin asignar | Pendiente |
-| **RSK-13** | Prevención de solicitudes duplicadas por reintento | Alta | Por estimar | Sin asignar | Pendiente |
+| **RSK-13** | Prevención de solicitudes duplicadas por reintento ([PBI-CR-01, escenario simulado](#ítem-de-product-backlog-para-cr-01)) | Alta | Por estimar | Sin asignar | Pendiente |
 | **RSK-15** | Control de ediciones simultáneas | Alta | Por estimar | Sin asignar | Pendiente |
 | **RSK-16** | Revocación de sesiones de cuentas desactivadas | Alta | Por estimar | Sin asignar | Pendiente |
 | **RSK-17** | Evaluación de la biblioteca de exportación | Alta | Por estimar | Sin asignar | Pendiente |
@@ -1464,7 +1470,7 @@ https://walbyngonzalez-1793296365243.atlassian.net/jira/software/projects/TASK/b
 
 ## Semana 8
 
-## 1. Matriz de riesgos
+## Matriz de riesgos
 
 **Escala:** probabilidad e impacto de 1 a 3 (bajo, medio y alto). **Prioridad = probabilidad × impacto:** baja (1–2), media (3–4) y alta (6–9).
 
@@ -1486,7 +1492,7 @@ La imagen ubica los riesgos del registro según su probabilidad e impacto. Verde
 
 ![Matriz de probabilidad e impacto con los nueve riesgos de prioridad alta](Imagenes/matriz-riesgos.svg)
 
-## 2. Plan de mitigación
+## Plan de mitigación
 
 Las nueve mitigaciones de prioridad alta se registran por su nombre e ID RSK como filas del [Product Backlog Inicial](#1-product-backlog-inicial); el detalle de la respuesta se presenta en esta tabla. No están asignadas a los sprints. Si el riesgo ocurre y requiere atención, la acción correspondiente se incorporará al Sprint Backlog. Las fechas de revisión son previstas y las acciones quedan pendientes de ejecución.
 
@@ -1509,3 +1515,79 @@ Las nueve mitigaciones de prioridad alta se registran por su nombre e ID RSK com
 ### Acta de Sprint Review y Sprint Retrospective
 El acta de cierre del Sprint 1, con la Sprint Review y la Sprint Retrospective, se detalla en el apartado [Acta de cierre del Sprint 1](#acta-de-cierre-del-sprint-1).
 
+---
+
+## Semana 10
+
+### Registro de Solicitudes de Cambio
+
+**Caso simulado · R-13, solicitudes duplicadas por reintento (prioridad alta, 6).** Una persona registra un trámite. El servidor lo guarda, pero la confirmación se pierde. La persona vuelve a enviarlo y aparecen dos trámites para la misma solicitud. El equipo evalúa dos respuestas a ese mismo incidente.
+
+**Flujo: solicitante → evaluación → decisión → registro.**
+
+1. **Solicitud.** Un cliente, un interesado o un integrante del equipo presenta el cambio a la Product Owner, con el motivo y un ejemplo del problema.
+2. **Evaluación.** El equipo de desarrollo revisan el impacto en alcance, tiempo, costo, calidad y riesgo. Si el cambio cabe en un sprint en curso, la Product Owner y el equipo de desarrollo comprueban que se puede asumir sin comprometer su objetivo.
+3. **Decisión.** La Product Owner aprueba, difiere o rechaza la solicitud y documenta el motivo. La Gerencia autoriza los gastos adicionales cuando corresponda.
+4. **Registro.** El Scrum Master registra la decisión, el responsable y el sprint previsto. La Product Owner incorpora los cambios aprobados al Product Backlog, los vincula con su ID de cambio y comunica el resultado en la Sprint Review.
+
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th scope="col" bgcolor="#d0d0d0" style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere; width: 6%; background-color: #d0d0d0; color: #24292f; text-align: left;">ID</th>
+      <th scope="col" bgcolor="#d0d0d0" style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere; width: 10%; background-color: #d0d0d0; color: #24292f; text-align: left;">Fecha</th>
+      <th scope="col" bgcolor="#d0d0d0" style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere; width: 12%; background-color: #d0d0d0; color: #24292f; text-align: left;">Solicitante</th>
+      <th scope="col" bgcolor="#d0d0d0" style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere; width: 21%; background-color: #d0d0d0; color: #24292f; text-align: left;">Descripción</th>
+      <th scope="col" bgcolor="#d0d0d0" style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere; width: 24%; background-color: #d0d0d0; color: #24292f; text-align: left;">Impacto</th>
+      <th scope="col" bgcolor="#d0d0d0" style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere; width: 19%; background-color: #d0d0d0; color: #24292f; text-align: left;">Decisión</th>
+      <th scope="col" bgcolor="#d0d0d0" style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere; width: 8%; background-color: #d0d0d0; color: #24292f; text-align: left;">Responsable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>CR-01</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;">25/11/2026</td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;">Colaborador de la corredora</td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>Recuperar la confirmación</strong><br>Al reenviar el mismo formulario, devolver el número guardado y conservar un solo trámite.</td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>Alcance</strong> · Registro de HU-02.<br><strong>Tiempo</strong> · Sprint 5, sujeto a estimación.<br><strong>Costo</strong> · ₡0 adicional si cabe en las horas previstas.<br><strong>Riesgo</strong> · Reduce duplicados por reintento.</td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>Aprobada en la simulación</strong><br>Sprint 5<br>Evita duplicar el envío y recupera el número de trámite.</td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;">Backend</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>CR-02</strong></td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;">25/11/2026</td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;">Administración de la corredora</td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>Mostrar «Guardando…»</strong><br>Desactivar Enviar durante el proceso y permitir reintentar el mismo envío si vence la espera.</td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>Alcance</strong> · Formulario de HU-02.<br><strong>Tiempo</strong> · Por estimar, con pruebas de espera y reintento.<br><strong>Costo</strong> · Por estimar.<br><strong>Riesgo</strong> · Reduce reenvíos por doble clic.</td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>Diferida en la simulación</strong><br>Sprint por definir<br>Se reevaluará si las pruebas muestran reintentos accidentales durante la espera.</td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;">Frontend</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Ítem de Product Backlog para CR-01
+
+**PBI-CR-01 · Confirmar un envío repetido sin duplicar el trámite.** Este ítem especifica el cambio aprobado en el escenario simulado. Está vinculado a **HU-02** y a **RSK-13**. Su estimación se confirma en el refinamiento y su incorporación al Sprint 5 depende de la capacidad disponible.
+
+- **Criterio de aceptación 1.** Si el servidor guarda un trámite y se pierde la confirmación, al reenviar el mismo intento el sistema devuelve el número del trámite guardado y existe un solo registro.
+- **Criterio de aceptación 2.** Si el usuario inicia una solicitud distinta, el sistema la procesa como un nuevo trámite.
+- **Aplicación y verificación.** La persona responsable de backend incorpora la protección en el registro. El equipo simula un doble clic, una confirmación perdida y un envío nuevo. El Scrum Master registra el resultado de las pruebas en CR-01.
+
+### Acuerdos de trabajo (Working Agreements)
+
+| ID | Acuerdo | Cómo se verifica |
+| --- | --- | --- |
+| WA-01 | Usamos WhatsApp para avisos y respondemos los mensajes que requieren acción durante el mismo día hábil. | Revisamos la hora del aviso y la primera respuesta. |
+| WA-02 | Registramos en el tablero las decisiones que afectan una tarea antes de cerrar el día hábil. | La tarjeta indica la decisión y su responsable. |
+| WA-03 | En el Daily compartimos el avance, el siguiente paso y los bloqueos que afectan el objetivo del sprint. | Cada bloqueo identificado queda anotado con una persona responsable de darle seguimiento. |
+| WA-04 | Actualizamos el estado de una tarea en el tablero el día en que cambia. | El historial de la tarjeta refleja el cambio ese día. |
+| WA-05 | Damos una primera revisión a cada pull request dentro de un día hábil desde que se solicita. | Las marcas de tiempo muestran cuándo se pidió y cuándo se dio la revisión. |
+| WA-06 | Movemos una tarjeta a «Hecho» cuando cumple los criterios de aceptación y la Definición de Terminado. | La tarjeta incluye evidencia de las pruebas y de la revisión. |
+| WA-07 | Registramos quién tomó cada decisión y por qué. La Product Owner decide la prioridad del producto y el equipo de desarrollo acuerdan la implementación. | El registro de la decisión incluye el responsable, el motivo y la fecha. |
+| WA-08 | Si el desacuerdo sigue abierto al siguiente Daily, el Scrum Master lo lleva al equipo y a la Product Owner. Si afecta fechas o presupuesto, lo escalan a Gerencia. | El registro indica cuándo se escaló, a quién y qué se acordó hacer. |
+| WA-09 | Presentamos los cambios que afectan el alcance, el tiempo o el costo por medio del Registro de Solicitudes de Cambio antes de incorporarlos al sprint. | La tarea vinculada tiene un ID de solicitud y una decisión registrada. |
+
+**Validación por puño de cinco.** El equipo votará cada acuerdo por separado de 0 a 5. Si alguien marca 0 o 1, el Scrum Master le pide que explique qué ajuste permitiría aumentar su apoyo. El equipo conversa y vuelve a votar los acuerdos que tengan alguna puntuación inferior a 3. Cada regla se cierra cuando todas las personas marcan al menos 3.
+
+**Revisión propuesta:** 09/12/2026, en la Retrospective del Sprint 5. El equipo revisará la evidencia de cumplimiento y actualizará los acuerdos que lo requieran.
+
+**Confirmaciones y firmas:** pendientes de la votación real. Una vez aprobados los acuerdos, el equipo registrará las confirmaciones de todas las personas que participaron en el mensaje del commit.
