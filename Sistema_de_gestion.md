@@ -1,9 +1,12 @@
 # Sistema de gestión y seguimiento de solicitudes de clientes para una empresa corredora de seguros
 
-**Integrantes del equipo:**
+**Integrantes del Scrum Team:**
 
-- Seidy Alanis Balladares.
-- Walbyn González Sequeira.
+- Seidy Alanis — Product Owner.
+- Walbyn González — Scrum Master.
+- Víctor Díaz — Developer (frontend y diseño de interfaz).
+- Julián Pérez — Developer (backend).
+- Michelle Álvarez — Developer (QA).
 
 ## Historial de versiones
 
@@ -27,11 +30,12 @@ Este historial registra las entregas y los cambios importantes del documento. Un
 | 0.14 | 7 | 31/10/2026 | Seidy Alanis | Configuración del tablero Kanban en Jira: definición de Terminado del desarrollo, columnas y su relación con la DoD, límites WIP por columna y regla para mover una tarjeta a «Hecho». |
 | 0.15 | 8 | 10/11/2026 | Walbyn González | Incorporación de la columna «Autor» en el historial de versiones. Corrección de errores ortográficos y de redacción. |
 | 0.16 | 8 | 10/11/2026 | Walbyn González | Ajuste de la duración del Sprint 1 de análisis a dos semanas (30/09/2026 – 14/10/2026), con el Product Backlog inicial como entregable, y desplazamiento de los Sprints 2 a 5 para completar diez semanas con entrega final el 09/12/2026. Actualización del plan temporal, la planificación de sprints, el cronograma de entregas y el gráfico burndown. |
-| 0.17 | 8 | 10/11/2026 | Walbyn González | Actualización de los costos por la nueva duración del Sprint 1: 200 horas del equipo, costo base de ₡800.000 y presupuesto inicial propuesto de ₡880.000 con contingencia. |
+| 0.17 | 8 | 10/11/2026 | Walbyn González | Estimación de los costos del proyecto según la duración de los sprints, la dedicación del equipo y la reserva de contingencia. |
 | 0.18 | 8 | 10/11/2026 | Walbyn González | Incorporación de la matriz de 17 riesgos y su imagen de probabilidad e impacto; plan de mitigación con respuesta, dueño, fecha de revisión y disparador; acciones completas en los Sprint Backlogs, con bordes, divisiones verticales y encabezados grises. Los criterios de aceptación se mantienen sin cambios. |
 | 0.19 | 8 | 11/11/2026 | Walbyn González | Traslado de las 17 mitigaciones al Product Backlog Inicial. |
 | 0.20 | 9 | 11/11/2026 | Seidy Alanis | Elaboración del acta de cierre del Sprint 1, que reemplaza los eventos de cierre anteriores, con la estructura de Sprint Review (asistentes, Sprint Goal, cumplimiento de la DoD, retroalimentación, cambios al backlog y estado del release) y de Sprint Retrospective (formato Start/Stop/Continue, evidencia y acciones de mejora con dueño, fecha y verificación). |
 | 0.21 | 9 | 18/11/2026 | Seidy Alanis | Ajuste del acta de cierre del Sprint 1: se incorporan la Gerencia y los Administradores como interesados asistentes y su retroalimentación, según el plan de comunicación. |
+| 0.22 | 9 | 25/11/2026 | Equipo del proyecto | Definición del equipo Scrum de cinco integrantes, con dos en el Sprint 1 y cinco en los sprints 2 a 5. Presupuesto de ₡1.936.000 con contingencia y selección de los nueve riesgos de prioridad alta. |
 
 
 
@@ -258,7 +262,7 @@ Centralizar el registro y el historial de solicitudes en una plataforma web que 
 
 ## 3. Scrum Team
 
-El Scrum Team está conformado por Seidy Alanis y Walbyn González. Durante las semanas establecidas del proyecto, ambos integrantes participarán en el desarrollo del sistema web de gestión y seguimiento de solicitudes de clientes de la empresa corredora de seguros. Debido a que el equipo cuenta con dos integrantes, cada persona combinará responsabilidades.
+El Scrum Team tiene cinco integrantes. Seidy Alanis es el Product Owner, Walbyn González es el Scrum Master, y Víctor Díaz, Julián Pérez y Michelle Álvarez son los Developers.
 
 ### Asignación de responsabilidades de Scrum
 
@@ -266,21 +270,19 @@ El Scrum Team está conformado por Seidy Alanis y Walbyn González. Durante las 
 | --- | --- | --- |
 | **Product Owner** | Seidy Alanis | Definir el objetivo del producto; mantener actualizada la lista de tareas pendientes del producto; aclarar los requisitos de registro, seguimiento y consulta de solicitudes con los interesados; revisar que las funcionalidades respondan a las necesidades del negocio. |
 | **Scrum Master** | Walbyn González | Ofrece asesoramiento sobre los procesos y metodologías al propietario del producto, a los desarrolladores y a las partes interesadas. Además, actúa como agente de cambio y facilita el desarrollo organizacional. |
-| **Developers** | Seidy Alanis y Walbyn González | Planificar el trabajo de cada Sprint; analizar, diseñar, desarrollar y probar las funcionalidades; integrar los componentes del sistema y cumplir los criterios de calidad acordados en la Definición de Terminado. |
+| **Developers** | Víctor Díaz, Julián Pérez y Michelle Álvarez | Planificar el trabajo de cada Sprint; analizar, diseñar, desarrollar y probar las funcionalidades; integrar los componentes del sistema y cumplir los criterios de calidad acordados en la Definición de Terminado. |
 
 ### Distribución de funciones técnicas
 
-Ambos integrantes participarán como desarrolladores full-stack, con una distribución inicial de funciones principales y apoyo mutuo según las necesidades de cada Sprint.
+Los Developers se distribuyen el trabajo de frontend y diseño de interfaz, backend y pruebas. Seidy Alanis aclara los requisitos y Walbyn González facilita la coordinación del equipo.
 
 | Función técnica | Responsable principal | Actividades en el proyecto |
 | --- | --- | --- |
-| **Desarrollo full-stack** | Ambos | Construir e integrar las interfaces, la lógica del sistema y el acceso a la base de datos; corregir errores y entregar funcionalidades completas. |
-| **Frontend** | Seidy Alanis, con apoyo de Walbyn González | Implementar las pantallas de registro, consulta y seguimiento de solicitudes, filtros y formularios; adaptar las interfaces a distintos dispositivos. |
-| **Backend** | Walbyn González, con apoyo de Seidy Alanis | Implementar la lógica de solicitudes, cambios de estado, asignación de responsables, observaciones, autenticación y permisos de Administrador y Colaborador. |
-| **Designer** | Seidy Alanis | Elaborar bocetos y prototipos; definir la apariencia y navegación; validar la facilidad de uso de las pantallas con los colaboradores. |
-| **Architect** | Walbyn González | Proponer y documentar la estructura del sistema, los componentes, el modelo de datos y las tecnologías; acordar las decisiones técnicas con el equipo considerando las restricciones de infraestructura. |
-| **QA** | Ambos | Definir criterios de aceptación; diseñar y ejecutar pruebas de registro, filtros, estados y permisos; registrar defectos y comprobar sus correcciones. |
-| **Documentación técnica** | Ambos | Mantener actualizados los requisitos, las decisiones técnicas, los resultados de pruebas y las instrucciones de uso del sistema. |
+| **Integración de frontend y backend** | Víctor Díaz y Julián Pérez | Construir e integrar las interfaces, la lógica del sistema y el acceso a la base de datos; corregir errores y entregar funcionalidades completas. |
+| **Frontend y diseño de interfaz** | Víctor Díaz | Diseñar prototipos y flujos de navegación e implementar las pantallas de registro, consulta y seguimiento de solicitudes, filtros y formularios; adaptar las interfaces a distintos dispositivos. |
+| **Backend** | Julián Pérez | Implementar la lógica de solicitudes, cambios de estado, asignación de responsables, observaciones, autenticación y permisos de Administrador y Colaborador. Definir y documentar el modelo de datos. |
+| **QA** | Michelle Álvarez, con apoyo de Víctor Díaz y Julián Pérez | Definir criterios de aceptación; diseñar y ejecutar pruebas de registro, filtros, estados y permisos; registrar defectos y comprobar sus correcciones. |
+| **Documentación técnica** | Equipo desarrollador | Mantener actualizados los requisitos, las decisiones técnicas, los resultados de pruebas y las instrucciones de uso del sistema. |
 
 ## Semana 2
 
@@ -602,19 +604,11 @@ El *Product Backlog* reúne todas las funcionalidades estimadas en Puntos de His
 | **HU-08** | Registro de historial y observaciones cronológicas de la solicitud | Media | 3 SP | Sprint 5 | Pendiente |
 | **HU-09** | Generación y exportación de reportes de trámites de atención | Baja | 5 SP | Sprint 5 | Pendiente |
 | **RSK-01** | Actualización de permisos de sesiones abiertas | Alta | Por estimar | Sin asignar | Pendiente |
-| **RSK-02** | Ajuste del formato de exportación a PDF | Baja | Por estimar | Sin asignar | Pendiente |
-| **RSK-03** | Respaldo y recuperación de información | Media | Por estimar | Sin asignar | Pendiente |
 | **RSK-04** | Revisión de cambios en campos y reglas | Alta | Por estimar | Sin asignar | Pendiente |
-| **RSK-05** | Adaptación de pantallas a distintos dispositivos | Baja | Por estimar | Sin asignar | Pendiente |
-| **RSK-06** | Optimización de consultas con muchos registros | Baja | Por estimar | Sin asignar | Pendiente |
 | **RSK-07** | Coordinación de cambios en la base de datos | Alta | Por estimar | Sin asignar | Pendiente |
-| **RSK-08** | Actualización de catálogos de listas desplegables | Media | Por estimar | Sin asignar | Pendiente |
 | **RSK-09** | Guardado conjunto del estado y su historial | Alta | Por estimar | Sin asignar | Pendiente |
-| **RSK-10** | Unificación de formatos de búsqueda | Media | Por estimar | Sin asignar | Pendiente |
 | **RSK-11** | Control de límites y reintentos de correo | Alta | Por estimar | Sin asignar | Pendiente |
-| **RSK-12** | Unificación de la zona horaria | Media | Por estimar | Sin asignar | Pendiente |
 | **RSK-13** | Prevención de solicitudes duplicadas por reintento | Alta | Por estimar | Sin asignar | Pendiente |
-| **RSK-14** | Protección de credenciales en registros de prueba | Media | Por estimar | Sin asignar | Pendiente |
 | **RSK-15** | Control de ediciones simultáneas | Alta | Por estimar | Sin asignar | Pendiente |
 | **RSK-16** | Revocación de sesiones de cuentas desactivadas | Alta | Por estimar | Sin asignar | Pendiente |
 | **RSK-17** | Evaluación de la biblioteca de exportación | Alta | Por estimar | Sin asignar | Pendiente |
@@ -855,7 +849,7 @@ A continuación se detalla cada una de las Historias de Usuario que componen el 
 
 ## 3. Planificación de Sprints del Proyecto
 
-A continuación se detalla la distribución del trabajo a lo largo de los Sprints del proyecto, considerando **2 semanas para cada sprint**, tanto para el Sprint 1 de análisis como para los sprints de desarrollo (40 horas de trabajo del equipo por sprint), y el desglose de tareas técnicas.
+A continuación se detalla la distribución del trabajo a lo largo de los Sprints del proyecto, considerando **2 semanas para cada sprint**, tanto para el Sprint 1 de análisis como para los sprints de desarrollo, y el desglose de tareas técnicas.
 
 ---
 
@@ -1209,9 +1203,9 @@ El proyecto se organiza en cinco sprints, siguiendo la planificación establecid
 - **Sprints 2 a 5 de desarrollo:** dos semanas cada uno, del 14/10/2026 al 09/12/2026.
 - **Duración total prevista:** diez semanas: dos de análisis y ocho de desarrollo.
 - **Entrega final prevista:** 09/12/2026.
-- **Equipo:** Seidy Alanis y Walbyn González.
+- **Equipo:** Seidy Alanis, Walbyn González, Víctor Díaz, Julián Pérez y Michelle Álvarez.
 
-Para estimar el trabajo y los costos se supone una dedicación de **10 horas semanales por integrante**. Entre las dos personas se suman **20 horas por semana**, por lo que cada sprint, tanto el de análisis como los de desarrollo, requiere **40 horas del equipo** (2 × 10 × 2). En los cinco sprints se estiman **200 horas del equipo**: 5 × 40, equivalentes a **100 horas por integrante**. Las fechas corresponden al plan y no demuestran que las entregas ya estén terminadas.
+Cada participante dedica **10 horas semanales**. En el Sprint 1 de análisis participan Seidy Alanis (Product Owner) y Walbyn González (Scrum Master), con **40 horas** entre ambos. En los Sprints 2 a 5 participan los cinco integrantes, con **100 horas por sprint** y **400 horas de desarrollo**. Se presupuestan **440 horas en total**.
 
 ## Estimaciones
 
@@ -1313,36 +1307,38 @@ Los hitos son fechas propuestas de revisión. Cada entrega se comprobará con lo
 
 <div style="display: block; width: 100%; box-sizing: border-box; border: 1px solid #cccccc; border-radius: 6px; padding: 8px 16px; margin: 12px 0;"><strong>Tarifa ilustrativa por hora: ₡4.000</strong></div>
 
-Para estimar los costos del proyecto consideramos el trabajo del equipo, las herramientas y la infraestructura necesaria en cada sprint. Los cuatro sprints de desarrollo tienen el mismo costo estimado porque duran dos semanas y mantienen la misma dedicación del equipo. El sprint de análisis también dura dos semanas, por lo que su costo es el mismo; se muestra por separado porque no forma parte del release de desarrollo.
+Para estimar los costos del proyecto consideramos el trabajo del equipo, las herramientas y la infraestructura necesaria en cada sprint. Los cuatro sprints de desarrollo tienen el mismo costo estimado porque duran dos semanas y mantienen la misma dedicación del equipo. El sprint de análisis dura dos semanas y se presupuesta con la participación del Product Owner y del Scrum Master.
 
 **Costo estimado por sprint de desarrollo:**
 
 | Componente | Base de cálculo o supuesto | Costo por sprint |
 | --- | --- | --- |
-| Mano de obra del equipo | 2 integrantes × 10 horas/semana × 2 semanas × ₡4.000 | ₡160.000 |
+| Mano de obra del equipo | 5 integrantes × 10 horas/semana × 2 semanas × ₡4.000 | ₡400.000 |
 | Herramientas | Uso previsto de herramientas gratuitas, sin licencias pagadas. | ₡0 adicionales |
 | Infraestructura de desarrollo | Uso de computadoras, conexión existentes y entorno local, sin compras ni contrataciones adicionales presupuestadas. | ₡0 adicionales |
-| **Total por sprint de desarrollo** | **Mano de obra + herramientas + infraestructura** | **₡160.000** |
+| **Total por sprint de desarrollo** | **Mano de obra + herramientas + infraestructura** | **₡400.000** |
 
 Para el desarrollo utilizaremos las computadoras y la conexión disponibles, junto con herramientas gratuitas, por lo que no presupuestamos gastos adicionales en estos recursos. Los servicios de hosting, dominio, correo y base de datos de producción quedan pendientes de cotización y se agregarán al presupuesto cuando se definan.
 
 **Costo del release = costo por sprint × sprints de desarrollo necesarios.**
 
-**₡160.000 × 4 sprints = ₡640.000.**
+**₡400.000 × 4 sprints = ₡1.600.000.**
 
 El cálculo toma los cuatro sprints de desarrollo definidos en la propuesta, con una duración de dos semanas cada uno y la misma dedicación del equipo.
 
 | Concepto | Base de cálculo | Costo estimado |
 | --- | --- | --- |
-| Sprint 1 de análisis | 2 integrantes × 10 horas/semana × 2 semanas × ₡4.000 | ₡160.000 |
-| Release de desarrollo: sprints 2 a 5 | ₡160.000 × 4 sprints | ₡640.000 |
-| **Costo base: análisis + desarrollo** | **₡160.000 + ₡640.000** | **₡800.000** |
-| Reserva de contingencia propuesta | 10% del costo base, para correcciones y ajustes de integración | ₡80.000 |
-| **Presupuesto inicial propuesto** | **Costo base + contingencia** | **₡880.000** |
+| Sprint 1 de análisis (2 integrantes) | 2 integrantes × 10 horas por semana por integrante × 2 semanas × ₡4.000 por hora | ₡160.000 |
+| Sprints 2 a 5 de desarrollo (5 integrantes) | 5 integrantes × 10 horas por semana por integrante × 2 semanas por sprint × 4 sprints × ₡4.000 por hora | ₡1.600.000 |
+| **Costo base: análisis + desarrollo** | **₡160.000 + ₡1.600.000** | **₡1.760.000** |
+| Reserva de contingencia propuesta | 10% del costo base, para correcciones y ajustes de integración | ₡176.000 |
+| **Presupuesto del proyecto** | **Costo base + contingencia** | **₡1.936.000** |
 
-Estimamos **200 horas de trabajo del equipo**: 40 para el análisis y 160 para el desarrollo. Calculamos el presupuesto con la dedicación prevista y la tarifa por hora; los puntos de historia nos permiten distribuir las funcionalidades entre los sprints. Si necesitamos un sprint adicional de dos semanas, su costo estimado sería de **₡160.000**.
+El proyecto requiere **440 horas** (40 de análisis y 400 de desarrollo). A ₡4.000 por hora, la mano de obra cuesta ₡1.760.000. Con la reserva de contingencia del 10 % (₡176.000), el **presupuesto total es de ₡1.936.000**.
 
-**Presupuesto fijo y alcance flexible:** Proponemos ₡880.000 como límite inicial para el análisis y desarrollo bajo los supuestos anteriores. Si el trabajo pendiente supera ese monto, acordaremos con el Product Owner qué historias de menor prioridad, como HU-07 y HU-09, se posponen para entregar primero las funcionalidades terminadas de mayor valor. Mantendremos los criterios de aceptación y la Definición de Terminado. Si se requieren servicios pagados, revisaremos su impacto antes de contratarlos y acordaremos si se ajusta el alcance o se aprueba un aumento del presupuesto.
+Un sprint adicional de dos semanas con las cinco personas costaría ₡400.000 en mano de obra.
+
+**Presupuesto fijo y alcance flexible:** Proponemos ₡1.936.000 como límite inicial para el análisis y desarrollo bajo los supuestos anteriores. Si el trabajo pendiente supera ese monto, acordaremos con el Product Owner qué historias de menor prioridad, como HU-07 y HU-09, se posponen para entregar primero las funcionalidades terminadas de mayor valor. Mantendremos los criterios de aceptación y la Definición de Terminado. Si se requieren servicios pagados, revisaremos su impacto antes de contratarlos y acordaremos si se ajusta el alcance o se aprueba un aumento del presupuesto.
 
 ---
 
@@ -1362,7 +1358,7 @@ El plan de comunicación define qué información recibe cada interesado, con qu
 | Administradores | 4 / 5 | Permisos, estados de las solicitudes, panel de control y reportes. | Sprint Review y validación funcional. | Cada dos semanas. | Reunión y demostración del sistema. | Walbyn González |
 | Colaboradores | 3 / 5 | Prototipos de pantallas, fechas de pruebas y capacitación. | Sesión de diseño y pruebas de usabilidad. | Cada dos semanas. | Reunión presencial y WhatsApp para coordinar. | Seidy Alanis |
 | Encargado/área de TI (si se confirma su existencia) | 4 / 4 | Requisitos técnicos, hosting, base de datos, respaldos y seguridad. | Mesa de trabajo técnica. | Al inicio, a mitad del desarrollo y antes del despliegue. | Reunión y correo. | Walbyn González |
-| Equipo desarrollador | 3 / 5 | Avance diario, bloqueos y prioridades del sprint. | Daily Scrum, Sprint Planning, Sprint Review y Retrospectiva. | Diaria / cada dos semanas. | WhatsApp del equipo y tablero Kanban. | Ambos integrantes |
+| Equipo desarrollador | 3 / 5 | Avance diario, bloqueos y prioridades del sprint. | Daily Scrum, Sprint Planning, Sprint Review y Retrospectiva. | Diaria / cada dos semanas. | WhatsApp del equipo y tablero Kanban. | Equipo desarrollador |
 | Clientes de la corredora | 2 / 3 | Estado de su trámite (de forma indirecta). | Sin comunicación directa del proyecto. | — | Por medio del colaborador, por los canales tradicionales. | — |
 | Compañías aseguradoras | 3 / 2 | Ninguna del proyecto. | Sin comunicación directa del proyecto. | — | — | — |
 
@@ -1445,7 +1441,7 @@ Una tarea o historia de usuario se considera terminada cuando:
 | Columna | Límite WIP | Justificación |
 | --- | :---: | --- |
 | **Por hacer** | Sin límite | Contiene las tareas comprometidas para el sprint; su cantidad ya está limitada por los puntos planificados en el Sprint Planning. |
-| **En proceso** | 2 | Una tarea por integrante. El equipo tiene dos personas con 10 horas semanales cada una; trabajar varias tareas a la vez divide la atención y retrasa su finalización. |
+| **En proceso** | 2 | Limita la cantidad de tareas activas para facilitar su finalización. |
 | **En pruebas / revisión** | 2 | Evita que se acumulen tareas sin probar. Si la columna está llena, el equipo prueba lo pendiente antes de iniciar una tarea nueva. |
 | **Hecho** | Sin límite | Es la columna final; acumula el trabajo terminado del sprint. |
 
@@ -1472,52 +1468,36 @@ https://walbyngonzalez-1793296365243.atlassian.net/jira/software/projects/TASK/b
 
 **Escala:** probabilidad e impacto de 1 a 3 (bajo, medio y alto). **Prioridad = probabilidad × impacto:** baja (1–2), media (3–4) y alta (6–9).
 
-Se consolidan 17 riesgos de implementación y uso. Cada uno identifica una situación que puede afectar al sistema; las comprobaciones funcionales habituales permanecen en los criterios de aceptación. Los riesgos se numeran consecutivamente del R-01 al R-17. Las valoraciones son iniciales y deben validarse con el equipo. Se propone probabilidad alta para R-07 porque varios módulos comparten la base de datos y los cambios durante el desarrollo pueden afectar a los formularios y consultas que dependen de ella.
+El registro reúne los nueve riesgos de prioridad alta del proyecto (puntaje de 6 o 9). Se conservan los identificadores y las valoraciones originales.
 
 | ID | Registro del riesgo | Probabilidad | Impacto | Prioridad |
 | --- | --- | :---: | :---: | --- |
 | R-01 | Permisos anteriores que siguen activos: si cambia el rol de una persona mientras tiene sesión abierta, podría conservar funciones de administrador que ya no le corresponden. | 2 | 3 | Alta (6) |
-| R-02 | Formato del reporte desajustado: los nombres o las observaciones extensas podrían cortarse al exportar a PDF, aunque estén completos en el sistema. | 1 | 1 | Baja (1) |
-| R-03 | Pérdida de información: una falla grave en la base de datos podría borrar solicitudes e historial y detener su seguimiento. | 1 | 3 | Media (3) |
 | R-04 | Cambios tardíos en lo solicitado: la corredora podría cambiar campos o reglas después de desarrollar los formularios, obligando a repetir trabajo. | 3 | 2 | Alta (6) |
-| R-05 | Diferencias entre dispositivos: una pantalla diseñada en computadora podría dejar campos, filtros o botones fuera de la pantalla en algunos celulares. | 1 | 2 | Baja (2) |
-| R-06 | Consultas lentas al crecer los datos: una búsqueda que funciona con pocos casos podría tardar demasiado cuando se acumulen solicitudes. | 2 | 1 | Baja (2) |
 | R-07 | Cambios incompatibles entre las partes del sistema: una modificación en la base de datos podría dejar desactualizados los formularios o las consultas de otro módulo. | 3 | 3 | Alta (9) |
-| R-08 | Catálogos desactualizados: las listas desplegables de aseguradoras, canales de recepción o prioridades podrían no incluir una opción necesaria para registrar una solicitud y requerir una actualización puntual. | 3 | 1 | Media (3) |
 | R-09 | Interrupción durante un cambio de estado: una falla de conexión con la base de datos podría guardar el nuevo estado sin guardar su historial, dejando el caso inconsistente. | 2 | 3 | Alta (6) |
-| R-10 | Datos escritos con formatos distintos: nombres con tildes, espacios o pólizas con ceros iniciales podrían no encontrarse si la búsqueda interpreta esos datos de otra manera. | 2 | 2 | Media (4) |
 | R-11 | Límites del proveedor de correo: el servicio contratado o gratuito podría bloquear envíos por cuota y dejar invitaciones pendientes aunque las cuentas ya estén creadas. | 2 | 3 | Alta (6) |
-| R-12 | Fechas interpretadas de forma distinta: si el servidor y la corredora usan horarios diferentes, los movimientos cercanos a medianoche podrían aparecer en otro día en el historial, el panel y los reportes. | 2 | 2 | Media (4) |
 | R-13 | Solicitudes duplicadas por reintento: si la respuesta tarda o se pierde después de guardar, el usuario podría reenviar el formulario y registrar dos veces el mismo trámite. | 2 | 3 | Alta (6) |
-| R-14 | Contraseñas expuestas en registros de prueba: al investigar errores de acceso, el equipo podría guardar por accidente credenciales en mensajes o archivos compartidos. | 1 | 3 | Media (3) |
 | R-15 | Ediciones simultáneas: dos colaboradores podrían modificar el mismo caso y el último guardado sobrescribir los cambios del primero. | 2 | 3 | Alta (6) |
 | R-16 | Sesión activa de una cuenta desactivada: aunque se impidan nuevos accesos, una sesión emitida antes de la desactivación podría seguir consultando información. | 2 | 3 | Alta (6) |
 | R-17 | Dependencia de una biblioteca de exportación: la herramienta para crear PDF y Excel podría no funcionar en el servidor elegido o requerir una licencia no presupuestada. | 2 | 3 | Alta (6) |
 
 La imagen ubica los riesgos del registro según su probabilidad e impacto. Verde: aceptar; amarillo: vigilar; rojo: atender primero.
 
-![Matriz de probabilidad e impacto con los 17 riesgos del proyecto](Imagenes/matriz-riesgos.svg)
+![Matriz de probabilidad e impacto con los nueve riesgos de prioridad alta](Imagenes/matriz-riesgos.svg)
 
 ## 2. Plan de mitigación
 
-Se atienden primero los riesgos de prioridad alta. Las 17 mitigaciones se registran por su nombre e ID RSK como filas del [Product Backlog Inicial](#1-product-backlog-inicial); el detalle de la respuesta se presenta en esta tabla. No están asignadas a los sprints. Si el riesgo ocurre y requiere atención, la acción correspondiente se incorporará al Sprint Backlog. Las fechas de revisión son previstas y las acciones quedan pendientes de ejecución.
+Las nueve mitigaciones de prioridad alta se registran por su nombre e ID RSK como filas del [Product Backlog Inicial](#1-product-backlog-inicial); el detalle de la respuesta se presenta en esta tabla. No están asignadas a los sprints. Si el riesgo ocurre y requiere atención, la acción correspondiente se incorporará al Sprint Backlog. Las fechas de revisión son previstas y las acciones quedan pendientes de ejecución.
 
 | Riesgo | Respuesta | Dueño | Fecha de revisión | Disparador |
 | --- | --- | --- | --- | --- |
 | R-01 | **Mitigación (RSK-01):** Al cambiar un rol, renovar los permisos de la sesión y comprobar el cambio sin cerrar el navegador. | Walbyn González | 18/11/2026 | Una cuenta conserva funciones de administrador después de cambiarla a colaborador. |
-| R-02 | **Mitigación (RSK-02):** Preparar una muestra con textos largos y ajustar los saltos de línea y de página del PDF. | Walbyn González | 02/12/2026 | En la muestra exportada aparecen textos cortados o superpuestos. |
-| R-03 | **Mitigación (RSK-03):** Programar copias de seguridad y ensayar la recuperación en una base separada. | Walbyn González | 11/11/2026 | La base de datos pierde información o no puede recuperarse con la copia disponible. |
 | R-04 | **Mitigación (RSK-04):** Confirmar campos y reglas con ejemplos antes de desarrollar; registrar y estimar las solicitudes de cambio. | Seidy Alanis | 11/11/2026 | Se solicita cambiar una regla o un campo ya desarrollado. |
-| R-05 | **Mitigación (RSK-05):** Revisar formularios, filtros y gráficos en los navegadores y tamaños de pantalla acordados con la corredora. | Seidy Alanis | 11/11/2026 | En un dispositivo previsto para el uso no se puede utilizar un campo, filtro o botón necesario. |
-| R-06 | **Mitigación (RSK-06):** Probar las consultas con un volumen representativo, mostrar resultados por páginas y revisar los campos de búsqueda. | Walbyn González | 11/11/2026 | La carga del listado supera cinco segundos en las pruebas de volumen. |
 | R-07 | **Mitigación (RSK-07):** Acordar la estructura de datos, guardar los cambios de la base en scripts y probarlos en un entorno compartido antes de integrarlos. | Walbyn González | 11/11/2026 | Un módulo deja de guardar o consultar después de cambiar la estructura de datos. |
-| R-08 | **Mitigación (RSK-08):** Confirmar con la corredora las opciones de los catálogos de aseguradoras, canales y prioridades, y acordar quién solicita y realiza sus actualizaciones. | Seidy Alanis | 11/11/2026 | Al registrar una solicitud se necesita una opción que no aparece en una lista desplegable. |
 | R-09 | **Mitigación (RSK-09):** Guardar el estado y su historial en una sola operación y simular una interrupción entre ambos pasos. | Walbyn González | 11/11/2026 | Al simular la interrupción, el estado y el último movimiento del historial no coinciden. |
-| R-10 | **Mitigación (RSK-10):** Acordar el tratamiento de tildes y espacios y conservar las pólizas como identificadores; preparar ejemplos de búsqueda. | Seidy Alanis | 11/11/2026 | Un caso existente no aparece por diferencias de escritura o por perder ceros de la póliza. |
 | R-11 | **Mitigación (RSK-11):** Confirmar la cuota del servicio, registrar envíos fallidos y permitir reintentos sin crear otra cuenta. | Walbyn González | 18/11/2026 | El proveedor rechaza un envío por límite o indisponibilidad. |
-| R-12 | **Mitigación (RSK-12):** Definir una zona horaria común y preparar casos cercanos a medianoche para historial, panel y reportes. | Walbyn González | 25/11/2026 | Un movimiento aparece en un día distinto al esperado en el historial, el panel o el reporte. |
 | R-13 | **Mitigación (RSK-13):** Bloquear el botón durante el envío y controlar en el servidor que un reintento del mismo envío no cree otra solicitud. | Walbyn González | 11/11/2026 | Un doble clic o un reintento tras perder la respuesta crea más de una solicitud. |
-| R-14 | **Mitigación (RSK-14):** Excluir contraseñas y tokens de los registros y revisar los archivos de diagnóstico antes de compartirlos. | Walbyn González | 11/11/2026 | Se encuentra una contraseña o un token completo en un registro o archivo compartido. |
 | R-15 | **Mitigación (RSK-15):** Detectar si la solicitud cambió desde que se abrió y pedir recargar antes de aceptar un guardado desactualizado. | Walbyn González | 11/11/2026 | La prueba con dos sesiones reemplaza silenciosamente un cambio reciente. |
 | R-16 | **Mitigación (RSK-16):** Revocar las sesiones al desactivar una cuenta y verificar que sus consultas posteriores sean rechazadas. | Walbyn González | 18/11/2026 | Una sesión abierta antes de desactivar la cuenta todavía permite consultar información. |
 | R-17 | **Mitigación (RSK-17):** Revisar licencia y requisitos y realizar una prueba corta de PDF y Excel en el servidor previsto antes de desarrollar la exportación completa. | Walbyn González | 25/11/2026 | La prueba falla en el servidor o la licencia impide el uso previsto. |
