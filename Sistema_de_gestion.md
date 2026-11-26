@@ -36,7 +36,8 @@ Este historial registra las entregas y los cambios importantes del documento. Un
 | 0.20 | 9 | 11/11/2026 | Seidy Alanis | Elaboración del acta de cierre del Sprint 1, que reemplaza los eventos de cierre anteriores, con la estructura de Sprint Review (asistentes, Sprint Goal, cumplimiento de la DoD, retroalimentación, cambios al backlog y estado del release) y de Sprint Retrospective (formato Start/Stop/Continue, evidencia y acciones de mejora con dueño, fecha y verificación). |
 | 0.21 | 9 | 18/11/2026 | Seidy Alanis | Ajuste del acta de cierre del Sprint 1: se incorporan la Gerencia y los Administradores como interesados asistentes y su retroalimentación, según el plan de comunicación. |
 | 0.22 | 9 | 25/11/2026 | Walbyn González | Definición del equipo Scrum de cinco integrantes, con dos en el Sprint 1 y cinco en los sprints 2 a 5. Presupuesto de ₡1.936.000 con contingencia y selección de los nueve riesgos de prioridad alta. |
-| 0.23 | 10 | 25/11/2026 | Walbyn González | Incorporación del registro de cambios con dos solicitudes simuladas a partir del R-13 y propuesta de diez acuerdos de trabajo verificables. |
+| 0.23 | 10 | 25/11/2026 | Walbyn González | Incorporación del registro de cambios con dos solicitudes simuladas a partir del R-13 y propuesta de nueve acuerdos de trabajo verificables. |
+| 0.24 | 10 | 26/11/2026 | Walbyn González | Restauración de los 17 riesgos en la matriz, su imagen y el plan de mitigación (el Product Backlog conserva solo los nueve de prioridad alta). Responsables de las tareas de los sprints 2 a 5 y dueños de las mitigaciones según la función de cada integrante del equipo. |
 
 
 
@@ -614,7 +615,7 @@ El *Product Backlog* reúne todas las funcionalidades estimadas en Puntos de His
 | **RSK-07** | Coordinación de cambios en la base de datos | Alta | Por estimar | Sin asignar | Pendiente |
 | **RSK-09** | Guardado conjunto del estado y su historial | Alta | Por estimar | Sin asignar | Pendiente |
 | **RSK-11** | Control de límites y reintentos de correo | Alta | Por estimar | Sin asignar | Pendiente |
-| **RSK-13** | Prevención de solicitudes duplicadas por reintento ([PBI-CR-01, escenario simulado](#ítem-de-product-backlog-para-cr-01)) | Alta | Por estimar | Sin asignar | Pendiente |
+| **RSK-13** | Prevención de solicitudes duplicadas por reintento | Alta | Por estimar | Sin asignar | Pendiente |
 | **RSK-15** | Control de ediciones simultáneas | Alta | Por estimar | Sin asignar | Pendiente |
 | **RSK-16** | Revocación de sesiones de cuentas desactivadas | Alta | Por estimar | Sin asignar | Pendiente |
 | **RSK-17** | Evaluación de la biblioteca de exportación | Alta | Por estimar | Sin asignar | Pendiente |
@@ -898,42 +899,42 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-01</strong> (8 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Dise&#241;ar maquetaci&#243;n y formulario de inicio de sesi&#243;n (Frontend)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">V&#237;ctor D&#237;az</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-02.2</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-01</strong> (8 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Implementar endpoint de autenticaci&#243;n y hashing bcrypt (Backend)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>3 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Juli&#225;n P&#233;rez</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-02.3</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-01</strong> (8 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Configuraci&#243;n de middleware RBAC, tokens JWT y protecci&#243;n de rutas</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>3 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Juli&#225;n P&#233;rez</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-02.4</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-02</strong> (5 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Crear formulario de registro de solicitudes con validaciones</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">V&#237;ctor D&#237;az</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-02.5</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-02</strong> (5 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Implementar registro, asignaci&#243;n autom&#225;tica y estado inicial &quot;Recibido&quot;</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Juli&#225;n P&#233;rez</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-02.6</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-02</strong> (5 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Pruebas de registro y conservaci&#243;n de datos en base de datos</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>1 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy / Walbyn</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Michelle &#193;lvarez</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TOTAL</strong></td>
@@ -978,42 +979,42 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-03</strong> (3 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Adaptar el formulario de registro para cargar, editar, validar y guardar los datos de una solicitud</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy / Walbyn</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">V&#237;ctor D&#237;az y Juli&#225;n P&#233;rez</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-03.2</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-03</strong> (3 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Probar edici&#243;n, cancelaci&#243;n y conservaci&#243;n de los datos de seguimiento</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>1 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy / Walbyn</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Michelle &#193;lvarez</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-03.3</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-04</strong> (3 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Desarrollar interfaz de actualizaci&#243;n de estados por lista desplegable</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>1 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">V&#237;ctor D&#237;az</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-03.4</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-04</strong> (3 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Implementar l&#243;gica backend para actualizaci&#243;n de estado y registro autom&#225;tico del historial de cambios de estado</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Juli&#225;n P&#233;rez</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-03.5</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-05</strong> (3 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Dise&#241;ar componentes de barra de b&#250;squeda y filtros din&#225;micos</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>1 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">V&#237;ctor D&#237;az</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-03.6</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-05</strong> (3 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Construir consultas SQL optimizadas para filtros combinados</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Juli&#225;n P&#233;rez</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TOTAL</strong></td>
@@ -1058,28 +1059,28 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-06</strong> (5 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Dise&#241;ar pantallas CRUD de gesti&#243;n de usuarios (Crear/Editar/Desactivar)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">V&#237;ctor D&#237;az</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-04.2</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-06</strong> (5 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Implementar l&#243;gica de borrado l&#243;gico (<em>soft delete</em>) y env&#237;o de credenciales SMTP</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>3 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Juli&#225;n P&#233;rez</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-04.3</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-07</strong> (5 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Dise&#241;ar componentes visuales y gr&#225;ficos interactivos del panel de control</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">V&#237;ctor D&#237;az</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-04.4</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-07</strong> (5 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Programar consultas agregadas en base de datos para contadores del Dashboard</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>3 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Juli&#225;n P&#233;rez</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TOTAL</strong></td>
@@ -1124,28 +1125,28 @@ A continuación se detalla la distribución del trabajo a lo largo de los Sprint
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-08</strong> (3 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Desarrollar secci&#243;n de notas y observaciones de solo lectura (<em>append-only</em>)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>1 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">V&#237;ctor D&#237;az</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-05.2</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-08</strong> (3 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Integrar sellos de tiempo autom&#225;ticos y trazabilidad de autor en bit&#225;cora</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Juli&#225;n P&#233;rez</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-05.3</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-09</strong> (5 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Dise&#241;ar interfaz para par&#225;metros de consulta y vista previa de reportes</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>2 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Seidy Alanis</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">V&#237;ctor D&#237;az</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TSK-05.4</strong></td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>HU-09</strong> (5 SP)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Programar motor backend de exportaci&#243;n a formatos est&#225;ndar (PDF/Excel)</td>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>3 SP</strong></td>
-      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Walbyn Gonz&#225;lez</td>
+      <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;">Juli&#225;n P&#233;rez</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 10px; vertical-align: top; overflow-wrap: anywhere;"><strong>TOTAL</strong></td>
@@ -1169,12 +1170,12 @@ Para garantizar la visibilidad del avance diario y el control de impedimentos du
 
 1. **Tablero Kanban Digital (Visualización de Flujo):**
    * **Por Hacer (*To Do*):** Historias/tareas seleccionadas para el Sprint actual.
-   * **En Proceso (*In Progress*):** Tareas en desarrollo activo por Seidy o Walbyn.
+   * **En Proceso (*In Progress*):** Tareas en desarrollo activo por los Developers (Víctor, Julián y Michelle).
    * **En Pruebas/Revisión (*QA / Review*):** Tareas terminadas que están siendo probadas funcionalmente contra sus Criterios de Aceptación.
    * **Hecho (*Done*):** Funcionalidades completamente integradas que cumplen con la Definición de Terminado (DoD).
 
 2. **Reuniones de Sincronización Diaria (*Daily Scrum*):**
-   * Sesiones breves de 10 a 15 minutos entre Seidy y Walbyn para revisar el avance y detectar bloqueos técnicos.
+   * Sesiones breves de 10 a 15 minutos entre los cinco integrantes del equipo (Developers, Product Owner y Scrum Master) para revisar el avance y detectar bloqueos técnicos. En el Sprint 1, solo entre Seidy y Walbyn.
 
 3. **Métricas de Rendimiento (*Burn-down Chart* / Control de Puntos):**
    * Seguimiento al consumo de Puntos de Historia (SP) a lo largo del Sprint de dos semanas para asegurar que la meta se complete dentro del plazo acordado.
@@ -1375,9 +1376,9 @@ Los clientes y las compañías aseguradoras no reciben comunicación directa del
 | Evento | Frecuencia y duración | Participantes | Propósito |
 | --- | --- | --- | --- |
 | Sprint Planning | Inicio de cada sprint, 1 hora. | Product Owner y equipo. | Definir la meta del sprint y el Sprint Backlog. |
-| Daily Scrum | Diaria, de 10 a 15 minutos. | Equipo desarrollador. | Revisar qué se hizo, qué se hará y qué bloquea el avance. |
+| Daily Scrum | Diaria, de 10 a 15 minutos. | Developers (Víctor, Julián y Michelle), con el Scrum Master como facilitador. | Revisar qué se hizo, qué se hará y qué bloquea el avance. |
 | Sprint Review | Cierre de cada sprint, 1 hora. | Product Owner, equipo, Gerencia y Administradores. | Demostrar el incremento y validarlo contra los criterios de aceptación. |
-| Sprint Retrospective | Cierre de cada sprint, 30 minutos. | Equipo desarrollador. | Identificar mejoras del proceso de trabajo. |
+| Sprint Retrospective | Cierre de cada sprint, 30 minutos. | Scrum Team completo (los cinco integrantes). | Identificar mejoras del proceso de trabajo. |
 | Informe de avance | Cada dos semanas, por correo, después de la Sprint Review. | Product Owner hacia la Gerencia. | Informar las historias terminadas, los puntos de historia consumidos (burndown), los riesgos y los próximos pasos. |
 
 ### 3. Reglas del equipo
@@ -1474,39 +1475,55 @@ https://walbyngonzalez-1793296365243.atlassian.net/jira/software/projects/TASK/b
 
 **Escala:** probabilidad e impacto de 1 a 3 (bajo, medio y alto). **Prioridad = probabilidad × impacto:** baja (1–2), media (3–4) y alta (6–9).
 
-El registro reúne los nueve riesgos de prioridad alta del proyecto (puntaje de 6 o 9). Se conservan los identificadores y las valoraciones originales.
+Se consolidan 17 riesgos de implementación y uso. Cada uno identifica una situación que puede afectar al sistema; las comprobaciones funcionales habituales permanecen en los criterios de aceptación. Los riesgos se numeran consecutivamente del R-01 al R-17. Las valoraciones son iniciales y deben validarse con el equipo. Se propone probabilidad alta para R-07 porque varios módulos comparten la base de datos y los cambios durante el desarrollo pueden afectar a los formularios y consultas que dependen de ella.
 
 | ID | Registro del riesgo | Probabilidad | Impacto | Prioridad |
 | --- | --- | :---: | :---: | --- |
 | R-01 | Permisos anteriores que siguen activos: si cambia el rol de una persona mientras tiene sesión abierta, podría conservar funciones de administrador que ya no le corresponden. | 2 | 3 | Alta (6) |
+| R-02 | Formato del reporte desajustado: los nombres o las observaciones extensas podrían cortarse al exportar a PDF, aunque estén completos en el sistema. | 1 | 1 | Baja (1) |
+| R-03 | Pérdida de información: una falla grave en la base de datos podría borrar solicitudes e historial y detener su seguimiento. | 1 | 3 | Media (3) |
 | R-04 | Cambios tardíos en lo solicitado: la corredora podría cambiar campos o reglas después de desarrollar los formularios, obligando a repetir trabajo. | 3 | 2 | Alta (6) |
+| R-05 | Diferencias entre dispositivos: una pantalla diseñada en computadora podría dejar campos, filtros o botones fuera de la pantalla en algunos celulares. | 1 | 2 | Baja (2) |
+| R-06 | Consultas lentas al crecer los datos: una búsqueda que funciona con pocos casos podría tardar demasiado cuando se acumulen solicitudes. | 2 | 1 | Baja (2) |
 | R-07 | Cambios incompatibles entre las partes del sistema: una modificación en la base de datos podría dejar desactualizados los formularios o las consultas de otro módulo. | 3 | 3 | Alta (9) |
+| R-08 | Catálogos desactualizados: las listas desplegables de aseguradoras, canales de recepción o prioridades podrían no incluir una opción necesaria para registrar una solicitud y requerir una actualización puntual. | 3 | 1 | Media (3) |
 | R-09 | Interrupción durante un cambio de estado: una falla de conexión con la base de datos podría guardar el nuevo estado sin guardar su historial, dejando el caso inconsistente. | 2 | 3 | Alta (6) |
+| R-10 | Datos escritos con formatos distintos: nombres con tildes, espacios o pólizas con ceros iniciales podrían no encontrarse si la búsqueda interpreta esos datos de otra manera. | 2 | 2 | Media (4) |
 | R-11 | Límites del proveedor de correo: el servicio contratado o gratuito podría bloquear envíos por cuota y dejar invitaciones pendientes aunque las cuentas ya estén creadas. | 2 | 3 | Alta (6) |
+| R-12 | Fechas interpretadas de forma distinta: si el servidor y la corredora usan horarios diferentes, los movimientos cercanos a medianoche podrían aparecer en otro día en el historial, el panel y los reportes. | 2 | 2 | Media (4) |
 | R-13 | Solicitudes duplicadas por reintento: si la respuesta tarda o se pierde después de guardar, el usuario podría reenviar el formulario y registrar dos veces el mismo trámite. | 2 | 3 | Alta (6) |
+| R-14 | Contraseñas expuestas en registros de prueba: al investigar errores de acceso, el equipo podría guardar por accidente credenciales en mensajes o archivos compartidos. | 1 | 3 | Media (3) |
 | R-15 | Ediciones simultáneas: dos colaboradores podrían modificar el mismo caso y el último guardado sobrescribir los cambios del primero. | 2 | 3 | Alta (6) |
 | R-16 | Sesión activa de una cuenta desactivada: aunque se impidan nuevos accesos, una sesión emitida antes de la desactivación podría seguir consultando información. | 2 | 3 | Alta (6) |
 | R-17 | Dependencia de una biblioteca de exportación: la herramienta para crear PDF y Excel podría no funcionar en el servidor elegido o requerir una licencia no presupuestada. | 2 | 3 | Alta (6) |
 
 La imagen ubica los riesgos del registro según su probabilidad e impacto. Verde: aceptar; amarillo: vigilar; rojo: atender primero.
 
-![Matriz de probabilidad e impacto con los nueve riesgos de prioridad alta](Imagenes/matriz-riesgos.svg)
+![Matriz de probabilidad e impacto con los 17 riesgos del proyecto](Imagenes/matriz-riesgos.svg)
 
 ## Plan de mitigación
 
-Las nueve mitigaciones de prioridad alta se registran por su nombre e ID RSK como filas del [Product Backlog Inicial](#1-product-backlog-inicial); el detalle de la respuesta se presenta en esta tabla. No están asignadas a los sprints. Si el riesgo ocurre y requiere atención, la acción correspondiente se incorporará al Sprint Backlog. Las fechas de revisión son previstas y las acciones quedan pendientes de ejecución.
+Se atienden primero los riesgos de prioridad alta. Las mitigaciones de los nueve riesgos de prioridad alta se registran por su nombre e ID RSK como filas del [Product Backlog Inicial](#1-product-backlog-inicial); las de prioridad media y baja permanecen solo en esta tabla, donde se presenta el detalle de cada respuesta. Ninguna está asignada a los sprints. Si el riesgo ocurre y requiere atención, la acción correspondiente se incorporará al Sprint Backlog. Las fechas de revisión son previstas y las acciones quedan pendientes de ejecución.
 
 | Riesgo | Respuesta | Dueño | Fecha de revisión | Disparador |
 | --- | --- | --- | --- | --- |
-| R-01 | **Mitigación (RSK-01):** Al cambiar un rol, renovar los permisos de la sesión y comprobar el cambio sin cerrar el navegador. | Walbyn González | 18/11/2026 | Una cuenta conserva funciones de administrador después de cambiarla a colaborador. |
+| R-01 | **Mitigación (RSK-01):** Al cambiar un rol, renovar los permisos de la sesión y comprobar el cambio sin cerrar el navegador. | Julián Pérez | 18/11/2026 | Una cuenta conserva funciones de administrador después de cambiarla a colaborador. |
+| R-02 | **Mitigación (RSK-02):** Preparar una muestra con textos largos y ajustar los saltos de línea y de página del PDF. | Julián Pérez | 02/12/2026 | En la muestra exportada aparecen textos cortados o superpuestos. |
+| R-03 | **Mitigación (RSK-03):** Programar copias de seguridad y ensayar la recuperación en una base separada. | Julián Pérez | 11/11/2026 | La base de datos pierde información o no puede recuperarse con la copia disponible. |
 | R-04 | **Mitigación (RSK-04):** Confirmar campos y reglas con ejemplos antes de desarrollar; registrar y estimar las solicitudes de cambio. | Seidy Alanis | 11/11/2026 | Se solicita cambiar una regla o un campo ya desarrollado. |
-| R-07 | **Mitigación (RSK-07):** Acordar la estructura de datos, guardar los cambios de la base en scripts y probarlos en un entorno compartido antes de integrarlos. | Walbyn González | 11/11/2026 | Un módulo deja de guardar o consultar después de cambiar la estructura de datos. |
-| R-09 | **Mitigación (RSK-09):** Guardar el estado y su historial en una sola operación y simular una interrupción entre ambos pasos. | Walbyn González | 11/11/2026 | Al simular la interrupción, el estado y el último movimiento del historial no coinciden. |
-| R-11 | **Mitigación (RSK-11):** Confirmar la cuota del servicio, registrar envíos fallidos y permitir reintentos sin crear otra cuenta. | Walbyn González | 18/11/2026 | El proveedor rechaza un envío por límite o indisponibilidad. |
-| R-13 | **Mitigación (RSK-13):** Bloquear el botón durante el envío y controlar en el servidor que un reintento del mismo envío no cree otra solicitud. | Walbyn González | 11/11/2026 | Un doble clic o un reintento tras perder la respuesta crea más de una solicitud. |
-| R-15 | **Mitigación (RSK-15):** Detectar si la solicitud cambió desde que se abrió y pedir recargar antes de aceptar un guardado desactualizado. | Walbyn González | 11/11/2026 | La prueba con dos sesiones reemplaza silenciosamente un cambio reciente. |
-| R-16 | **Mitigación (RSK-16):** Revocar las sesiones al desactivar una cuenta y verificar que sus consultas posteriores sean rechazadas. | Walbyn González | 18/11/2026 | Una sesión abierta antes de desactivar la cuenta todavía permite consultar información. |
-| R-17 | **Mitigación (RSK-17):** Revisar licencia y requisitos y realizar una prueba corta de PDF y Excel en el servidor previsto antes de desarrollar la exportación completa. | Walbyn González | 25/11/2026 | La prueba falla en el servidor o la licencia impide el uso previsto. |
+| R-05 | **Mitigación (RSK-05):** Revisar formularios, filtros y gráficos en los navegadores y tamaños de pantalla acordados con la corredora. | Víctor Díaz | 11/11/2026 | En un dispositivo previsto para el uso no se puede utilizar un campo, filtro o botón necesario. |
+| R-06 | **Mitigación (RSK-06):** Probar las consultas con un volumen representativo, mostrar resultados por páginas y revisar los campos de búsqueda. | Julián Pérez | 11/11/2026 | La carga del listado supera cinco segundos en las pruebas de volumen. |
+| R-07 | **Mitigación (RSK-07):** Acordar la estructura de datos, guardar los cambios de la base en scripts y probarlos en un entorno compartido antes de integrarlos. | Julián Pérez | 11/11/2026 | Un módulo deja de guardar o consultar después de cambiar la estructura de datos. |
+| R-08 | **Mitigación (RSK-08):** Confirmar con la corredora las opciones de los catálogos de aseguradoras, canales y prioridades, y acordar quién solicita y realiza sus actualizaciones. | Seidy Alanis | 11/11/2026 | Al registrar una solicitud se necesita una opción que no aparece en una lista desplegable. |
+| R-09 | **Mitigación (RSK-09):** Guardar el estado y su historial en una sola operación y simular una interrupción entre ambos pasos. | Julián Pérez | 11/11/2026 | Al simular la interrupción, el estado y el último movimiento del historial no coinciden. |
+| R-10 | **Mitigación (RSK-10):** Acordar el tratamiento de tildes y espacios y conservar las pólizas como identificadores; preparar ejemplos de búsqueda. | Seidy Alanis | 11/11/2026 | Un caso existente no aparece por diferencias de escritura o por perder ceros de la póliza. |
+| R-11 | **Mitigación (RSK-11):** Confirmar la cuota del servicio, registrar envíos fallidos y permitir reintentos sin crear otra cuenta. | Julián Pérez | 18/11/2026 | El proveedor rechaza un envío por límite o indisponibilidad. |
+| R-12 | **Mitigación (RSK-12):** Definir una zona horaria común y preparar casos cercanos a medianoche para historial, panel y reportes. | Julián Pérez | 25/11/2026 | Un movimiento aparece en un día distinto al esperado en el historial, el panel o el reporte. |
+| R-13 | **Mitigación (RSK-13):** Bloquear el botón durante el envío y controlar en el servidor que un reintento del mismo envío no cree otra solicitud. | Julián Pérez | 11/11/2026 | Un doble clic o un reintento tras perder la respuesta crea más de una solicitud. |
+| R-14 | **Mitigación (RSK-14):** Excluir contraseñas y tokens de los registros y revisar los archivos de diagnóstico antes de compartirlos. | Michelle Álvarez | 11/11/2026 | Se encuentra una contraseña o un token completo en un registro o archivo compartido. |
+| R-15 | **Mitigación (RSK-15):** Detectar si la solicitud cambió desde que se abrió y pedir recargar antes de aceptar un guardado desactualizado. | Julián Pérez | 11/11/2026 | La prueba con dos sesiones reemplaza silenciosamente un cambio reciente. |
+| R-16 | **Mitigación (RSK-16):** Revocar las sesiones al desactivar una cuenta y verificar que sus consultas posteriores sean rechazadas. | Julián Pérez | 18/11/2026 | Una sesión abierta antes de desactivar la cuenta todavía permite consultar información. |
+| R-17 | **Mitigación (RSK-17):** Revisar licencia y requisitos y realizar una prueba corta de PDF y Excel en el servidor previsto antes de desarrollar la exportación completa. | Julián Pérez | 25/11/2026 | La prueba falla en el servidor o la licencia impide el uso previsto. |
 
 ---
 
@@ -1550,7 +1567,7 @@ El acta de cierre del Sprint 1, con la Sprint Review y la Sprint Retrospective, 
       <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>Recuperar la confirmación</strong><br>Al reenviar el mismo formulario, devolver el número guardado y conservar un solo trámite.</td>
       <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>Alcance</strong> · Registro de HU-02.<br><strong>Tiempo</strong> · Sprint 5, sujeto a estimación.<br><strong>Costo</strong> · ₡0 adicional si cabe en las horas previstas.<br><strong>Riesgo</strong> · Reduce duplicados por reintento.</td>
       <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>Aprobada en la simulación</strong><br>Sprint 5<br>Evita duplicar el envío y recupera el número de trámite.</td>
-      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;">Backend</td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;">Juli&#225;n P&#233;rez (Backend)</td>
     </tr>
     <tr>
       <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>CR-02</strong></td>
@@ -1559,7 +1576,7 @@ El acta de cierre del Sprint 1, con la Sprint Review y la Sprint Retrospective, 
       <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>Mostrar «Guardando…»</strong><br>Desactivar Enviar durante el proceso y permitir reintentar el mismo envío si vence la espera.</td>
       <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>Alcance</strong> · Formulario de HU-02.<br><strong>Tiempo</strong> · Por estimar, con pruebas de espera y reintento.<br><strong>Costo</strong> · Por estimar.<br><strong>Riesgo</strong> · Reduce reenvíos por doble clic.</td>
       <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;"><strong>Diferida en la simulación</strong><br>Sprint por definir<br>Se reevaluará si las pruebas muestran reintentos accidentales durante la espera.</td>
-      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;">Frontend</td>
+      <td style="border: 1px solid #8b949e; padding: 8px; vertical-align: top; overflow-wrap: anywhere;">V&#237;ctor D&#237;az (Frontend)</td>
     </tr>
   </tbody>
 </table>
